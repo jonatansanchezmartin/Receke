@@ -23,11 +23,11 @@ Developed to help people with cooking challenges in order to:
 
 ## 🚀 Features
 
-- 📃🎦🎙️ Display of learning contents such as text, video or audio.
+- 🔍 Search recipes by keywords and icons.
 
-- ✅ Interactive activities such as quizzes.
+- 🍽️ Create your own recipes.
 
-- 🔧 Tools to help you manage your spending, saving and investing.
+- ⭐ Review the recipes you try.
 
 
 
