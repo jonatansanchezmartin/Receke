@@ -13,11 +13,13 @@ Welcome to Receké, a web App to find the right recipe with the ingredients you 
 
 Developed to help people with cooking challenges in order to:
 
-1. ⏰ Save time.
+1. 🗑️🚯 Avoid food waste.
 
-2. 🍲 Cook real recipes with nutriotional value. 
+2. ⏰ Save time.
 
-3.  🏃‍♂️ Make technology more accessible to promote healthier habits.
+3. 🍲 Cook real recipes with nutriotional value. 
+
+4.  🏃‍♂️ Make technology more accessible to promote healthier habits.
 
 
 
