@@ -33,4 +33,4 @@ Developed to help people with cooking challenges in order to:
 
 ## 🤝 Feedback and Contributions
 
-We'd love to hear your feedback and suggestions for further improvements. Feel free to contribute and join us in making backend development cleaner and faster!
+We'd love to hear your feedback and suggestions for further improvements. Feel free to contribute and join us in making fronted development cleaner and faster!
