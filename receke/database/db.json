@@ -54,3 +54,256 @@
     }
   ]
 }
+
+// Receta arroz con leche
+
+{
+  "recipes": [
+    {
+      "id": "2",
+      "title": "Arroz con leche",
+      "instructions": [
+        "Introducir la leche en una cacerola amplia y añadir el arroz y la rama de canela, junto con un par de trozos de la piel del limón.",
+        "Calentar y, cuando comenzar a hervir, cocer el conjunto a fuego suave durante unos 50 minutos.",
+        "Remover a menudo para que no agarrar a la base y el arroz soltar lentamente su almidón.",
+        "A continuación agregar el azúcar y cocer durante diez minutos más a la misma temperatura, es decir, a fuego bajo.",
+        "Continuar removiendo para ayudar a que el azúcar disolverse y se incorporar al resto de ingredientes.",
+        "Retirar la rama de canela y repartir el arroz con leche en cuencos (o donde querer servirlo).",
+        "Dejar que atemperar antes de espolvorear con un poco de canela molida. A la hora de servir decorar cada cuenco con unas hojas de menta fresca (opcional)."
+      ],
+      "image": "https://fastly.picsum.photos/id/865/200/200.jpg?hmac=wvBzP6ZRbFhC3yvYQFYFRH1yveXrLRZPdI7tFKJMt8A",
+      "ingredients": [
+        {
+          "ingredient": "Leche",
+          "quantity": "1 litro"
+        },
+        {
+          "ingredient": "Arroz redondo",
+          "quantity": "100 g"
+        },
+        {
+          "ingredient": "Azúcar",
+          "quantity": "70 g"
+        },
+        {
+          "ingredient": "Limón",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Canela en rama",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Canela molida",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Cucharada Menta fresca para decorar",
+          "quantity": "(opcional)"
+        }
+      ]
+    }
+  ]
+}
+
+// Receta salmorejo
+
+
+{
+  "recipes": [
+    {
+      "id": "3",
+      "title": "Salmorejo",
+      "instructions": [
+        "Limpiar los tomates, triturarlos y colarlos para quitarles la piel y las pepitas.",
+        "Añadir el pan (previamente puesto en remojo ya sea en agua o en el tomate triturado), el aceite de oliva virgen extra, los ajos y la sal y triturar de nuevo.",
+        "Servir en cuencos individuales y decorar con huevo duro picado y trocitos de jamón."
+      ],
+      "image": "https://fastly.picsum.photos/id/869/200/200.jpg?hmac=9RiRIgGnsqH_rkg_r3zwW9ty1sT9w4N5mIzW1ld7zJo",
+      "ingredients": [
+        {
+          "ingredient": "Tomates",
+          "quantity": "1 kg"
+        },
+        {
+          "ingredient": "Diente de ajo",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Pan (preferiblemente del día anterior)",
+          "quantity": "200 g"
+        },
+        {
+          "ingredient": "Aceite de oliva virgen extra",
+          "quantity": "100 gr"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "10 gr"
+        },
+        {
+          "ingredient": "Opcional: huevo y jamón",
+          "quantity": ""
+        }
+      ]
+    }
+  ]
+}
+
+// Receta pollo al horno
+
+
+{
+  "recipes": [
+    {
+      "id": "4",
+      "title": "Pollo al horno",
+      "instructions": [
+        "Cortar el tomate, zanahoria, puerro y cebolla. Sofreírlos aparte con un poco de caldo de pollo.",
+        "En un recipiente de horno, agregar el pollo, las verduras, el vino blanco y los frutos secos triturados.",
+        "Hornear durante 1 hora y 15 minutos."
+      ],
+      "image": "https://fastly.picsum.photos/id/410/200/200.jpg?hmac=9-jWy0xLq5O9ugrQyNtT28_e3SSOGfTkg4CgBDnX0A4",
+      "ingredients": [
+        {
+          "ingredient": "Pollo entero",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Tomate",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Zanahoria",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Cebolla",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Vino blanco",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Surtido de frutos secos triturados (nueces, almendras y pasas)",
+          "quantity": ""
+        }
+      ]
+    }
+  ]
+}
+
+// Receta de pizza fresca
+
+{
+  "recipes": [
+    {
+      "id": "5",
+      "title": "Pizza casera",
+      "instructions": [
+        "Mezclar el agua tibia con la levadura y el azúcar.",
+        "Mezclar el resto de los ingredientes y amasar hasta que la masa no se pegue en las manos y forme una bola.",
+        "Dejar crecer la masa en un bol tapado con un trapo húmedo en una zona caliente.",
+        "Dividir la masa en bolas más pequeñas (salen 4).",
+        "Estirar la masa sobre papel de horno.",
+        "Aliñar con tomate: 1 tsp de sal, 1/2 tsp de azúcar, orégano al gusto, albahaca (menos cantidad que el orégano), y lata de tomate triturado Apis.",
+        "Agregar queso mozzarella (de barra de carnicería) y otros ingredientes al gusto.",
+        "Meter la piedra de horno en el horno y precalentar a máxima potencia (mínimo 250°C).",
+        "Cocer la pizza entre 5 y 8 minutos."
+      ],
+      "image": "https://fastly.picsum.photos/id/200/200/200.jpg?hmac=udF0FbCSgd0sxe5IWv-sR0Wy3l3cAMF0s25W7IBgNFw",
+      "ingredients": [
+        {
+          "ingredient": "El vaso medidor de agua",
+          "quantity": "240 ml"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "1 tsp (5 g)"
+        },
+        {
+          "ingredient": "Azúcar",
+          "quantity": "1/2 tsp"
+        },
+        {
+          "ingredient": "Aceite",
+          "quantity": "un chorreón"
+        },
+        {
+          "ingredient": "Harina",
+          "quantity": "350-400 g"
+        },
+        {
+          "ingredient": "Levadura",
+          "quantity": "1 sobre (7 g)"
+        }
+      ]
+    }
+  ]
+}
+
+// Receta Vichyssoise
+{
+  "recipes": [
+    {
+      "id": "6",
+      "title": "Vichyssoise",
+      "instructions": [
+        "Poner en el vaso el puerro cortado en rodajas y las patatas cortadas y trocear durante 4 segundos en velocidad 4.",
+        "Agregar el aceite y sofreír durante 10 minutos a 120°C.",
+        "Incorporar el caldo de ave y la leche, y cocinar durante 25 minutos a 90°C.",
+        "Triturar la mezcla durante 1 minuto en velocidad progresiva 5-10 (cuidado de no quemarse, se puede poner un trapo sobre la tapa del vaso de la thermomix para evitar salpicaduras).",
+        "Agregar la sal y la pimienta y triturar.",
+        "Servir caliente."
+      ],
+      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "ingredients": [
+        {
+          "ingredient": "Puerros",
+          "quantity": "3-4 grandes"
+        },
+        {
+          "ingredient": "Patata",
+          "quantity": "200 g"
+        },
+        {
+          "ingredient": "Aceite de oliva virgen extra",
+          "quantity": "50 g"
+        },
+        {
+          "ingredient": "Leche",
+          "quantity": "500 g"
+        },
+        {
+          "ingredient": "Caldo de ave",
+          "quantity": "500 g"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "al gusto"
+        },
+        {
+          "ingredient": "Pimienta negra",
+          "quantity": "al gusto"
+        },
+        {
+          "ingredient": "Nata líquida",
+          "quantity": "para decorar"
+        },
+        {
+          "ingredient": "Cebollino",
+          "quantity": "para decorar"
+        }
+      ]
+    }
+  ]
+}
