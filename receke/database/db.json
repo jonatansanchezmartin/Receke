@@ -10,62 +10,30 @@
         "Cocer las patatas",
         "Añadir el huevo"
       ],
-      "image": "https://fastly.picsum.photos/id/863/200/200.jpg?hmac=b2PqP--PkLWi3zKCrto-MSpLXkrtt4kYpKbUkZa2Yjo"
-    },
-    {
-      "id": "2",
-      "title": "Ensalada de tomate",
-      "instructions": [
-        "Lavar los tomates", 
-        "Cortar los tomates", 
-        "Aliñar los tomates"
-    ],  
-      "image": "https://fastly.picsum.photos/id/442/200/200.jpg?hmac=S-yNCNr30GK97ulUYoey_Fh2-czIf7YnNgcKp7zrEoE"
-    },
-    {
-      "id": "3",
-      "title": "Gazpacho",
-      "instructions": [
-        "Pelar los tomates",
-        "Triturar los tomates",
-        "Añadir el resto de ingredientes"
-      ],
-      "image": "https://fastly.picsum.photos/id/218/200/200.jpg?hmac=pIx-HTJBJRheNaHmhgqsQRX8JbTGvag_zic9NTNWFJU"
-    }
-  ],
-  "recipes_ingredients": [
-    {
-      "recipes_id": "1",
-      "ingredients_id": "1",
-      "quantity": "5 unidades"
-    },
-    {
-      "recipes_id": "1",
-      "ingredients_id": "2",
-      "quantity": "4 unidades"
-    },
-    {
-      "recipes_id": "2",
-      "ingredients_id": "3",
-      "quantity": "3 unidades"
-    },
-    {
-      "recipes_id": "3",
-      "ingredients_id": "1",
-      "quantity": "5 unidades"
+      "image": "https://fastly.picsum.photos/id/863/200/200.jpg?hmac=b2PqP--PkLWi3zKCrto-MSpLXkrtt4kYpKbUkZa2Yjo",
+      "ingredients": [
+        {
+          "ingredient": "Patata",
+          "quantity": "4 unidades"
+        },
+        {
+          "ingredient": "Huevos",
+          "quantity": "3 unidades"
+        }
+      ]
     }
   ],
   "ingredients": [
     {
       "id": "1",
       "name": "Patata",
-      "category_id": "1",
+      "category": "Hortalizas",
       "image": "https://fastly.picsum.photos/id/866/200/200.jpg?hmac=i0ngmQOk9dRZEzhEosP31m_vQnKBQ9C19TBP1CGoIUA"
     },
     {
       "id": "2",
       "name": "Huevo",
-      "category_id": "2",
+      "category_id": "Proteínas",
       "image": "https://fastly.picsum.photos/id/608/200/200.jpg?hmac=-p1htX-mFieavdRDr9vUIJKyDHCXZAY5B35nhdcgIgQ"
     },
     {
