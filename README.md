@@ -33,9 +33,9 @@ Developed to help people with cooking challenges in order to:
 
 
 
-  ## 👩‍💻 Technology
+## 👩‍💻 Technology
 
-  Frontend: HTML, CSS, Javascrit y VUE.
+Frontend: HTML, CSS, Javascrit y VUE.
 
 
 
