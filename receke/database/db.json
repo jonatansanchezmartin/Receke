@@ -14,51 +14,14 @@
       "ingredients": [
         {
           "ingredient": "Patata",
-          "quantity": "4 unidades"
+          "quantity": "4"
         },
         {
-          "ingredient": "Huevos",
-          "quantity": "3 unidades"
+          "ingredient": "Huevo",
+          "quantity": "3"
         }
       ]
-    }
-  ],
-  "ingredients": [
-    {
-      "id": "1",
-      "name": "Patata",
-      "category": "Hortalizas",
-      "image": "https://fastly.picsum.photos/id/866/200/200.jpg?hmac=i0ngmQOk9dRZEzhEosP31m_vQnKBQ9C19TBP1CGoIUA"
     },
-    {
-      "id": "2",
-      "name": "Huevo",
-      "category_id": "Proteínas",
-      "image": "https://fastly.picsum.photos/id/608/200/200.jpg?hmac=-p1htX-mFieavdRDr9vUIJKyDHCXZAY5B35nhdcgIgQ"
-    },
-    {
-      "id": "3",
-      "name": "Tomate",
-      "category_id": "1",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "Hortalizas"
-    },
-    {
-      "id": "2",
-      "name": "Proteínas"
-    }
-  ]
-}
-
-// Receta arroz con leche
-
-{
-  "recipes": [
     {
       "id": "2",
       "title": "Arroz con leche",
@@ -67,18 +30,18 @@
         "Calentar y, cuando comenzar a hervir, cocer el conjunto a fuego suave durante unos 50 minutos.",
         "Remover a menudo para que no agarrar a la base y el arroz soltar lentamente su almidón.",
         "A continuación agregar el azúcar y cocer durante diez minutos más a la misma temperatura, es decir, a fuego bajo.",
-        "Continuar removiendo para ayudar a que el azúcar disolverse y se incorporar al resto de ingredientes.",
-        "Retirar la rama de canela y repartir el arroz con leche en cuencos (o donde querer servirlo).",
-        "Dejar que atemperar antes de espolvorear con un poco de canela molida. A la hora de servir decorar cada cuenco con unas hojas de menta fresca (opcional)."
+        "Continuar removiendo para ayudar a que el azúcar se disuelva y se incorpore al resto de ingredientes.",
+        "Retirar la rama de canela y repartir el arroz con leche en cuencos (o donde se quiera servir).",
+        "Dejar atemperar antes de espolvorear con un poco de canela molida."
       ],
       "image": "https://fastly.picsum.photos/id/865/200/200.jpg?hmac=wvBzP6ZRbFhC3yvYQFYFRH1yveXrLRZPdI7tFKJMt8A",
       "ingredients": [
         {
           "ingredient": "Leche",
-          "quantity": "1 litro"
+          "quantity": "1 l"
         },
         {
-          "ingredient": "Arroz redondo",
+          "ingredient": "Arroz",
           "quantity": "100 g"
         },
         {
@@ -90,71 +53,44 @@
           "quantity": "1"
         },
         {
-          "ingredient": "Canela en rama",
-          "quantity": "1"
-        },
-        {
-          "ingredient": "Canela molida",
-          "quantity": "1"
-        },
-        {
-          "ingredient": "Cucharada Menta fresca para decorar",
-          "quantity": "(opcional)"
+          "ingredient": "Canela",
+          "quantity": "1 rama y 1 piza de canela molida"
         }
       ]
-    }
-  ]
-}
-
-// Receta salmorejo
-
-
-{
-  "recipes": [
+    },
     {
       "id": "3",
       "title": "Salmorejo",
       "instructions": [
         "Limpiar los tomates, triturarlos y colarlos para quitarles la piel y las pepitas.",
         "Añadir el pan (previamente puesto en remojo ya sea en agua o en el tomate triturado), el aceite de oliva virgen extra, los ajos y la sal y triturar de nuevo.",
-        "Servir en cuencos individuales y decorar con huevo duro picado y trocitos de jamón."
+        "Servir en cuencos individuales.",
+        "Opcional: Puedes decorarlo con huevo duro picado y trocitos de jamón."
       ],
       "image": "https://fastly.picsum.photos/id/869/200/200.jpg?hmac=9RiRIgGnsqH_rkg_r3zwW9ty1sT9w4N5mIzW1ld7zJo",
       "ingredients": [
         {
-          "ingredient": "Tomates",
+          "ingredient": "Tomate",
           "quantity": "1 kg"
         },
         {
-          "ingredient": "Diente de ajo",
-          "quantity": "1"
+          "ingredient": "Ajo",
+          "quantity": "1 diente"
         },
         {
-          "ingredient": "Pan (preferiblemente del día anterior)",
+          "ingredient": "Pan",
           "quantity": "200 g"
         },
         {
-          "ingredient": "Aceite de oliva virgen extra",
-          "quantity": "100 gr"
+          "ingredient": "Aceite de oliva",
+          "quantity": "100 g"
         },
         {
           "ingredient": "Sal",
-          "quantity": "10 gr"
-        },
-        {
-          "ingredient": "Opcional: huevo y jamón",
-          "quantity": ""
+          "quantity": "10 g"
         }
       ]
-    }
-  ]
-}
-
-// Receta pollo al horno
-
-
-{
-  "recipes": [
+    },
     {
       "id": "4",
       "title": "Pollo al horno",
@@ -166,51 +102,48 @@
       "image": "https://fastly.picsum.photos/id/410/200/200.jpg?hmac=9-jWy0xLq5O9ugrQyNtT28_e3SSOGfTkg4CgBDnX0A4",
       "ingredients": [
         {
-          "ingredient": "Pollo entero",
-          "quantity": ""
+          "ingredient": "Pollo",
+          "quantity": "1 pollo entero"
         },
         {
           "ingredient": "Tomate",
-          "quantity": ""
+          "quantity": "1"
         },
         {
           "ingredient": "Zanahoria",
-          "quantity": ""
+          "quantity": "1"
         },
         {
           "ingredient": "Cebolla",
-          "quantity": ""
+          "quantity": "1"
         },
         {
           "ingredient": "Sal",
-          "quantity": ""
+          "quantity": "1 pizca"
         },
         {
           "ingredient": "Vino blanco",
-          "quantity": ""
+          "quantity": "1 chorro"
         },
         {
           "ingredient": "Aceite de oliva",
-          "quantity": ""
+          "quantity": "1 chorro"
         },
         {
-          "ingredient": "Surtido de frutos secos triturados (nueces, almendras y pasas)",
-          "quantity": ""
+          "ingredient": "Almendras",
+          "quantity": "1 puñado"
+        },
+        {
+          "ingredient": "Avellanas",
+          "quantity": "1 puñado"
         }
       ]
-    }
-  ]
-}
-
-// Receta de pizza fresca
-
-{
-  "recipes": [
+    },
     {
       "id": "5",
       "title": "Pizza casera",
       "instructions": [
-        "Mezclar el agua tibia con la levadura y el azúcar.",
+        "Mezclar 240 ml de agua tibia con la levadura y el azúcar.",
         "Mezclar el resto de los ingredientes y amasar hasta que la masa no se pegue en las manos y forme una bola.",
         "Dejar crecer la masa en un bol tapado con un trapo húmedo en una zona caliente.",
         "Dividir la masa en bolas más pequeñas (salen 4).",
@@ -223,23 +156,19 @@
       "image": "https://fastly.picsum.photos/id/200/200/200.jpg?hmac=udF0FbCSgd0sxe5IWv-sR0Wy3l3cAMF0s25W7IBgNFw",
       "ingredients": [
         {
-          "ingredient": "El vaso medidor de agua",
-          "quantity": "240 ml"
-        },
-        {
           "ingredient": "Sal",
-          "quantity": "1 tsp (5 g)"
+          "quantity": "1 cucharada"
         },
         {
           "ingredient": "Azúcar",
-          "quantity": "1/2 tsp"
+          "quantity": "Media cucharada"
         },
         {
-          "ingredient": "Aceite",
-          "quantity": "un chorreón"
+          "ingredient": "Aceite de oliva",
+          "quantity": "1 chorreón"
         },
         {
-          "ingredient": "Harina",
+          "ingredient": "Harina de trigo",
           "quantity": "350-400 g"
         },
         {
@@ -247,13 +176,7 @@
           "quantity": "1 sobre (7 g)"
         }
       ]
-    }
-  ]
-}
-
-// Receta Vichyssoise
-{
-  "recipes": [
+    },
     {
       "id": "6",
       "title": "Vichyssoise",
@@ -263,20 +186,21 @@
         "Incorporar el caldo de ave y la leche, y cocinar durante 25 minutos a 90°C.",
         "Triturar la mezcla durante 1 minuto en velocidad progresiva 5-10 (cuidado de no quemarse, se puede poner un trapo sobre la tapa del vaso de la thermomix para evitar salpicaduras).",
         "Agregar la sal y la pimienta y triturar.",
-        "Servir caliente."
+        "Servir caliente.",
+        "Opcional: Se puede servir con un poco de nata líquida y cebollino picado."
       ],
       "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
       "ingredients": [
         {
-          "ingredient": "Puerros",
-          "quantity": "3-4 grandes"
+          "ingredient": "Puerro",
+          "quantity": "3-4 (grandes)"
         },
         {
           "ingredient": "Patata",
           "quantity": "200 g"
         },
         {
-          "ingredient": "Aceite de oliva virgen extra",
+          "ingredient": "Aceite de oliva",
           "quantity": "50 g"
         },
         {
@@ -289,21 +213,183 @@
         },
         {
           "ingredient": "Sal",
-          "quantity": "al gusto"
+          "quantity": "Al gusto"
         },
         {
-          "ingredient": "Pimienta negra",
-          "quantity": "al gusto"
-        },
-        {
-          "ingredient": "Nata líquida",
-          "quantity": "para decorar"
-        },
-        {
-          "ingredient": "Cebollino",
-          "quantity": "para decorar"
+          "ingredient": "Pimienta",
+          "quantity": "Al gusto"
         }
       ]
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "1",
+      "name": "Patata",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/866/200/200.jpg?hmac=i0ngmQOk9dRZEzhEosP31m_vQnKBQ9C19TBP1CGoIUA"
+    },
+    {
+      "id": "2",
+      "name": "Huevo",
+      "category": "🥚Huevos",
+      "image": "https://fastly.picsum.photos/id/608/200/200.jpg?hmac=-p1htX-mFieavdRDr9vUIJKyDHCXZAY5B35nhdcgIgQ"
+    },
+    {
+      "id": "3",
+      "name": "Leche",
+      "category": "🥛Lácteos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "4",
+      "name": "Arroz",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "5",
+      "name": "Azúcar",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "6",
+      "name": "Limón",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "7",
+      "name": "Canela",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "8",
+      "name": "Tomate",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "9",
+      "name": "Ajo",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "10",
+      "name": "Pan",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "11",
+      "name": "Aceite de oliva",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "12",
+      "name": "Sal",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "13",
+      "name": "Pollo",
+      "category": "🥩Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "14",
+      "name": "Zanahoria",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "15",
+      "name": "Cebolla",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "16",
+      "name": "Vino blanco",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "17",
+      "name": "Almendras",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "18",
+      "name": "Avellanas",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "19",
+      "name": "Harina de trigo",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "20",
+      "name": "Levadura",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "21",
+      "name": "Puerro",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "22",
+      "name": "Caldo de ave",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "23",
+      "name": "Pimienta",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "🥛Lácteos"
+    },
+    {
+      "id": "2",
+      "name": "🥚Huevos"
+    },
+    {
+      "id": "3",
+      "name": "🥩Carnes"
+    },
+    {
+      "id": "4",
+      "name": "🐟Pescados"
+    },
+    {
+      "id": "5",
+      "name": "🥬Vegetales"
+    },
+    {
+      "id": "6",
+      "name": "🌾Granos"
+    },
+    {
+      "id": "7",
+      "name": "Otros"
     }
   ]
 }
