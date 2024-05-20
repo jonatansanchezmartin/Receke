@@ -147,7 +147,7 @@ header p {
 
 /* Query page styles - Mobile */
 
-/* Header-style */
+/* Quert-style */
 
 .query-nav {
   margin: 2vh;
@@ -218,10 +218,53 @@ overflow: hidden;
 
 /* Recipe page styles - Mobile */
 
+/* Recipe navigation */
+
+.recipe-nav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.recipe-nav h1 {
+  margin: 30px;
+  text-align: center;
+  position: center;
+  padding: 1vh 1vh;
+  color: #433A2F;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+      /*** Removes PNG button default styles ***/
+
+.recipe-nav button {
+background-color: Transparent;
+background-repeat:no-repeat;
+border: none;
+cursor:pointer;
+overflow: hidden;  
+}
+
+.recipe-nav img {
+  height: 30px;
+}
+
 .recipe-image {
   height: 200px;
   width: auto;
   background-color: #ffd3332f;
+}
+
+.ingredients-title {
+  margin: 4vh 0;
+  text-align: left;
+  position: center;
+  padding: 1vh 0 1vh 0;
+  color: #433A2F;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .ingredients-list h3 {
@@ -234,25 +277,67 @@ overflow: hidden;
 }
 
 .ingredients-list {
-margin: 20px;
 display: inline-flex;
 }
 
 .ingredients-list img {
+  margin: 6px;
+  padding: 5px;
   height: 60px;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(223,223,223,0.5) 100%);
+  border: 1px solid #6DCA53;
+  border-radius: 5px;
 }
+
 .ingredients-list div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-right: 40px;
 }
 
 .ingredients-list h4 {
   color: #433A2F;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 
+.steps-menu {
+  margin: 2vh 0;
+  display: flex;
+  color: #433A2F;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* align-content: flex-end; */
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.steps-menu p {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+.recipe-steps {
+  color:#433A2F;
+}
+
+.recipe-steps li {
+  margin:4vh 0;
+}
+
+/*
+
+---- To add styles to numbers of the ordered list -----
+
+.recipe-steps li::marker {
+  width: 40px;
+  height: 40px;
+  background-color: #D61F31;
+}
+*/
 
 
 @media (hover:hover) {
