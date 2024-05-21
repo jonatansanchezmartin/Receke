@@ -1,22 +1,48 @@
 <script>
+import newStep from '../components/form/newStep.vue'
 export default {
     props: {
         ingredients: Array,
     },
     components: {
+        newStep,
     },
     data() {
         return {
            // ingredients: [],
+
+
             recipeName: '',
-            descriptionStep: ''
+
+            selectedIngredients: [],
+            steps: ["pasoDummy"],
+            number: null,
+
+            isActive: false,
         }
     },
     created() {
        
     },
     methods: {
-       
+        getSelectedIngredients(ingredientName) {
+         console.log(ingredientName)
+            // Compruebo que el ingrediente seleccionado existe en el array
+            if(this.selectedIngredients.includes(ingredientName)) {
+                // Si existe, analizo cada elemento para conocer en qué índice se encuenta y borrarlo
+                this.selectedIngredients.forEach(ingredient => {
+                    if(ingredient === ingredientName) {
+                        let index = this.selectedIngredients.indexOf(ingredient)
+                        this.selectedIngredients.splice(index, 1)
+                    }
+                });
+                console.log(this.selectedIngredients)
+            }else {
+                // Si no existe, lo añado al array
+                this.selectedIngredients.push(ingredientName)
+                console.log(this.selectedIngredients)
+            }
+        }
     }
 }
 </script>
@@ -38,26 +64,25 @@ export default {
         <div class="form-block">
             <label for="recipe-name">Ingredientes básicos</label>
             <div class="cards-container" >
-                <div class="ingredient-card" v-for="ingredient in ingredients" :key="ingredient.id"> 
-                    <img :src="ingredient.image" alt="ingredient.name" >
-                    <h3>{{ ingredient.name }}</h3>
+                <div class="ingredient-card" v-for="ingredient in ingredients" > 
+                    <div class="ingredient-card-wrapper" @click="getSelectedIngredients(ingredient.name)" :key="ingredient.id" :class="isActive">
+                        <img  :src="ingredient.image" :alt="ingredient.name">
+                        <h3>{{ ingredient.name }}</h3>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="form-block">
+        <div class="form-block steps">
             <label for="steps">Pasos</label>
-            <div class="step">
-                <div class="number">1</div>
-                <input type="textarea" class="description" v-model="descriptionStep"></input>
-                <div class="plus">+</div>
-                {{ descriptionStep }}
-            </div>
-            <div class="step">
-                <div class="number">1</div>
-                <input type="textarea" class="description" v-model="descriptionStep"></input>
-                <div class="plus">+</div>
-                {{ descriptionStep }}
-            </div>
+            
+            <ol>
+                <newStep v-for="(step, index) in steps" :key="number"
+                :steps = "steps"
+            />
+            </ol>
+            
+            
+
         </div>
     </form>
 </template>
