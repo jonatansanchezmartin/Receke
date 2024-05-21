@@ -78,7 +78,10 @@ header p {
   margin: 2.4vh auto; 
   display: block;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 
 .ingredient-card {
   margin: 6px;
@@ -96,7 +99,8 @@ header p {
 
 .ingredient-card img{
   margin: 6px;
-  height: 80px;
+  width: 76px;
+  height: 76px;
 }
 
 .ingredient-card h3{
