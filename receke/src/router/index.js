@@ -10,6 +10,11 @@ const router = createRouter({
       component: Home
     }
     // {
+    //   path: '/add-recipe',
+    //   name: 'addRecipe',
+    //   component: AddRecipe
+    // }
+    // {
     //   path: '/about',
     //   name: 'about',
     //   // route level code-splitting
