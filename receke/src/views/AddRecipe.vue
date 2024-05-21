@@ -1,23 +1,22 @@
 <script>
 export default {
+    props: {
+        ingredients: Array,
+    },
     components: {
     },
     data() {
         return {
-            ingredients: [],
+           // ingredients: [],
             recipeName: '',
             descriptionStep: ''
         }
     },
     created() {
-        this.fetchIngredients()
+       
     },
     methods: {
-        async fetchIngredients() {
-            let response = await fetch('http://localhost:3001/ingredients')
-            let ingredients = await response.json()
-            this.ingredients = ingredients
-        }
+       
     }
 }
 </script>
