@@ -220,6 +220,227 @@
           "quantity": "Al gusto"
         }
       ]
+    },
+    {
+      "id": "7",
+      "title": "Macarrones con setas y calabacín",
+      "instructions": [
+        "Cocer los macarrones en agua ligeramente salada el tiempo que indique el fabricante y escurrirlos muy bien.",
+        "Despuntar el calabacín, lavarlo y cortarlo en medias lunas. Lavar los tomatitos. Limpiar los champiñones, lavarlos, secarlos y cortarlos en láminas. Mezclar todas las especias.",
+        "Pelar la cebolla, cortarla en juliana y saltearla 2 minutos en 3 cucharadas de aceite. Agregar las verduras, remover y cocinar 4 minutos.",
+        "Incorporar los macarrones, las especias y el romero. Remover y servir con unas hojas de albahaca lavadas."
+      ],
+      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "ingredients": [
+        {
+          "ingredient": "Macarrones",
+          "quantity": "400 g"
+        },
+        {
+          "ingredient": "Tomate cherry",
+          "quantity": "200 g"
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": "50 g"
+        },
+        {
+          "ingredient": "Cebolla",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Calabacín",
+          "quantity": "100 g"
+        },
+        {
+          "ingredient": "Champiñón",
+          "quantity": "100 g"
+        },
+        {
+          "ingredient": "Orégano",
+          "quantity": "1 cucharadita"
+        },
+        {
+          "ingredient": "Romero",
+          "quantity": "1 cucharadita"
+        },
+        {
+          "ingredient": "Cilantro",
+          "quantity": "1/2 cucharadita"
+        },
+        {
+          "ingredient": "Albahaca",
+          "quantity": "1/2 cucharadita"
+        },
+        {
+          "ingredient": "Comino",
+          "quantity": "1/2 cucharadita"
+        },
+        {
+          "ingredient": "Pimienta",
+          "quantity": "1/2 cucharadita"
+        },
+        {
+          "ingredient": "Pimentón",
+          "quantity": "1/2 cucharadita"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "Una pizca"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Solomillo al whisky",
+      "instructions": [
+        "En primer lugar, preparar el solomillo. Limpiar la grasa más gruesa y cortar en medallones de unos 2 centímetros aproximadamente.",
+        "Después, echar un poco de pimienta molida en cada trozo de carne.",
+        "También pelar unos dientes de ajos (unos 7 a 8 dientes por cada solomillo de unos 400 gr) y dejarlos enteros.",
+        "Cocinar los ajos a fuego suave unos minutos. Cuando comiencen a coger un poco de color, separarlos a un lado de la cazuela, subir el fuego y agregar la carne para sellarla 1 minuto por cada lado.",
+        "Entonces es cuando incorporar el zumo de 1 limón grande, dar una vuelta para que se integre con el whisky y añadir el caldo de carne o agua.",
+        "Dejar cocer a fuego fuerte unos 3 o 4 minutos hasta que reduzca y se quede en una salsa un poco más trabada. Apartar del fuego y servir. Es importante que la carne no cueza demasiado para evitar que se seque."
+      ],
+      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "ingredients": [
+        {
+          "ingredient": "Solomillo de cerdo",
+          "quantity": "500 gr"
+        },
+        {
+          "ingredient": "Ajo",
+          "quantity": "2 dientes"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "Al gusto"
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": "50 g"
+        },
+        {
+          "ingredient": "Limón",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Whisky",
+          "quantity": "150 g"
+        },
+        {
+          "ingredient": "Caldo de carne",
+          "quantity": "1 pastilla"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Albóndigas con mantón de Manila",
+      "instructions": [
+        "Primero hacer las albóndigas.Poner la miga de pan en un bol. Verter la leche y dejar que la miga se empape.",
+        "Poner las carnes picadas en un bol. Agregar 1 diente de ajo pelado y picadito. Escurrir la miga de pan y agregarla. Añadir también sal, pimienta, un poco de perejil picado y el huevo. Amasar y formar bolitas. Freírlas en una sartén con aceite. Retirarlas a un plato y reservarlas.",
+        "Para preparar la salsa. Pelar y picar la cebolla, los otros dos dientes de ajo y la zanahoria. Ponerlos a pochar en una sartén con un chorrito de aceite. Picar el pimiento y añadirlo. Sazonar y rehogar las verduras hasta que se doren un poco. Rallar encima el tomate y cocinar todo durante 6-8 minutos. Verter el vino y darle un hervor. Desmenuzar la pastilla de sabor y verter un vaso de agua. Cocinar los ingredientes de la salsa durante 10-12 minutos.",
+        "Pasar la salsa por el pasapurés y ponerla en una tartera. Introducir las albóndigas y cocinarlas 2-3 minutos. Servir y adornar con unas hojas de perejil.",
+        "Consejo: si la salsa quedara muy ligera, se puede espesar agregando un poco de harina de maíz refinada diluida en agua fría."
+      ],
+      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "ingredients": [
+        {
+          "ingredient": "Carne picada de ternera",
+          "quantity": "500 g"
+        },
+        {
+          "ingredient": "Carne picada de cerdo",
+          "quantity": "100 g"
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": "50 g"
+        },
+        {
+          "ingredient": "Cebolla",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Zanahoria",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Tomate",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Huevo",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Ajo",
+          "quantity": "3 dientes"
+        },
+        {
+          "ingredient": "Vino blanco",
+          "quantity": "100 ml"
+        },
+        {
+          "ingredient": "Pan",
+          "quantity": "15 g de miga"
+        },
+        {
+          "ingredient": "Caldo de carne",
+          "quantity": "1 pastilla"
+        },
+        {
+          "ingredient": "Pimienta",
+          "quantity": "1 pizca"
+        },
+        {
+          "ingredient": "Perejil",
+          "quantity": "1 pizca"
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": "Una pizca"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Brócoli asegurado",
+      "instructions": [
+        "Pelar, patatas y zanahoria y cortarlas en trozos medianos.",
+        "Cortar los arbolitos del brócoli.",
+        "Cocer las patatas y la zanahoria con agua que les cubra y dos pastillas de avecrem durante 15 minutos.",
+        "Echar los arbolitos del brócoli y dejar que cuezan hasta que queden blanditos los troncos.",
+        "A parte, freír beicon y rallar el queso.",
+        "Escurrir la verdura y añadir el bacon y el queso y remover."
+      ],
+      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "ingredients": [
+        {
+          "ingredient": "Brócoli",
+          "quantity": "1 árbol"
+        },
+        {
+          "ingredient": "Patatas",
+          "quantity": "3"
+        },
+        {
+          "ingredient": "Zanahoria",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "Caldo de ave",
+          "quantity": "1 pastilla"
+        },
+        {
+          "ingredient": "Bacon",
+          "quantity": "1 sobre"
+        },
+        {
+          "ingredient": "Queso",
+          "quantity": "150 g"
+        }
+      ]
     }
   ],
   "ingredients": [
@@ -321,13 +542,13 @@
     },
     {
       "id": "17",
-      "name": "Almendras",
+      "name": "Almendra",
       "category": "🌾Granos",
       "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
     },
     {
       "id": "18",
-      "name": "Avellanas",
+      "name": "Avellana",
       "category": "🌾Granos",
       "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
     },
@@ -359,6 +580,114 @@
       "id": "23",
       "name": "Pimienta",
       "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "24",
+      "name": "Pimemtón",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "25",
+      "name": "Romero",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "26",
+      "name": "Cilantro",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "27",
+      "name": "Orégano",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "28",
+      "name": "Comino",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "29",
+      "name": "Macarrón",
+      "category": "🌾Granos",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "30",
+      "name": "Tomate cherry",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "31",
+      "name": "Calabacín",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "32",
+      "name": "Champiñón",
+      "category": "🥬Vegetales",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "33",
+      "name": "Caldo de carne",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "34",
+      "name": "Perejil",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "35",
+      "name": "Carne picada de ternera",
+      "category": "🥩Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "36",
+      "name": "Solomillo de cerdo",
+      "category": "🥩Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "37",
+      "name": "Whisky",
+      "category": "Otros",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "38",
+      "name": "Carne picada de cerdo",
+      "category": "🥩Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "39",
+      "name": "Brócoli",
+      "category": "🥬Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "40",
+      "name": "Bacon",
+      "category": "🥩Carnes",
+      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+    },
+    {
+      "id": "38",
+      "name": "Queso",
+      "category": "🥛Lácteos",
       "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
     }
   ],
