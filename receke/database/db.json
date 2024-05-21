@@ -10,7 +10,7 @@
         "Cocer las patatas",
         "Añadir el huevo"
       ],
-      "image": "https://fastly.picsum.photos/id/863/200/200.jpg?hmac=b2PqP--PkLWi3zKCrto-MSpLXkrtt4kYpKbUkZa2Yjo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Truita_de_patates.png",
       "ingredients": [
         {
           "ingredient": "Patata",
@@ -34,7 +34,7 @@
         "Retirar la rama de canela y repartir el arroz con leche en cuencos (o donde se quiera servir).",
         "Dejar atemperar antes de espolvorear con un poco de canela molida."
       ],
-      "image": "https://fastly.picsum.photos/id/865/200/200.jpg?hmac=wvBzP6ZRbFhC3yvYQFYFRH1yveXrLRZPdI7tFKJMt8A",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Arroz_con_leche_espolvoreado_con_canela_molida.jpg",
       "ingredients": [
         {
           "ingredient": "Leche",
@@ -67,7 +67,7 @@
         "Servir en cuencos individuales.",
         "Opcional: Puedes decorarlo con huevo duro picado y trocitos de jamón."
       ],
-      "image": "https://fastly.picsum.photos/id/869/200/200.jpg?hmac=9RiRIgGnsqH_rkg_r3zwW9ty1sT9w4N5mIzW1ld7zJo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Spanish_tapas_%286922915138%29.jpg",
       "ingredients": [
         {
           "ingredient": "Tomate",
@@ -99,7 +99,7 @@
         "En un recipiente de horno, agregar el pollo, las verduras, el vino blanco y los frutos secos triturados.",
         "Hornear durante 1 hora y 15 minutos."
       ],
-      "image": "https://fastly.picsum.photos/id/410/200/200.jpg?hmac=9-jWy0xLq5O9ugrQyNtT28_e3SSOGfTkg4CgBDnX0A4",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Muslo_de_pollo_al_ast_en_horno.jpg",
       "ingredients": [
         {
           "ingredient": "Pollo",
@@ -153,7 +153,7 @@
         "Meter la piedra de horno en el horno y precalentar a máxima potencia (mínimo 250°C).",
         "Cocer la pizza entre 5 y 8 minutos."
       ],
-      "image": "https://fastly.picsum.photos/id/200/200/200.jpg?hmac=udF0FbCSgd0sxe5IWv-sR0Wy3l3cAMF0s25W7IBgNFw",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg",
       "ingredients": [
         {
           "ingredient": "Sal",
@@ -189,7 +189,7 @@
         "Servir caliente.",
         "Opcional: Se puede servir con un poco de nata líquida y cebollino picado."
       ],
-      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Vichyssoise_krema.jpg",
       "ingredients": [
         {
           "ingredient": "Puerro",
@@ -223,17 +223,17 @@
     },
     {
       "id": "7",
-      "title": "Macarrones con setas y calabacín",
+      "title": "pasta con setas y calabacín",
       "instructions": [
-        "Cocer los macarrones en agua ligeramente salada el tiempo que indique el fabricante y escurrirlos muy bien.",
+        "Cocer la pasta en agua ligeramente salada el tiempo que indique el fabricante y escurrirla muy bien.",
         "Despuntar el calabacín, lavarlo y cortarlo en medias lunas. Lavar los tomatitos. Limpiar los champiñones, lavarlos, secarlos y cortarlos en láminas. Mezclar todas las especias.",
         "Pelar la cebolla, cortarla en juliana y saltearla 2 minutos en 3 cucharadas de aceite. Agregar las verduras, remover y cocinar 4 minutos.",
-        "Incorporar los macarrones, las especias y el romero. Remover y servir con unas hojas de albahaca lavadas."
+        "Incorporar la pasta, las especias y el romero. Remover y servir con unas hojas de albahaca lavadas."
       ],
-      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "image": "https://commons.wikimedia.org/wiki/File:Zucchini_oil_pasta.jpg#:~:text=https%3A//upload.wikimedia.org/wikipedia/commons/9/9a/Zucchini_oil_pasta.jpg",
       "ingredients": [
         {
-          "ingredient": "Macarrones",
+          "ingredient": "Pasta",
           "quantity": "400 g"
         },
         {
@@ -301,7 +301,7 @@
         "Entonces es cuando incorporar el zumo de 1 limón grande, dar una vuelta para que se integre con el whisky y añadir el caldo de carne o agua.",
         "Dejar cocer a fuego fuerte unos 3 o 4 minutos hasta que reduzca y se quede en una salsa un poco más trabada. Apartar del fuego y servir. Es importante que la carne no cueza demasiado para evitar que se seque."
       ],
-      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Solomillo_al_whisky.JPG",
       "ingredients": [
         {
           "ingredient": "Solomillo de cerdo",
@@ -343,7 +343,7 @@
         "Pasar la salsa por el pasapurés y ponerla en una tartera. Introducir las albóndigas y cocinarlas 2-3 minutos. Servir y adornar con unas hojas de perejil.",
         "Consejo: si la salsa quedara muy ligera, se puede espesar agregando un poco de harina de maíz refinada diluida en agua fría."
       ],
-      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Albondigas_La_Nacional.jpg",
       "ingredients": [
         {
           "ingredient": "Carne picada de ternera",
@@ -414,7 +414,7 @@
         "A parte, freír beicon y rallar el queso.",
         "Escurrir la verdura y añadir el bacon y el queso y remover."
       ],
-      "image": "https://fastly.picsum.photos/id/201/200/200.jpg?hmac=_qbe0Mt6UW7hIf1xP5LUCdcsjBByCjQ-kq-kCs91vHk",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Broccoli_salad.jpg",
       "ingredients": [
         {
           "ingredient": "Brócoli",
@@ -448,247 +448,247 @@
       "id": "1",
       "name": "Patata",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/866/200/200.jpg?hmac=i0ngmQOk9dRZEzhEosP31m_vQnKBQ9C19TBP1CGoIUA"
+      "image": "./src/assets/media/patata.png"
     },
     {
       "id": "2",
       "name": "Huevo",
       "category": "🥚Huevos",
-      "image": "https://fastly.picsum.photos/id/608/200/200.jpg?hmac=-p1htX-mFieavdRDr9vUIJKyDHCXZAY5B35nhdcgIgQ"
+      "image": "./src/assets/media/huevo.png"
     },
     {
       "id": "3",
       "name": "Leche",
       "category": "🥛Lácteos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/leche.png"
     },
     {
       "id": "4",
       "name": "Arroz",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/arroz.png"
     },
     {
       "id": "5",
       "name": "Azúcar",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/azucar.png"
     },
     {
       "id": "6",
       "name": "Limón",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/limon.png"
     },
     {
       "id": "7",
       "name": "Canela",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especia.png"
     },
     {
       "id": "8",
       "name": "Tomate",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/tomate.png"
     },
     {
       "id": "9",
       "name": "Ajo",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/ajo.png"
     },
     {
       "id": "10",
       "name": "Pan",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/pan.png"
     },
     {
       "id": "11",
       "name": "Aceite de oliva",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/aceite.png"
     },
     {
       "id": "12",
       "name": "Sal",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especia.png"
     },
     {
       "id": "13",
       "name": "Pollo",
       "category": "🥩Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/pollo.png"
     },
     {
       "id": "14",
       "name": "Zanahoria",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/zanahoria.png"
     },
     {
       "id": "15",
       "name": "Cebolla",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/cebolla.png"
     },
     {
       "id": "16",
       "name": "Vino blanco",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/vino.png"
     },
     {
       "id": "17",
       "name": "Almendra",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/frutoseco.png"
     },
     {
       "id": "18",
       "name": "Avellana",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/frutoseco.png"
     },
     {
       "id": "19",
       "name": "Harina de trigo",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/harina.png"
     },
     {
       "id": "20",
       "name": "Levadura",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "21",
       "name": "Puerro",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/puerro.png"
     },
     {
       "id": "22",
       "name": "Caldo de ave",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/caldo.png"
     },
     {
       "id": "23",
       "name": "Pimienta",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "24",
-      "name": "Pimemtón",
+      "name": "Pimentón",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "25",
       "name": "Romero",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "26",
       "name": "Cilantro",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "27",
       "name": "Orégano",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "28",
       "name": "Comino",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "29",
-      "name": "Macarrón",
+      "name": "pasta",
       "category": "🌾Granos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/pasta.png"
     },
     {
       "id": "30",
       "name": "Tomate cherry",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/tomate.png"
     },
     {
       "id": "31",
       "name": "Calabacín",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/calabacin.png"
     },
     {
       "id": "32",
       "name": "Champiñón",
       "category": "🥬Vegetales",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/setas.png"
     },
     {
       "id": "33",
       "name": "Caldo de carne",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/caldo.png"
     },
     {
       "id": "34",
       "name": "Perejil",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/especias.png"
     },
     {
       "id": "35",
       "name": "Carne picada de ternera",
       "category": "🥩Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/carne.png"
     },
     {
       "id": "36",
       "name": "Solomillo de cerdo",
       "category": "🥩Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/carne.png"
     },
     {
       "id": "37",
       "name": "Whisky",
       "category": "Otros",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/vino.png"
     },
     {
       "id": "38",
       "name": "Carne picada de cerdo",
       "category": "🥩Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/carne.png"
     },
     {
       "id": "39",
       "name": "Brócoli",
       "category": "🥬Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/brocoli.png"
     },
     {
       "id": "40",
       "name": "Bacon",
       "category": "🥩Carnes",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/bacon.png"
     },
     {
       "id": "38",
       "name": "Queso",
       "category": "🥛Lácteos",
-      "image": "https://fastly.picsum.photos/id/88/200/200.jpg?hmac=7_fl_u460sA-SBPikcqpeADpHOtrqhLVlh3rhHUX5tk"
+      "image": "./src/assets/media/queso.png"
     }
   ],
   "categories": [
