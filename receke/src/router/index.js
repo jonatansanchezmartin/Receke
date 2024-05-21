@@ -8,12 +8,12 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/add-recipe',
-      name: 'addRecipe',
-      component: AddRecipe
     }
+    // {
+    //   path: '/add-recipe',
+    //   name: 'addRecipe',
+    //   component: AddRecipe
+    // }
     // {
     //   path: '/about',
     //   name: 'about',
