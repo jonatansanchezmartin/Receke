@@ -76,13 +76,11 @@ export default {
             <label for="steps">Pasos</label>
             
             <ol>
-                <newStep v-for="(step, index) in steps" :key="number"
+                <newStep v-for="(step, index) in steps"
                 :steps = "steps"
             />
             </ol>
             
-            
-
         </div>
     </form>
 </template>
