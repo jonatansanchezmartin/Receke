@@ -1,7 +1,9 @@
 <script>
 import { RouterView } from 'vue-router';
+import Header from './components/Header.vue';
 export default {
     components: {
+        Header
     },
     data() {
         return {
@@ -30,9 +32,9 @@ export default {
 </script>
 
 <template>
-  <RouterView :ingredients = "ingredients"/>
+    <Header>
+    </Header>
+    <RouterView :ingredients="ingredients" />
 </template>
 
-<style scoped>
-
-</style>
+<style></style>
