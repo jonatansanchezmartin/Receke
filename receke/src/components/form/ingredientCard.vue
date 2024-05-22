@@ -17,7 +17,7 @@ export default {
         getSelectedIngredients(ingredientName, ingredientQuantity) {
             console.log(ingredientName, ingredientQuantity)
 
-            // Si no existe, lo añado al array
+            // Añado objeto de ingrediente al array
             
             const ingredient = {
                 ingredient: ingredientName,
@@ -55,13 +55,16 @@ export default {
         </div>
         <div @click="deleteIngredients(ingredient.name, ingredientQuantity)">Borrar</div>
         <input class="ingredient-quantity" placeholder="Cantidad" v-model="ingredientQuantity">
-        
     </div> 
 </template>
 
 <style>
 .ingredient-card-wrapper.active .ingredient-card{
     border: 1px solid green;
+    pointer-events: none;
+}
+.ingredient-card-wrapper.active .ingredient-quantity {
+    display: none;
 }
 .ingredient-quantity {
     width: 100%;
