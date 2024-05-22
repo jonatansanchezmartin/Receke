@@ -10,19 +10,45 @@ export default {
     components: {
         CategoriesFilter,
         IngredientsCards
+    },
+    methods: {
+        filterIngredients(category) {
+            if (category === 'all') {
+                this.ingredientsToShow = this.ingredients
+                return
+            }
+            this.ingredientsToShow = this.ingredients.filter((ingredient) => ingredient.category === category)
+        }
+    },
+    data() {
+        return {
+            ingredientsToShow: []
+        }
+    },
+    //When ingredients is created, populate filteredIngredients
+    watch: {
+        ingredients: {
+            handler() {
+                this.ingredientsToShow = this.ingredients
+            },
+            immediate: true
+        }
     }
 }
 </script>
 
 <template>
-        <CategoriesFilter :categories="categories"/>
-        <IngredientsCards :ingredients="ingredients"/>
-
-        <!-- Fixed Menu -->
-        <div class="fixed-menu">
-            <button class="search-button"> <h3> Buscar recetas</h3> </button>
-            <router-link to="/add-recipe"><button class="add-button"> <h3> Añadir recetas</h3> </button></router-link>
-        </div>
+    <CategoriesFilter :categories="categories" @filter-ingredients="filterIngredients" />
+    <IngredientsCards :ingredients="ingredientsToShow" />
+    <!-- Fixed Menu -->
+    <div class="fixed-menu">
+        <button class="search-button">
+            <h3> Buscar recetas</h3>
+        </button>
+        <router-link to="/add-recipe"><button class="add-button">
+                <h3> Añadir recetas</h3>
+            </button></router-link>
+    </div>
 
 </template>
 
