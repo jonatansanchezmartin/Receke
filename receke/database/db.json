@@ -441,6 +441,37 @@
           "quantity": "150 g"
         }
       ]
+    },
+    {
+      "id": "4d1d",
+      "title": "test",
+      "instructions": [
+        "pasoDummy",
+        "1",
+        "2",
+        "3"
+      ],
+      "image": "imagen url",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": "2 kg"
+          },
+          {
+            "ingredient": "Huevo",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Leche",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Limón",
+            "quantity": ""
+          }
+        ]
+      ]
     }
   ],
   "ingredients": [

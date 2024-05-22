@@ -1,22 +1,59 @@
 <script>
+import newStep from '../components/form/newStep.vue'
+import ingredientCard from '../components/form/ingredientCard.vue'
 export default {
     props: {
         ingredients: Array,
     },
     components: {
+        newStep,
+        ingredientCard,
     },
     data() {
         return {
            // ingredients: [],
+
+
             recipeName: '',
-            descriptionStep: ''
+
+            selectedIngredients: [],
+           
+
+            steps: ["pasoDummy"],
+
+            recipeImage: '',
+
+            isActive: false,
         }
     },
     created() {
        
     },
     methods: {
-       
+        
+        
+        async sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
+            console.log(recipeName, steps, selectedIngredients, recipeImage)
+
+            const newRecipe = {
+                title: recipeName,
+                instructions: steps,
+                image: recipeImage,
+                ingredients: [selectedIngredients]
+            }
+
+            console.log(newRecipe);
+
+            const url = "http://localhost:3001/recipes";
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newRecipe)
+            })
+            window.location.reload();
+        }
     }
 }
 </script>
@@ -25,42 +62,47 @@ export default {
     <div class="query-nav">
         <button><router-link to="/"><img src="./src/assets/img/back-arrow.png"></router-link>  </button>
         <div>
-            <h1>Contribuye con tu receta</h1>
+            <h1>Contribuye con tu receta TEST</h1>
             <p>Aporta a la comunidad recetas fáciles con ingredientes sencillos</p>
         </div>
     </div>
-    <form>
+    <form @submit.prevent="sendRecipe()">
         <div class="form-block">
             <label for="recipe-name">Nombre de la receta</label>
             <input id="recipe-name" v-model="recipeName">
-            <p>{{  recipeName }}</p>
         </div>
         <div class="form-block">
             <label for="recipe-name">Ingredientes básicos</label>
             <div class="cards-container" >
-                <div class="ingredient-card" v-for="ingredient in ingredients" :key="ingredient.id"> 
-                    <img :src="ingredient.image" alt="ingredient.name" >
-                    <h3>{{ ingredient.name }}</h3>
-                </div>
+                
+                    <ingredientCard v-for="(ingredient) in ingredients"
+                        :selectedIngredients = "selectedIngredients"
+                        :ingredients = "ingredients"
+                        :ingredient = "ingredient"
+                       
+                    />
+                    <!-- <div class="ingredient-card"  > 
+                </div> -->
             </div>
+        </div>
+        <div class="form-block steps">
+            <label for="steps">Pasos</label>
+            
+            <ol>
+                <newStep v-for="(step, index) in steps" :key="step"
+                :steps = "steps"
+            />
+            </ol>
+            
         </div>
         <div class="form-block">
-            <label for="steps">Pasos</label>
-            <div class="step">
-                <div class="number">1</div>
-                <input type="textarea" class="description" v-model="descriptionStep"></input>
-                <div class="plus">+</div>
-                {{ descriptionStep }}
-            </div>
-            <div class="step">
-                <div class="number">1</div>
-                <input type="textarea" class="description" v-model="descriptionStep"></input>
-                <div class="plus">+</div>
-                {{ descriptionStep }}
-            </div>
+            <label for="recipe-img">Imagen de la receta</label>
+            <input id="recipe-img" v-model="recipeImage">
         </div>
+        <button type="button" @click="sendRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">Enviar receta</button>
     </form>
 </template>
 
 <style>
+
 </style>
