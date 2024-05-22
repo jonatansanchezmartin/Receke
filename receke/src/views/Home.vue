@@ -8,21 +8,29 @@ export default {
 </script>
 
 <template>
-    <div>
-        <div class="button-container" v-for="category in categories" :key="category.id">
-            <button class="button-style">{{ category.name }}</button>
+
+        <!-- Filter buttons -->
+        <div class="button-container">
+            <button class="button-style">Todos</button>
+            <button v-for="category in categories" :key="category.id" class="button-style">{{ category.name }}</button>
         </div>
-        <div>
-            <div v-for="ingredient in ingredients" :key="ingredient.id">
-                <img :src="ingredient.image" alt="ingredient.name" width="100" height="100">
-                {{ ingredient.name }}
-            </div>
+
+        <!-- Ingredient cards -->
+        <div class="cards-container">
+            <button class="ingredient-card" v-for="ingredient in ingredients" :key="ingredient.id">
+                <img :src="ingredient.image" alt="ingredient.name">
+                <h3>{{ ingredient.name }}</h3>
+            </button>
         </div>
-        <button>Buscar recetas</button>
-        o
-        <router-link to="/add-recipe">Añadir nueva</router-link>
+
+        <!-- Fixed Menu -->
+        <div class="fixed-menu">
+            <button class="search-button"> <h3> Buscar recetas</h3> </button>
+            <router-link to="/add-recipe"><button class="add-button"> <h3> Añadir recetas</h3> </button></router-link>
+        </div>
+    
         <RouterView />
-    </div>
+
 </template>
 
 <style></style>
