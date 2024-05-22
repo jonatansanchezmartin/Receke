@@ -1,27 +1,24 @@
 <script>
+import Categories from "../components/Categories.vue";
+import Ingredients from "../components/Ingredients.vue";
+
 export default {
     props: {
         ingredients: Array,
         categories: Array
+    },
+    components: {
+        Categories,
+        Ingredients
     }
 }
 </script>
 
 <template>
-
-        <!-- Filter buttons -->
-        <div class="button-container">
-            <button class="button-style">Todos</button>
-            <button v-for="category in categories" :key="category.id" class="button-style">{{ category.name }}</button>
-        </div>
-
+        <Categories :categories="categories"/>
+        <Ingredients :ingredients="ingredients"/>
         <!-- Ingredient cards -->
-        <div class="cards-container">
-            <button class="ingredient-card" v-for="ingredient in ingredients" :key="ingredient.id">
-                <img :src="ingredient.image" alt="ingredient.name">
-                <h3>{{ ingredient.name }}</h3>
-            </button>
-        </div>
+
 
         <!-- Fixed Menu -->
         <div class="fixed-menu">
