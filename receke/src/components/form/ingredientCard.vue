@@ -53,7 +53,8 @@ export default {
             <img  :src="ingredient.image" :alt="ingredient.name">
             <h3>{{ ingredient.name }}</h3>
         </div>
-        <div @click="deleteIngredients(ingredient.name, ingredientQuantity)">Borrar</div>
+        <div class="ingredient-add" @click="getSelectedIngredients(ingredient.name, ingredientQuantity)">Añadir</div>
+        <div class="ingredient-delete" @click="deleteIngredients(ingredient.name, ingredientQuantity)">Borrar</div>
         <input class="ingredient-quantity" placeholder="Cantidad" v-model="ingredientQuantity">
     </div> 
 </template>
@@ -64,6 +65,15 @@ export default {
     pointer-events: none;
 }
 .ingredient-card-wrapper.active .ingredient-quantity {
+    display: none;
+}
+.ingredient-card-wrapper.active .ingredient-delete {
+    display: block;
+}
+.ingredient-card-wrapper.active .ingredient-add {
+    display: none;
+}
+.ingredient-delete {
     display: none;
 }
 .ingredient-quantity {
