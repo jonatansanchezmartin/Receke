@@ -17,8 +17,6 @@ export default {
 <template>
         <Categories :categories="categories"/>
         <Ingredients :ingredients="ingredients"/>
-        <!-- Ingredient cards -->
-
 
         <!-- Fixed Menu -->
         <div class="fixed-menu">
