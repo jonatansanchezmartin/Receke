@@ -9,14 +9,8 @@ export default {
 
 <template>
     <div>
-        <h1>
-            Inicio
-        </h1>
-        Selecciona tus ingredientes
-        <div>
-            <div v-for="category in categories" :key="category.id">
-                {{ category.name }}
-            </div>
+        <div class="button-container" v-for="category in categories" :key="category.id">
+            <button class="button-style">{{ category.name }}</button>
         </div>
         <div>
             <div v-for="ingredient in ingredients" :key="ingredient.id">
