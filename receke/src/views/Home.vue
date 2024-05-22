@@ -2,6 +2,7 @@
 export default {
     props: {
         ingredients: Array,
+        categories: Array
     }
 }
 </script>
