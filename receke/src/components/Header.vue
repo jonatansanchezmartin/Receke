@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <template>
     <header class="header-logo">
         <img src="../assets/img/Receke.png" alt="Logo" >
@@ -6,3 +9,6 @@
             fáciles con ingredientes sencillos</p>
     </header>
 </template>
+
+<style>
+</style>

@@ -28,8 +28,6 @@ export default {
             <button class="search-button"> <h3> Buscar recetas</h3> </button>
             <router-link to="/add-recipe"><button class="add-button"> <h3> Añadir recetas</h3> </button></router-link>
         </div>
-    
-        <RouterView />
 
 </template>
 

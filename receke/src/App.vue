@@ -20,7 +20,6 @@ export default {
             let response = await fetch('http://localhost:3001/ingredients')
             let ingredients = await response.json()
             this.ingredients = ingredients
-            console.log(this.ingredients)
         },
         async fetchCategories() {
             let response = await fetch('http://localhost:3001/categories')
