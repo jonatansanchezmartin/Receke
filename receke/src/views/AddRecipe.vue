@@ -32,7 +32,7 @@ export default {
     methods: {
         
         
-        sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
+        async sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
             console.log(recipeName, steps, selectedIngredients, recipeImage)
 
             const newRecipe = {
@@ -43,6 +43,16 @@ export default {
             }
 
             console.log(newRecipe);
+
+            const url = "http://localhost:3001/recipes";
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(newRecipe)
+            })
+            window.location.reload();
         }
     }
 }

@@ -27,6 +27,20 @@ export default {
             console.log(this.selectedIngredients)
             this.isActive = true;
 
+        },
+        deleteIngredients(ingredientName) {
+            this.ingredientQuantity = '';
+            this.isActive = false;
+
+            // Hago un foreach por todos los elementos de la lista, y le paso la posición para que si está repetido, haga splice
+            this.selectedIngredients.forEach((ingredient, index) => {
+                console.log(index)
+                if(ingredientName === ingredient.ingredient) {
+                    this.selectedIngredients.splice(index, 1)
+                    
+                }
+            });
+            console.log(this.selectedIngredients)
         }
     },
     emits: []
@@ -39,7 +53,8 @@ export default {
             <img  :src="ingredient.image" :alt="ingredient.name">
             <h3>{{ ingredient.name }}</h3>
         </div>
-        <input class="ingredient-quantity" v-model="ingredientQuantity">
+        <div @click="deleteIngredients(ingredient.name, ingredientQuantity)">Borrar</div>
+        <input class="ingredient-quantity" placeholder="Cantidad" v-model="ingredientQuantity">
         
     </div> 
 </template>
