@@ -34,7 +34,7 @@ export default {
 <template>
     <Header>
     </Header>
-    <RouterView :ingredients="ingredients" />
+    <RouterView :ingredients="ingredients" :categories="categories"/>
 </template>
 
 <style></style>
