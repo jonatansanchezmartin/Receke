@@ -48,4 +48,7 @@ export default {
 .ingredient-card-wrapper.active .ingredient-card{
     border: 1px solid green;
 }
+.ingredient-quantity {
+    width: 100%;
+}
 </style>
