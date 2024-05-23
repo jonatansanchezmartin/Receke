@@ -59,13 +59,9 @@ export default {
 </script>
 
 <template>
-    <div class="query-nav">
-        <button><router-link to="/"><img src="./src/assets/img/back-arrow.png"></router-link>  </button>
-        <div>
-            <h1>Contribuye con tu receta TEST</h1>
-            <p>Aporta a la comunidad recetas fáciles con ingredientes sencillos</p>
-        </div>
-    </div>
+   
+    <button><router-link to="/"><img src="./src/assets/img/back-arrow.png"></router-link>  </button>
+        
     <form @submit.prevent="sendRecipe()">
         <div class="form-block">
             <label for="recipe-name">Nombre de la receta</label>
