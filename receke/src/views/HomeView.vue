@@ -1,11 +1,12 @@
 <script>
 import CategoriesFilter from "../components/CategoriesFilter.vue";
 import IngredientsCards from "../components/IngredientsCards.vue";
+import { mapState } from "pinia";
+import { useIngredientsStore } from '@/stores/IngredientsStore'
 
 export default {
-    props: {
-        ingredients: Array,
-        categories: Array
+    computed: {
+        ...mapState(useIngredientsStore, ['ingredients', 'categories']),
     },
     components: {
         CategoriesFilter,
