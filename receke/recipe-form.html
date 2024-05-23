@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receké</title>
+  <link rel="stylesheet" type="text/css" href="./src/assets/main.css">
+</head>
+
+
+<body>
+  <div id="app">
+   
+   <!-- Header logo & content -->
+
+    <header class="header-logo">
+        <img src="./src/assets/img/Receké.png" alt="Logo" >
+        <h1>Contribuye con tu receta</h1>
+        <p>Aporta a la comunidad recetas<br>
+            fáciles con ingredientes sencillos</p>
+    </header>
+
+    
+    <!-- Form Label & Input -->
+
+
+    <div class="form-recipe-name">
+        <label for="name">Nombre de la receta</label>
+        <input type="text" placeholder="Ej: Salteado de champiñones" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+    </div>
+
+   
+    <!-- Ingredients Selection -->
+
+
+    <h2 class="ingredients-title">Ingredientes basicos </h2>
+
+
+  
+      <!-- Filter buttons -->
+  
+      <div class="button-container">
+        <button class="button-style">Todos</button>
+        <button class="button-style">Frescos</button>
+        <button class="button-style">Carnes</button>
+        <button class="button-style">Verduras</button>
+        <button class="button-style">Frutas</button>
+      </div>
+  
+      <!-- Ingredient count cards -->
+
+
+      <!-- 
+        
+         ***   To highlight the ingredient card please create 
+                an OnClick Event slecting the root 
+                button within ingredienst count   ***
+    
+    -->
+  
+      <div class="cards-container">
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/tomate.png">
+                <h3> Tomate</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>
+
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/lechuga.png">
+                <h3> Lechuga</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>  
+        
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/cebolla.png">
+                <h3> Cebolla</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div> 
+        
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/huevo.png">
+                <h3> Huevo</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>          
+
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/maiz.png">
+                <h3> Maiz</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>    
+
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/berenjena.png">
+                <h3> Berenjena</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div> 
+
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/pan.png">
+                <h3> Pan de molde</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>
+
+
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/zanahoria.png">
+                <h3>Zanahoria</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>
+        
+        <div class="ingredients-count">   
+            <button class="ingredient-card"> 
+                <img src="./src/assets/media/pimiento.png">
+                <h3> Pimiento rojo</h3>
+            </button>
+            <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="Cantidad">
+        </div>
+      </div>
+
+
+      <!-- Recipe Steps -->
+  
+      <h3 class="ingredients-title"> Pasos </h3>
+
+
+      <div class="recipe-steps-container">
+        <ol>
+            <li><input type="text" placeholder="Paso 1 descripción" id="name" name="name" required minlength="4" maxlength="8" size="10">
+            </li>
+            <li><input type="text" placeholder="Paso 2 descripción" id="name" name="name" required minlength="4" maxlength="8" size="10">
+            </li>
+        </ol>
+      </div>
+
+
+        <button class="send-button"> <h3> Enviar receta</h3> </button>
+
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
