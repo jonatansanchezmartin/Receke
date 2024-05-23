@@ -11,12 +11,12 @@ export default {
     },
 // nos traemos las variavles con mapstate y las funciones con mapActions
     computed: {
-        ...mapState(useIngredientsStore, ['ingredients'])
+        ...mapState(useIngredientsStore, ['ingredients','categories'])
     },
     data() {
         return {
             //ingredients: [],
-            categories: []
+            //categories: []
         }
     },
     created() {
@@ -25,7 +25,7 @@ export default {
     },
     methods: {
 
-        ...mapActions(useIngredientsStore, ['fetchIngredients']),
+        ...mapActions(useIngredientsStore, ['fetchIngredients','fetchCategories']),
         // async fetchIngredients() {
         //     let response = await fetch('http://localhost:3001/ingredients')
         //     let ingredients = await response.json()
@@ -33,11 +33,11 @@ export default {
         // },
 
 
-        async fetchCategories() {
-            let response = await fetch('http://localhost:3001/categories')
-            let categories = await response.json()
-            this.categories = categories
-        }
+        // async fetchCategories() {
+        //     let response = await fetch('http://localhost:3001/categories')
+        //     let categories = await response.json()
+        //     this.categories = categories
+        // }
     }
 }
 </script>
