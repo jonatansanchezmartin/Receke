@@ -24,13 +24,17 @@ export default {
             recipeImage: '',
 
             isActive: false,
+
         }
     },
     created() {
        
     },
     methods: {
-        
+
+        addStep(descriptionStep) {
+            this.steps.push(descriptionStep)
+        },
         
         async sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
             console.log(recipeName, steps, selectedIngredients, recipeImage)
@@ -45,13 +49,14 @@ export default {
             console.log(newRecipe);
 
             const url = "http://localhost:3001/recipes";
-            const response = await fetch(url, {
+            await fetch(url, {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(newRecipe)
             })
+            
             window.location.reload();
         }
     }
@@ -75,7 +80,7 @@ export default {
                         :selectedIngredients = "selectedIngredients"
                         :ingredients = "ingredients"
                         :ingredient = "ingredient"
-                       
+                        :key = "ingredient.id"
                     />
                     <!-- <div class="ingredient-card"  > 
                 </div> -->
@@ -85,8 +90,9 @@ export default {
             <label for="steps">Pasos</label>
             
             <ol>
-                <newStep v-for="(step, index) in steps" :key="step"
+                <newStep v-for="step in steps" :key="step"
                 :steps = "steps"
+                @add-step="(descriptionStep) => addStep(descriptionStep)"
             />
             </ol>
             

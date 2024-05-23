@@ -23,15 +23,17 @@ export default {
                 });
             }, 10);
         }
-    }
+        
+    },
+    emits: ['add-step']
 }
 </script>
 
 <template>
     <li class="step">
-        <input type="textarea" class="description" v-model="descriptionStep" :class="{ 'disabled' : isDisabled }"></input>
+        <input type="textarea" class="description" v-model="descriptionStep" :class="{ 'disabled' : isDisabled }" @keyup.enter="$emit('add-step', descriptionStep)" />
         
-        <div v-if="descriptionStep != ''" @click="addStep(descriptionStep)" class="plus" :class="{ 'disabled' : isDisabled }">+</div>
+        <div v-if="descriptionStep != ''" @click="addStep(descriptionStep)" class="plus" :class="{ 'disabled' : isDisabled } ">+</div>
     </li>
 </template>
 

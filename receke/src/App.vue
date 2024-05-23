@@ -1,7 +1,8 @@
 <script>
-import { RouterView } from 'vue-router';
+import HeaderComponent from './components/HeaderComponent.vue';
 export default {
     components: {
+        HeaderComponent
     },
     data() {
         return {
@@ -18,7 +19,6 @@ export default {
             let response = await fetch('http://localhost:3001/ingredients')
             let ingredients = await response.json()
             this.ingredients = ingredients
-            console.log(this.ingredients)
         },
         async fetchCategories() {
             let response = await fetch('http://localhost:3001/categories')
@@ -30,9 +30,8 @@ export default {
 </script>
 
 <template>
-  <RouterView :ingredients = "ingredients"/>
+    <HeaderComponent />
+    <RouterView :ingredients="ingredients" :categories="categories"/>
 </template>
 
-<style scoped>
-
-</style>
+<style></style>
