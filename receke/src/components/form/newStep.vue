@@ -47,7 +47,7 @@ input.disabled {
     pointer-events: none;
 }
 ol {
-  counter-reset: step-counter; /* Inicializa el counter */
+  counter-reset: step-counter;
 }
 
 ol {
@@ -56,8 +56,8 @@ ol {
 
 ol li::before {
     color: black;
-    content: counter(step-counter); /* Usa el counter en el contenido generado */
-    counter-increment: step-counter; /* Incrementa el counter para cada elemento de la lista */
+    content: counter(step-counter);
+    counter-increment: step-counter;
 }
 
 ol li {

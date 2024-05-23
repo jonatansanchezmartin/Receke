@@ -75,7 +75,7 @@ export default {
             <label for="recipe-name">Ingredientes básicos</label>
             <div class="cards-container" >
                 
-                    <ingredientCard v-for="(ingredient) in ingredients"
+                    <ingredientCard v-for="ingredient in ingredients"
                         :selectedIngredients = "selectedIngredients"
                         :ingredients = "ingredients"
                         :ingredient = "ingredient"
