@@ -67,13 +67,13 @@ export default {
    
     <button><router-link to="/"><img src="./src/assets/img/back-arrow.png"></router-link>  </button>
         
-    <form @submit.prevent="sendRecipe()">
+    <form class="form-recipe-name" @submit.prevent="sendRecipe()">
         <div class="form-block">
-            <label for="recipe-name">Nombre de la receta</label>
+            <div class="ingredients-title" for="recipe-name">Nombre de la receta</div>
             <input id="recipe-name" v-model="recipeName">
         </div>
         <div class="form-block">
-            <label for="recipe-name">Ingredientes básicos</label>
+            <div class="ingredients-title" for="recipe-name">Ingredientes básicos</div>
             <div class="cards-container" >
                 
                     <ingredientCard v-for="ingredient in ingredients"
@@ -86,7 +86,7 @@ export default {
                 </div> -->
             </div>
         </div>
-        <div class="form-block steps">
+        <div class="form-block recipe-steps-container">
             <label for="steps">Pasos</label>
             
             <ol>
@@ -98,10 +98,10 @@ export default {
             
         </div>
         <div class="form-block">
-            <label for="recipe-img">Imagen de la receta</label>
+            <div class="ingredients-title" for="recipe-img">Imagen de la receta</div>
             <input id="recipe-img" v-model="recipeImage">
         </div>
-        <button type="button" @click="sendRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">Enviar receta</button>
+        <button class="send-button" type="button" @click="sendRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">Enviar receta</button>
     </form>
 </template>
 

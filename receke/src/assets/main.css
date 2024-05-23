@@ -364,9 +364,11 @@ display: inline-flex;
 
 .form-recipe-name input {
  height: 36px;
- background-color: white;
+ background-color: #FAFAFA;
  border: none;
  border-radius: 10px;
+ border: 1px solid #EFEFEF;
+ width: 100%;
 }
 
 .form-recipe-name ::placeholder {
@@ -390,23 +392,61 @@ display: inline-flex;
   background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(223,223,223,0.5) 100%);
   border: none;
   border-radius: 5px;
+  
 }
 
 .ingredients-count ::placeholder {
   text-align: center; 
 }
 
-.recipe-steps-container input{
+.recipe-steps-container textarea{
+  width: 100%;
   height: 120px;
   width: 240px;
-  background-color: white;
+  background-color: #FAFAFA;
   border: none;
   border-radius: 10px;
+  border: 1px solid #EFEFEF;
+  padding: 12px 8px;
+  flex: 1;
+  text-align: left;
 }
 
-.recipe-steps-container::marker{
-  padding: 20px;
+.recipe-steps-container textarea ::placeholder {
+  text-align:left; 
+}
+
+.recipe-steps-container ol {
+  padding: 0px;
+  counter-reset: step-counter;
+}
+
+.recipe-steps-container ol li {
+  display: flex;
+  gap:6px;
+  margin-bottom: 9px;
+}
+
+.recipe-steps-container ol li::before{
+  padding: 8px 12px;
   background-color:#D61F31;
+  content: counter(step-counter);
+  counter-increment: step-counter;
+  color: white;
+  height: fit-content;
+  line-height: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.recipe-steps-container ol li .plus {
+  align-self: end;
+  padding: 12px;
+  line-height: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #FAFAFA;
+  border: 1px solid #EFEFEF;
 }
 
 .send-button {
