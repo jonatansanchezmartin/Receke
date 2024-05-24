@@ -75,8 +75,22 @@ header p {
   background-color: #C5EABA;
 }
 
+.button-style:active{
+  border: 1px solid #6DCA53;
+  background-color: #C5EABA;
+}
+
+
 
 /* Ingredient cards styles */
+
+.ingredients-title-desktop{
+  margin: 0 2.4vh;
+  display: none;
+  padding: 3vh 0 2vh 0 ;
+  color: #A7A7A7;
+  font-size: 14px;
+}
 
 .cards-container {
   margin: 2.4vh auto; 
@@ -85,14 +99,6 @@ header p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
-.cards-container p{
-  display: none;
-  padding: 0 0 3vh 0 ;
-  color: #A7A7A7;
-  font-size: 14px;
-}
-
 
 .ingredient-card {
   margin: 6px;
@@ -106,6 +112,12 @@ header p {
 
 .ingredient-card:hover {
   border: 1px solid #6DCA53;
+}
+
+.ingredient-card:focus {
+  border: 1px solid #6dca53;
+  background: rgb(109, 202, 83, 1);
+  background: radial-gradient(circle, rgba(109, 202, 83, 0.2) 60%, rgba(223,223,223,0.5) 100%);
 }
 
 .ingredient-card img{
@@ -503,9 +515,10 @@ header {
   padding: 2vh;
   display: grid;
   text-align: left;
-  align-items: center;
   border: 4px solid #D61F31;
   border-radius: 10px;
+  justify-content: start;
+  align-content: center;
 }
 
 header img {
@@ -568,26 +581,32 @@ header p {
   background-color: #C5EABA;
 }
 
-/* Ingredient cards styles */
-
-.cards-container {
-  width: 1200px;
-  height: 400px;
-  overflow: auto;
-
-  margin: 2.4vh;
-  display: block;
-  text-align: left;
-  grid-template-columns: 1fr 1fr 1fr;
+.button-style:focus{
+  border: 1px solid #6DCA53;
+  background-color: #C5EABA;
 }
 
-.cards-container p{
+
+/* Ingredient cards styles */
+
+
+.ingredients-title-desktop{
+  margin: 0 2.4vh;
   display: block;
-  padding: 0 0 3vh 0 ;
+  padding: 3vh 0 2vh 0 ;
   color: #A7A7A7;
   font-size: 14px;
 }
 
+.cards-container {
+  width: 1200px;
+  height: 320px;
+  overflow-x: auto;
+  margin: 0 2.4vh;
+  display: block;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .ingredient-card {
   margin: 6px;
@@ -618,18 +637,17 @@ header p {
 /* Fixed menu styles */
 
 .fixed-menu {
-  display: none;
+  height: 100px;
+  width: auto;
+  display: block;
   text-align: center;
-  position: fixed;
-  height: 140px;
+  position: relative;
   bottom: 0%;
   right: 0%; 
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 20%, rgba(255,255,245,1) 52%);
 }
 
 .search-button {
-  margin: 4vh 0 1vh 0;
+  margin: 4vh 1vh 2vh 0;
   width: 340px;
   padding: 10px 120px;
   color:#FFFFF5;
@@ -642,7 +660,7 @@ header p {
 }
 
 .add-button {
-  margin: 1vh 0 2vh 0;
+  margin: 4vh 1vh 2vh 0;
   width: 340px;
   padding: 10px 120px;
   color: #433A2F;
