@@ -10,7 +10,7 @@ import { useRecipesStore } from '@/stores/RecipesStore';
 export default {
 computed:{
     
-    ...mapState(useRecipesStore, ['recipeName','selectedIngredients','recipeImage','steps','isActive',])
+    ...mapState(useRecipesStore, ['recipeName','selectedIngredients','recipeImage','steps','isActive'])
 },
 
     props: {
@@ -62,6 +62,7 @@ computed:{
         //     }
 
         //     console.log(newRecipe);
+// desmosntar en  dos esta función por un lado crear el objeto, que se queda aqui y pasa a pinia sendREcipe como tal con el posteado a localhost.
 
         //     const url = "http://localhost:3001/recipes";
         //     await fetch(url, {
