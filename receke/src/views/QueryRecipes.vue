@@ -54,4 +54,5 @@ export default {
                
     </template>
 
-<style></style>
+<styles>
+</styles>
