@@ -31,7 +31,7 @@ export default {
 
 <template>
     <li class="step">
-        <input type="textarea" class="description" v-model="descriptionStep" :class="{ 'disabled' : isDisabled }" @keyup.enter="$emit('add-step', descriptionStep)" />
+        <textarea class="description" placeholder="Comienza a escribir un paso para añadirlo" v-model="descriptionStep" :class="{ 'disabled' : isDisabled }" @keyup.enter="$emit('add-step', descriptionStep)"></textarea>
         
         <div v-if="descriptionStep != ''" @click="addStep(descriptionStep)" class="plus" :class="{ 'disabled' : isDisabled } ">+</div>
     </li>
@@ -47,22 +47,5 @@ export default {
 
 input.disabled {
     pointer-events: none;
-}
-ol {
-  counter-reset: step-counter; /* Inicializa el counter */
-}
-
-ol {
-  list-style-type: none; /* Elimina los marcadores predeterminados */
-}
-
-ol li::before {
-    color: black;
-    content: counter(step-counter); /* Usa el counter en el contenido generado */
-    counter-increment: step-counter; /* Incrementa el counter para cada elemento de la lista */
-}
-
-ol li {
-    display: flex;
 }
 </style>
