@@ -441,6 +441,278 @@
           "quantity": "150 g"
         }
       ]
+    },
+    {
+      "id": "4d1d",
+      "title": "test",
+      "instructions": [
+        "pasoDummy",
+        "1",
+        "2",
+        "3"
+      ],
+      "image": "imagen url",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": "2 kg"
+          },
+          {
+            "ingredient": "Huevo",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Leche",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Limón",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "9f80",
+      "title": "",
+      "instructions": [
+        "pasoDummy"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Huevo",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Leche",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Canela",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Tomate",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Ajo",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Aceite de oliva",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Pan",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Sal",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Almendra",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "73de",
+      "title": "Nombre",
+      "instructions": [
+        "pasoDummy",
+        "Paso 1",
+        "Paso 2"
+      ],
+      "image": "http://localhost:5173/src/assets/media/brocoli.png",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Huevo",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Leche",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Azúcar",
+            "quantity": "1 cucharada"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "65e5",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "Paso 1",
+        "2",
+        "3"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "pasta",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Caldo de carne",
+            "quantity": "1l"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "163a",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "1"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Carne picada de cerdo",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "4e8e",
+      "title": "",
+      "instructions": [
+        "pasoDummy"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Limón",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "24a6",
+      "title": "gfgdfg",
+      "instructions": [
+        "pasoDummy",
+        "Paso 1",
+        "Paso 2",
+        "paso 3"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Huevo",
+            "quantity": "1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "4a08",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "paso 1"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Patata",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "a600",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "paso 1",
+        "paso 2"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Whisky",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "ec6a",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "paao 1",
+        "paso 2"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Brócoli",
+            "quantity": ""
+          }
+        ]
+      ]
+    },
+    {
+      "id": "4b79",
+      "title": "",
+      "instructions": [
+        "pasoDummy",
+        "fgfg",
+        "gfdgdf",
+        "gfdgdf"
+      ],
+      "image": "",
+      "ingredients": [
+        [
+          {
+            "ingredient": "Bacon",
+            "quantity": ""
+          },
+          {
+            "ingredient": "Queso",
+            "quantity": ""
+          }
+        ]
+      ]
     }
   ],
   "ingredients": [
@@ -685,7 +957,7 @@
       "image": "./src/assets/media/bacon.png"
     },
     {
-      "id": "38",
+      "id": "41",
       "name": "Queso",
       "category": "🥛Lácteos",
       "image": "./src/assets/media/queso.png"
@@ -693,31 +965,31 @@
   ],
   "categories": [
     {
-      "id": "1",
+      "id": "c1",
       "name": "🥛Lácteos"
     },
     {
-      "id": "2",
+      "id": "c2",
       "name": "🥚Huevos"
     },
     {
-      "id": "3",
+      "id": "c3",
       "name": "🥩Carnes"
     },
     {
-      "id": "4",
+      "id": "c4",
       "name": "🐟Pescados"
     },
     {
-      "id": "5",
+      "id": "c5",
       "name": "🥬Vegetales"
     },
     {
-      "id": "6",
+      "id": "c6",
       "name": "🌾Granos"
     },
     {
-      "id": "7",
+      "id": "c7",
       "name": "Otros"
     }
   ]
