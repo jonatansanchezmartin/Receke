@@ -27,16 +27,16 @@ computed:{
            // ingredients: [],
 
 
-            //recipeName: '',
+            recipeName: '',
 
-            // selectedIngredients: [],
+            selectedIngredients: [],
            
 
-            // steps: ["pasoDummy"],
+            steps: ["pasoDummy"],
 
-            // recipeImage: '',
+            recipeImage: '',
 
-            // isActive: false,
+            isActive: false,
 
         }
     },
@@ -49,33 +49,35 @@ computed:{
             this.steps.push(descriptionStep)
         },
         
-        ...mapActions(useRecipesStore, ['sendRecipe'])
+        ...mapActions(useRecipesStore, ['postRecipe']),
 
-        // async sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
-        //     console.log(recipeName, steps, selectedIngredients, recipeImage)
+        async createRecipe(recipeName, steps, selectedIngredients, recipeImage) {
+            console.log(recipeName, steps, selectedIngredients, recipeImage)
 
-        //     const newRecipe = {
-        //         title: recipeName,
-        //         instructions: steps,
-        //         image: recipeImage,
-        //         ingredients: [selectedIngredients]
-        //     }
+            const newRecipe = {
+                title: recipeName,
+                instructions: steps,
+                image: recipeImage,
+                ingredients: [selectedIngredients]
+            }
 
-        //     console.log(newRecipe);
+            console.log(newRecipe);
+            this.postRecipe(newRecipe)
+        }
 // desmosntar en  dos esta función por un lado crear el objeto, que se queda aqui y pasa a pinia sendREcipe como tal con el posteado a localhost.
-
-        //     const url = "http://localhost:3001/recipes";
-        //     await fetch(url, {
-        //         method: 'POST',
-        //         headers: {
-        //         'Content-Type': 'application/json'
-        //         },
-        //         body: JSON.stringify(newRecipe)
-        //     })
+// async postRecipe(newRecipe){
+//             const url = "http://localhost:3001/recipes";
+//             await fetch(url, {
+//                 method: 'POST',
+//                 headers: {
+//                 'Content-Type': 'application/json'
+//                 },
+//                 body: JSON.stringify(newRecipe)
+//             })
             
-        //     window.location.reload();
-        // }
-    }
+//             window.location.reload();
+//         }
+  }
 }
 </script>
 
@@ -87,7 +89,7 @@ computed:{
             <p>Aporta a la comunidad recetas fáciles con ingredientes sencillos</p>
         </div>
     </div>
-    <form @submit.prevent="sendRecipe()">
+    <form @submit.prevent="createRecipe()">
         <div class="form-block">
             <div class="ingredients-title" for="recipe-name">Nombre de la receta</div>
             <input id="recipe-name" v-model="recipeName">
@@ -121,7 +123,7 @@ computed:{
             <div class="ingredients-title" for="recipe-img">Imagen de la receta</div>
             <input id="recipe-img" v-model="recipeImage">
         </div>
-        <button class="send-button" type="button" @click="sendRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">Enviar receta</button>
+        <button class="send-button" type="button" @click="createRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">Enviar receta</button>
     </form>
 </template>
 

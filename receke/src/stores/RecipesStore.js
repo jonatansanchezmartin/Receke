@@ -5,16 +5,16 @@ export const useRecipesStore = defineStore('RecipesStore', {  //el default
   state: () => ({   //data de default
     recipes : [],
 
-    recipeName: '',
+    // recipeName: '',
 
-    selectedIngredients: [],
+    // selectedIngredients: [],
            
 
-    steps: ["pasoDummy"],
+    // steps: ["pasoDummy"],
 
-    recipeImage: '',
+    // recipeImage: '',
 
-    isActive: false,
+    // isActive: false,
 
     //ingredients : parseInt(localStorage.getItem('ingredients') || []), //obtiene los ingredientes guardados en LocalStorage en futuro quitamos esto cuando pongamos usuarios
   
@@ -27,18 +27,7 @@ export const useRecipesStore = defineStore('RecipesStore', {  //el default
     
 
     
-    async sendRecipe(recipeName, steps, selectedIngredients, recipeImage) {
-      console.log(recipeName, steps, selectedIngredients, recipeImage)
-
-      const newRecipe = {
-          title: recipeName,
-          instructions: steps,
-          image: recipeImage,
-          ingredients: [selectedIngredients]
-      }
-
-      console.log(newRecipe);
-
+    async postRecipe(newRecipe){
       const url = "http://localhost:3001/recipes";
       await fetch(url, {
           method: 'POST',
@@ -50,10 +39,11 @@ export const useRecipesStore = defineStore('RecipesStore', {  //el default
       
       window.location.reload();
   }
+}
 
     
 
   }
 
 
-})
+)
