@@ -1,17 +1,17 @@
 <script>
-
+    export default{
+        data(){
+            return{
+                // Aquí dentro meto todas las variables que solo utilice en las funciones de aquí
+            }
+        },
+        methods: {
+            // Aquí dentro meto todas las funciones que cree para usar aquí
+        }, 
+    }
 </script>
 
 <template>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receké</title>
-    <link rel="stylesheet" type="text/css" href="./src/assets/main.css">
-    </head>
 
 
         <header class="header-logo">
@@ -34,12 +34,12 @@
         <div class="ingredients-list">
 
             <div> 
-                <img src="./src/assets/media/tomato-ReceKé.png">
+                <img src="./src/assets/media/tomate.png">
                 <h4> Tomate</h4>
             </div>
 
             <div class="ingredients-card"> 
-                <img src="./src/assets/media/eggplant-ReceKé.png">
+                <img src="./src/assets/media/berenjena.png">
                 <h4> Berenjena</h4>
             </div>
 
@@ -48,12 +48,12 @@
         <div class="ingredients-list">
 
             <div> 
-                <img src="./src/assets/media/spinach-ReceKé.png">
+                <img src="./src/assets/media/espinacas.png">
                 <h4> Acelgas</h4>
             </div>
 
             <div class="ingredients-card"> 
-                <img src="./src/assets/media/carrot-ReceKé.png">
+                <img src="./src/assets/media/zanahoria.png">
                 <h4> Zanaoria</h4>
             </div>
 
