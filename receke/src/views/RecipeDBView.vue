@@ -1,5 +1,7 @@
 <script>
+
 </script>
+
 <template>
     <!DOCTYPE html>
     <html lang="en">
@@ -11,11 +13,6 @@
     <link rel="stylesheet" type="text/css" href="./src/assets/main.css">
     </head>
 
-
-    <body>
-    <div id="app">
-
-        <!-- Header logo, content & navigation -->
 
         <header class="header-logo">
         <img src="./src/assets/img/Receké.png" alt="Logo" >
@@ -79,14 +76,9 @@
         </div>
 
 
-    
 
 
 
-    </div>
-    <script type="module" src="/src/main.js"></script>
-    </body>
-    </html>
 
 </template>
 <style></style>
