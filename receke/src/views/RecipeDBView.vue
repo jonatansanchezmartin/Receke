@@ -32,6 +32,7 @@
 
         <h3 class="ingredients-title"> Ingredientes</h3>
 
+        <!-- Ingredients list -->
 
         <div class="ingredients-list">
 
@@ -61,6 +62,9 @@
 
         </div>
 
+        <!-- Ingredients -->
+
+
         <div class="steps-menu"> 
             <h3 class="ingredients-title"> Pasos</h3>
             <p>Ver pasos en pictogramas</p>
@@ -75,7 +79,7 @@
         </div>
 
 
-        
+    
 
 
 
