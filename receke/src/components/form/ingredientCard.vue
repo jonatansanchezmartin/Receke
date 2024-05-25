@@ -70,6 +70,10 @@ export default {
     .ingredient-card-wrapper.active .ingredient-card, .ingredient-card-wrapper.active .ingredient-quantity{
         border: 1px solid green;
     }
+    .ingredient-card-wrapper .ingredient-quantity{
+        margin: 0px 6px 6px 6px;
+        width: 100px;
+    }
     .ingredient-card-wrapper.active .ingredient-quantity{
         pointer-events: none;
     }
