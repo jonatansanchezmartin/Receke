@@ -25,7 +25,7 @@ const router = createRouter({
     },
 
     {
-      path:'/recipe-view',
+      path:'/recipe-view/:id',
       name: 'recipeView',
       component: RecipeDBView
     },

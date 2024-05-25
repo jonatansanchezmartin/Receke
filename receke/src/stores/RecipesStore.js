@@ -1,9 +1,16 @@
 //import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useRecipesStore = defineStore('RecipesStore', {  //el default
+const baseUrl = import.meta.env.VITE_APP_BACKEND_URL;
+console.log("Hola", baseUrl);
+
+export const useRecipesStore = defineStore('recipesStore', {  //el default
   state: () => ({   //data de default
     recipes : [],
+
+    recipeSelected: {
+
+    }
 
     // recipeName: '',
 
@@ -25,10 +32,21 @@ export const useRecipesStore = defineStore('RecipesStore', {  //el default
   },
   actions: {    //methods de default
     
+    async fetchRecipes() {
+      let response = await fetch(`${baseUrl}/recipes`)
+      let recipes = await response.json()
+      this.recipes = recipes
+    },
 
+
+    async getRecipeById(id) {
+      let response = await fetch(`${baseUrl}/recipes/${id}`)
+      let recipes = await response.json()
+      this.recipeSelected = recipes
+    },
     
     async postRecipe(newRecipe){
-      const url = "http://localhost:3001/recipes";
+      const url = `${baseUrl}/recipes`;
       await fetch(url, {
           method: 'POST',
           headers: {
