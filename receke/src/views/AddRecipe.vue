@@ -82,8 +82,7 @@ export default {
                         :ingredient = "ingredient"
                         :key = "ingredient.id"
                     />
-                    <!-- <div class="ingredient-card"  > 
-                </div> -->
+                   
             </div>
         </div>
         <div class="form-block recipe-steps-container">
