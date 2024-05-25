@@ -28,10 +28,11 @@ export default {
                 this.isActive = false;
                 this.ingredientQuantity = '';
             } else {
-                // Si el ingrediente no existe, lo añade
+                // Si el ingrediente no existe, primero comprobamos que el campo de cantidad tiene algo
                 if (this.ingredientQuantity == '') {
                     this.isRequired = true;
                 } else {
+                    // Si tiene cantidad, creamos el objeto de ingrediente y lo subimos al array
                     const ingredient = {
                         ingredient: ingredientName,
                         quantity: ingredientQuantity,
