@@ -77,6 +77,12 @@ export default {
     }
     input.required {
         border-color: red;
-        
+    }
+    form.form-recipe-name textarea::placeholder {
+        text-align: left;
+    }
+    textarea.disabled {
+        pointer-events: none;
+        border: 1px solid green;
     }
 </style>
