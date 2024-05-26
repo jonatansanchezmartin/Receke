@@ -1,4 +1,8 @@
 <script>
+    // import { mapState, mapActions } from "pinia";
+
+    // import { useIngredientsStore } from '@/stores/IngredientsStore';
+
     import { useRecipesStore } from '@/stores/RecipesStore';
     export default{
         data(){
@@ -11,11 +15,20 @@
             // Aquí dentro meto todas las funciones que cree para usar aquí
             getRecipesById(){
                 this.recipesStore.getRecipeById(this.$route.params.id)
-            }
-        }, 
+            },
+
+            // getIngredientsById(){
+            //     console.log(ingredients)
+            // }
+        },
+
+        // computed: {
+        // ...mapState(useIngredientsStore, ['ingredients'])
+        // },
 
         mounted() {
             this.getRecipesById()
+            // this.getIngredientsById()
         }, 
     }
 </script>
@@ -37,7 +50,7 @@
 
         <!-- Recipe image -->
         
-        <div class="recipe-image"> <img :src="recipesStore.recipeSelected.image" width="200"> </div>
+        <div class="recipe-image"> <img :src="recipesStore.recipeSelected.image" width="250"> </div>
 
         <h3 class="ingredients-title"> Ingredientes</h3>
 
@@ -47,7 +60,7 @@
 
             <div> 
                 <!-- <img src="./src/assets/media/tomate.png"> -->
-                <h4> {{ item.ingredient }}</h4>
+                <h4> {{ item.ingredient }} {{ item.quantity }}</h4>
             </div>
 
         </div>
@@ -65,8 +78,7 @@
 
         <div class="recipe-steps">
             <ol>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li>Batir los huevos</li>
+                <li v-for="step in recipesStore.recipeSelected.instructions"> {{step}}</li>
             </ol>
         </div>
 
