@@ -5,8 +5,7 @@ import { useRecipesStore } from '@/stores/RecipesStore';
 export default {
     methods: {
         ...mapActions(useRecipesStore, ['getRecipeById']),
-        getImage(ingredient) {
-            console.log('received', ingredient)
+        getIngredientImage(ingredient) {
             const ingredientMatch = this.ingredients.find((item) => item.name === ingredient)
             return ingredientMatch.image
         }
@@ -40,7 +39,7 @@ export default {
     <!-- Ingredients list -->
     <div class="ingredients-list" v-for="(item, index) in recipeSelected.ingredients" :key="index">
         <div>
-            <img :src="getImage(item.ingredient)">
+            <img :src="getIngredientImage(item.ingredient)">
             <h4> {{ item.ingredient }} {{ item.quantity }}</h4>
         </div>
     </div>
