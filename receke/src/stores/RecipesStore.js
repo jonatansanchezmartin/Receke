@@ -37,12 +37,5 @@ export const useRecipesStore = defineStore('RecipesStore', {
     async setSelectedRecipe(recipe) {
       this.selectedRecipe = recipe
     },
-    // filtra recetas por ingredientes seleccionados
-    async filterRecipesByIngredients(recipes, selectedIngredients) {
-      let recipesFiltered = recipes.filter((recipe) =>
-        recipe.ingredients.some((ing) => selectedIngredients.includes(ing.ingredient))
-      )
-      return recipesFiltered
-    }
   }
 })
