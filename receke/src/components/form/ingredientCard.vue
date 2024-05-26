@@ -11,36 +11,41 @@ export default {
         return {
             ingredientQuantity: '',
             isActive : false,
+            isRequired : false,
         }; 
     },
     methods: {
         getSelectedIngredients(ingredientName, ingredientQuantity) {
-            console.log(ingredientName, ingredientQuantity)
 
-            // Añado objeto de ingrediente al array
+            console.log(ingredientName, ingredientQuantity);
+
+            // Miramos si el ingrediente existe en selectedIngredients, buscamos indice con findindex y si no existe devuelve -1
+            const existingIngredient = this.selectedIngredients.findIndex(ing => ing.ingredient === ingredientName);
             
-            const ingredient = {
-                ingredient: ingredientName,
-                quantity: ingredientQuantity,
-            }
-            this.selectedIngredients.push(ingredient)
-            console.log(this.selectedIngredients)
-            this.isActive = true;
-
-        },
-        deleteIngredients(ingredientName) {
-            this.ingredientQuantity = '';
-            this.isActive = false;
-
-            // Hago un foreach por todos los elementos de la lista, y le paso la posición para que si está repetido, haga splice
-            this.selectedIngredients.forEach((ingredient, index) => {
-                console.log(index)
-                if(ingredientName === ingredient.ingredient) {
-                    this.selectedIngredients.splice(index, 1)
-                    
+            if (existingIngredient!== -1) {
+                // Si el ingrediente existe, si no es igual a -1, lo elimina
+                this.selectedIngredients.splice(existingIngredient, 1);
+                this.isActive = false;
+                this.ingredientQuantity = '';
+            } else {
+                // Si el ingrediente no existe, primero comprobamos que el campo de cantidad tiene algo
+                if (this.ingredientQuantity == '') {
+                    this.isRequired = true;
+                } else {
+                    // Si tiene cantidad, creamos el objeto de ingrediente y lo subimos al array
+                    const ingredient = {
+                        ingredient: ingredientName,
+                        quantity: ingredientQuantity,
+                    };
+                    this.selectedIngredients.push(ingredient);
+                    this.isActive = true;
+                    this.isRequired = false;
                 }
-            });
-            console.log(this.selectedIngredients)
+                
+            }
+
+            console.log(this.selectedIngredients);
+
         }
     },
     emits: []
@@ -53,30 +58,36 @@ export default {
             <img  :src="ingredient.image" :alt="ingredient.name">
             <h3>{{ ingredient.name }}</h3>
         </div>
-        <div class="ingredient-add" @click="getSelectedIngredients(ingredient.name, ingredientQuantity)">Añadir</div>
-        <div class="ingredient-delete" @click="deleteIngredients(ingredient.name, ingredientQuantity)">Borrar</div>
-        <input class="ingredient-quantity" placeholder="Cantidad" v-model="ingredientQuantity">
+       
+        <input class="ingredient-quantity" placeholder="Cantidad" v-model="ingredientQuantity" :class="{ 'required' : isRequired }">
     </div> 
 </template>
 
 <style>
-.ingredient-card-wrapper.active .ingredient-card{
-    border: 1px solid green;
-    pointer-events: none;
-}
-.ingredient-card-wrapper.active .ingredient-quantity {
-    display: none;
-}
-.ingredient-card-wrapper.active .ingredient-delete {
-    display: block;
-}
-.ingredient-card-wrapper.active .ingredient-add {
-    display: none;
-}
-.ingredient-delete {
-    display: none;
-}
-.ingredient-quantity {
-    width: 100%;
-}
+    .ingredient-card-wrapper .ingredient-card:hover{
+        border: none;
+    }
+    .ingredient-card-wrapper.active .ingredient-card, .ingredient-card-wrapper.active .ingredient-quantity{
+        border: 1px solid green;
+    }
+    .ingredient-card-wrapper .ingredient-quantity{
+        margin: 0px 6px 6px 6px;
+        width: 100px;
+    }
+    .ingredient-card-wrapper.active .ingredient-quantity{
+        pointer-events: none;
+    }
+    input {
+        text-align: center;
+    }
+    input.required {
+        border-color: red;
+    }
+    form.form-recipe-name textarea::placeholder {
+        text-align: left;
+    }
+    textarea.disabled {
+        pointer-events: none;
+        border: 1px solid green;
+    }
 </style>
