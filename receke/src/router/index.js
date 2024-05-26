@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/HomeView.vue'
-import AddRecipe from '../views/AddRecipe.vue'
+import Home from '../views/HomeView.vue';
+import AddRecipe from '../views/AddRecipe.vue';
+import QueryRecipes from '../views/QueryRecipes.vue';
+import RecipeDBView from '@/views/RecipeDBView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +16,20 @@ const router = createRouter({
       path: '/add-recipe',
       name: 'addRecipe',
       component: AddRecipe
-    }
+    },
+
+    {
+      path:'/query-recipes',
+      name: 'queryRecipes',
+      component: QueryRecipes
+    },
+
+    {
+      path:'/recipe-view/:id',
+      name: 'recipeView',
+      component: RecipeDBView
+    },
+    
     // {
     //   path: '/about',
     //   name: 'about',

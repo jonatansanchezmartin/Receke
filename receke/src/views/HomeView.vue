@@ -1,11 +1,12 @@
 <script>
 import CategoriesFilter from "../components/CategoriesFilter.vue";
 import IngredientsCards from "../components/IngredientsCards.vue";
+import { mapState } from "pinia";
+import { useIngredientsStore } from '@/stores/IngredientsStore'
 
 export default {
-    props: {
-        ingredients: Array,
-        categories: Array
+    computed: {
+        ...mapState(useIngredientsStore, ['ingredients', 'categories']),
     },
     components: {
         CategoriesFilter,
@@ -42,12 +43,16 @@ export default {
     <IngredientsCards :ingredients="ingredientsToShow" />
     <!-- Fixed Menu -->
     <div class="fixed-menu">
-        <button class="search-button">
-            <h3> Buscar recetas</h3>
-        </button>
-        <router-link to="/add-recipe"><button class="add-button">
+        <router-link to="/query-recipes">
+            <button class="search-button">
+                <h3> Buscar recetas</h3>
+            </button>
+        </router-link>
+        <router-link to="/add-recipe">
+            <button class="add-button">
                 <h3> Añadir recetas</h3>
-            </button></router-link>
+            </button>
+        </router-link>
     </div>
 
 </template>

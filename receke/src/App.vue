@@ -1,37 +1,30 @@
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
+import { mapState } from 'pinia';
+import { mapActions } from 'pinia';
+import { useIngredientsStore } from '@/stores/IngredientsStore.js'
+
 export default {
+
     components: {
         HeaderComponent
     },
-    data() {
-        return {
-            ingredients: [],
-            categories: []
-        }
+    computed: {
+        ...mapState(useIngredientsStore, ['ingredients','categories'])
     },
     created() {
         this.fetchIngredients()
         this.fetchCategories()
     },
     methods: {
-        async fetchIngredients() {
-            let response = await fetch('http://localhost:3001/ingredients')
-            let ingredients = await response.json()
-            this.ingredients = ingredients
-        },
-        async fetchCategories() {
-            let response = await fetch('http://localhost:3001/categories')
-            let categories = await response.json()
-            this.categories = categories
-        }
+        ...mapActions(useIngredientsStore, ['fetchIngredients','fetchCategories']),
     }
 }
 </script>
 
 <template>
     <HeaderComponent />
-    <RouterView :ingredients="ingredients" :categories="categories"/>
+    <RouterView />
 </template>
 
 <style></style>
