@@ -899,6 +899,10 @@ display: inline-flex;
 
 /* ---- Recipe Form Styles - Mobile ----- */
 
+.recipe-form-content {
+  display: flex;
+}
+
 .form-recipe-name {
   margin: 1vh ;
   display: flex;
@@ -949,6 +953,11 @@ display: inline-flex;
 .ingredients-count ::placeholder {
   text-align: center; 
 }
+
+.form-buttons-container {
+  display: none;
+}
+
 
 .recipe-steps-container input{
   height: 120px;
