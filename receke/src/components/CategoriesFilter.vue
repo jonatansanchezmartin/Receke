@@ -5,11 +5,6 @@ export default {
     props: {
         categories: Array
     },
-    data() {
-        return {
-            selectedCategory: ''
-        }
-    },
     methods: {
         ...mapActions(useIngredientsStore, ['filterIngredients']),
     }
