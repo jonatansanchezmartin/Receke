@@ -4,10 +4,7 @@ import { useIngredientsStore } from '@/stores/IngredientsStore'
 
 export default {
     computed: {
-        ...mapState(useIngredientsStore, ['selectedIngredients'])
-    },
-    props: {
-        ingredients: Array
+        ...mapState(useIngredientsStore, ['ingredientsToShow', 'selectedIngredients'])
     },
     methods: {
         ...mapActions(useIngredientsStore, ['toggleIngredient'])
@@ -21,7 +18,7 @@ export default {
         <button 
             @click='toggleIngredient(ingredient.id)'
             class="ingredient-card"
-            v-for="ingredient in ingredients"
+            v-for="ingredient in ingredientsToShow"
             :key="ingredient.id"
             :class="{ 'active': selectedIngredients.includes(ingredient.id) }"
             >

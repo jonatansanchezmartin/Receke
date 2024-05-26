@@ -1,9 +1,9 @@
 <script>
-import { mapActions } from "pinia";
+import { mapState, mapActions } from "pinia";
 import { useIngredientsStore } from '@/stores/IngredientsStore'
 export default {
-    props: {
-        categories: Array
+    computed: {
+        ...mapState(useIngredientsStore, ['categories'])
     },
     methods: {
         ...mapActions(useIngredientsStore, ['filterIngredients']),

@@ -1,26 +1,18 @@
 <script>
 import CategoriesFilter from "../components/CategoriesFilter.vue";
 import IngredientsCards from "../components/IngredientsCards.vue";
-import { mapState, mapActions } from "pinia";
-import { useIngredientsStore } from '@/stores/IngredientsStore'
 
 export default {
-    computed: {
-        ...mapState(useIngredientsStore, ['ingredients', 'ingredientsToShow', 'categories', 'filterByCategory']),
-    },
     components: {
         CategoriesFilter,
         IngredientsCards
-    },
-    methods: {
-        ...mapActions(useIngredientsStore, ['filterIngredients']),
     }
 }
 </script>
 
 <template>
-    <CategoriesFilter :categories="categories" />
-    <IngredientsCards :ingredients="ingredientsToShow" />
+    <CategoriesFilter />
+    <IngredientsCards />
     <!-- Fixed Menu -->
     <div class="fixed-menu">
         <router-link to="/query-recipes">
