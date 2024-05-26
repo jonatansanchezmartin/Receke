@@ -1,18 +1,23 @@
 <script>
 import CategoriesFilter from "../components/CategoriesFilter.vue";
 import IngredientsCards from "../components/IngredientsCards.vue";
-import { mapState } from "pinia";
+
+import { mapState,} from "pinia";
 import { useIngredientsStore } from '@/stores/IngredientsStore'
+import { useRecipesStore } from '@/stores/RecipesStore'
+
 
 export default {
     computed: {
         ...mapState(useIngredientsStore, ['ingredients', 'categories']),
+        ...mapState(useRecipesStore, ['recipes', 'selectedRecipe', 'recipesFiltered'])
     },
     components: {
         CategoriesFilter,
         IngredientsCards
     },
     methods: {
+        
         filterIngredients(category) {
             if (category === 'all') {
                 this.ingredientsToShow = this.ingredients
@@ -44,7 +49,7 @@ export default {
     <!-- Fixed Menu -->
     <div class="fixed-menu">
         <router-link to="/query-recipes">
-            <button class="search-button">
+            <button class="search-button" >
                 <h3> Buscar recetas</h3>
             </button>
         </router-link>
