@@ -37,13 +37,6 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
       let recipes = await response.json()
       this.recipes = recipes
     },
-
-
-    async getRecipeById(id) {
-      let response = await fetch(`${baseUrl}/recipes/${id}`)
-      let recipes = await response.json()
-      this.recipeSelected = recipes
-    },
     
     async postRecipe(newRecipe){
       const url = `${baseUrl}/recipes`;
