@@ -3,6 +3,7 @@ import Home from '../views/HomeView.vue';
 import AddRecipe from '../views/AddRecipe.vue';
 import QueryRecipes from '../views/QueryRecipes.vue';
 import RecipeDBView from '@/views/RecipeDBView.vue';
+import RecipeDBView from '@/views/RecipeDBView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -25,11 +26,10 @@ const router = createRouter({
     },
 
     {
-      path: '/recipe-view',
+      path:'/recipe-view/:id',
       name: 'recipeView',
       component: RecipeDBView
-
-    }
+    },
     
     // {
     //   path: '/about',

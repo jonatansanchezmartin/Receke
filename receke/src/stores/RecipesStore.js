@@ -1,21 +1,51 @@
 //import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-export const useRecipesStore = defineStore('RecipesStore', {
-  //el default
-  state: () => ({
-    //data de default
-    recipes: [],
-    selectedRecipe: null,
-    recipesFiltered: []
-  }),
-  getters: {},
-  actions: {
-    //methods de default
+const baseUrl = import.meta.env.VITE_APP_BACKEND_URL;
+console.log("Hola", baseUrl);
 
-    // sube una receta a la base de datos
-    async postRecipe(newRecipe) {
-      const url = 'http://localhost:3001/recipes'
+export const useRecipesStore = defineStore('recipesStore', {  //el default
+  state: () => ({   //data de default
+    recipes : [],
+
+    recipeSelected: {
+
+    }
+
+    // recipeName: '',
+
+    // selectedIngredients: [],
+           
+
+    // steps: ["pasoDummy"],
+
+    // recipeImage: '',
+
+    // isActive: false,
+
+    //ingredients : parseInt(localStorage.getItem('ingredients') || []), //obtiene los ingredientes guardados en LocalStorage en futuro quitamos esto cuando pongamos usuarios
+  
+     
+  }),
+  getters: {
+
+  },
+  actions: {    //methods de default
+    
+    async fetchRecipes() {
+      let response = await fetch(`${baseUrl}/recipes`)
+      let recipes = await response.json()
+      this.recipes = recipes
+    },
+
+    async getRecipeById(id) {
+      let response = await fetch(`${baseUrl}/recipes/${id}`)
+      let recipes = await response.json()
+      this.recipeSelected = recipes
+    },
+
+    async postRecipe(newRecipe){
+      const url = `${baseUrl}/recipes`;
       await fetch(url, {
         method: 'POST',
         headers: {
@@ -28,16 +58,7 @@ export const useRecipesStore = defineStore('RecipesStore', {
     },
 
     //obtiene un listado de recetas de la base de datos
-    async fetchRecipes() {
-      let response = await fetch('http://localhost:3001/recipes', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-      let recipes = await response.json()
-      this.recipes = recipes
-    },
+    
     // marca como seleccionada una receta
     async setSelectedRecipe(recipe) {
       this.selectedRecipe = recipe
