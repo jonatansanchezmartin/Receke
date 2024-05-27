@@ -181,7 +181,7 @@ header p {
 /* Quert-style */
 
 .query-nav {
-  margin: 2vh;
+  margin: 0;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -259,7 +259,11 @@ overflow: hidden;
   display: flex;
   flex-direction: row;
   text-align: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 
 .recipe-nav h1 {
   margin: 30px;
@@ -411,6 +415,15 @@ display: inline-flex;
 
 .form-recipe-name ::placeholder {
   text-align: center; 
+}
+
+.basic-ingredients-section h2{
+  padding: 20px;
+  text-align: center;
+  position: center;
+  color: #433A2F;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .ingredients-count input {
@@ -904,6 +917,8 @@ display: inline-flex;
 }
 
 .form-recipe-name {
+  height: 100px;
+  width: 300px;
   margin: 1vh ;
   display: flex;
   flex-direction: column;
@@ -912,12 +927,11 @@ display: inline-flex;
 }
 
 .form-recipe-name label{
-  padding: 6px;
-  text-align: center;
+  text-align: left;
   position: center;
   color: #433A2F;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .form-recipe-name input {
@@ -929,6 +943,18 @@ display: inline-flex;
 
 .form-recipe-name ::placeholder {
   text-align: center; 
+}
+
+.basic-ingredients-section {
+  width: 300px;;
+}
+
+.basic-ingredients-section h2{
+  text-align: left;
+  position: center;
+  color: #433A2F;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .ingredients-title {
@@ -958,14 +984,23 @@ display: inline-flex;
   display: none;
 }
 
+************************************
 
-.form-buttons-container {
-  display: none;
+.cards-container {
+  width: 1200px;
+  height: 320px;
+  overflow-x: auto;
+  margin: 0 2.4vh;
+  display: block;
+  text-align: left;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 
+***********************************
+
+
 .recipe-steps-container input{
-  
   height: 120px;
   width: 240px;
   background-color: white;
@@ -1008,13 +1043,6 @@ display: inline-flex;
   border-radius: 10px;
 
 }
-
-
-
-
-
-
-
 
 
 
