@@ -19,6 +19,13 @@ export const useIngredientsStore = defineStore('IngredientsStore', {
       this.ingredients = ingredients
     },
 
+    async getIngredientById(){
+      console.log(`${baseUrl}/ingredients/1`)
+      let response = await fetch(`${baseUrl}/ingredients/1`)
+      let ingredient = await response.json()
+      return ingredient
+    },
+
     async fetchCategories() {
       let response = await fetch(`${baseUrl}/categories`)
       let categories = await response.json()

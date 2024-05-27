@@ -731,247 +731,247 @@
       "id": "1",
       "name": "Patata",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/patata.png"
+      "image": "http://localhost:5173/src/assets/media/patata.png"
     },
     {
       "id": "2",
       "name": "Huevo",
       "category": "🥚Huevos",
-      "image": "./src/assets/media/huevo.png"
+      "image": "http://localhost:5173/src/assets/media/huevo.png"
     },
     {
       "id": "3",
       "name": "Leche",
       "category": "🥛Lácteos",
-      "image": "./src/assets/media/leche.png"
+      "image": "http://localhost:5173/src/assets/media/leche.png"
     },
     {
       "id": "4",
       "name": "Arroz",
       "category": "🌾Granos",
-      "image": "./src/assets/media/arroz.png"
+      "image": "http://localhost:5173/src/assets/media/arroz.png"
     },
     {
       "id": "5",
       "name": "Azúcar",
       "category": "Otros",
-      "image": "./src/assets/media/harina.png"
+      "image": "http://localhost:5173/src/assets/media/harina.png"
     },
     {
       "id": "6",
       "name": "Limón",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/limon.png"
+      "image": "http://localhost:5173/src/assets/media/limon.png"
     },
     {
       "id": "7",
       "name": "Canela",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "8",
       "name": "Tomate",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/tomate.png"
+      "image": "http://localhost:5173/src/assets/media/tomate.png"
     },
     {
       "id": "9",
       "name": "Ajo",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/ajo.png"
+      "image": "http://localhost:5173/src/assets/media/ajo.png"
     },
     {
       "id": "10",
       "name": "Pan",
       "category": "🌾Granos",
-      "image": "./src/assets/media/pan.png"
+      "image": "http://localhost:5173/src/assets/media/pan.png"
     },
     {
       "id": "11",
       "name": "Aceite de oliva",
       "category": "Otros",
-      "image": "./src/assets/media/aceite.png"
+      "image": "http://localhost:5173/src/assets/media/aceite.png"
     },
     {
       "id": "12",
       "name": "Sal",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "13",
       "name": "Pollo",
       "category": "🥩Carnes",
-      "image": "./src/assets/media/pollo.png"
+      "image": "http://localhost:5173/src/assets/media/pollo.png"
     },
     {
       "id": "14",
       "name": "Zanahoria",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/zanahoria.png"
+      "image": "http://localhost:5173/src/assets/media/zanahoria.png"
     },
     {
       "id": "15",
       "name": "Cebolla",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/cebolla.png"
+      "image": "http://localhost:5173/src/assets/media/cebolla.png"
     },
     {
       "id": "16",
       "name": "Vino blanco",
       "category": "Otros",
-      "image": "./src/assets/media/vino.png"
+      "image": "http://localhost:5173/src/assets/media/vino.png"
     },
     {
       "id": "17",
       "name": "Almendra",
       "category": "🌾Granos",
-      "image": "./src/assets/media/frutoseco.png"
+      "image": "http://localhost:5173/src/assets/media/frutoseco.png"
     },
     {
       "id": "18",
       "name": "Avellana",
       "category": "🌾Granos",
-      "image": "./src/assets/media/frutoseco.png"
+      "image": "http://localhost:5173/src/assets/media/frutoseco.png"
     },
     {
       "id": "19",
       "name": "Harina de trigo",
       "category": "🌾Granos",
-      "image": "./src/assets/media/harina.png"
+      "image": "http://localhost:5173/src/assets/media/harina.png"
     },
     {
       "id": "20",
       "name": "Levadura",
       "category": "Otros",
-      "image": "./src/assets/media/levadura.png"
+      "image": "http://localhost:5173/src/assets/media/levadura.png"
     },
     {
       "id": "21",
       "name": "Puerro",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/puerro.png"
+      "image": "http://localhost:5173/src/assets/media/puerro.png"
     },
     {
       "id": "22",
       "name": "Caldo de ave",
       "category": "Otros",
-      "image": "./src/assets/media/caldo.png"
+      "image": "http://localhost:5173/src/assets/media/caldo.png"
     },
     {
       "id": "23",
       "name": "Pimienta",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "24",
       "name": "Pimentón",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "25",
       "name": "Romero",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "26",
       "name": "Cilantro",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "27",
       "name": "Orégano",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "28",
       "name": "Comino",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "29",
       "name": "pasta",
       "category": "🌾Granos",
-      "image": "./src/assets/media/pasta.png"
+      "image": "http://localhost:5173/src/assets/media/pasta.png"
     },
     {
       "id": "30",
       "name": "Tomate cherry",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/tomate.png"
+      "image": "http://localhost:5173/src/assets/media/tomate.png"
     },
     {
       "id": "31",
       "name": "Calabacín",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/calabacin.png"
+      "image": "http://localhost:5173/src/assets/media/calabacin.png"
     },
     {
       "id": "32",
       "name": "Champiñón",
       "category": "🥬Vegetales",
-      "image": "./src/assets/media/setas.png"
+      "image": "http://localhost:5173/src/assets/media/setas.png"
     },
     {
       "id": "33",
       "name": "Caldo de carne",
       "category": "Otros",
-      "image": "./src/assets/media/caldo.png"
+      "image": "http://localhost:5173/src/assets/media/caldo.png"
     },
     {
       "id": "34",
       "name": "Perejil",
       "category": "Otros",
-      "image": "./src/assets/media/especias.png"
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     },
     {
       "id": "35",
       "name": "Carne picada de ternera",
       "category": "🥩Carnes",
-      "image": "./src/assets/media/carne.png"
+      "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
       "id": "36",
       "name": "Solomillo de cerdo",
       "category": "🥩Carnes",
-      "image": "./src/assets/media/carne.png"
+      "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
       "id": "37",
       "name": "Whisky",
       "category": "Otros",
-      "image": "./src/assets/media/vino.png"
+      "image": "http://localhost:5173/src/assets/media/vino.png"
     },
     {
       "id": "38",
       "name": "Carne picada de cerdo",
       "category": "🥩Carnes",
-      "image": "./src/assets/media/carne.png"
+      "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
       "id": "39",
       "name": "Brócoli",
       "category": "🥬Carnes",
-      "image": "./src/assets/media/brocoli.png"
+      "image": "http://localhost:5173/src/assets/media/brocoli.png"
     },
     {
       "id": "40",
       "name": "Bacon",
       "category": "🥩Carnes",
-      "image": "./src/assets/media/bacon.png"
+      "image": "http://localhost:5173/src/assets/media/bacon.png"
     },
     {
       "id": "41",
       "name": "Queso",
       "category": "🥛Lácteos",
-      "image": "./src/assets/media/queso.png"
+      "image": "http://localhost:5173/src/assets/media/queso.png"
     }
   ],
   "categories": [
