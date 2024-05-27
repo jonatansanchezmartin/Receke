@@ -87,10 +87,13 @@ export default {
 
         <div class="recipes-container">
             <div v-for="recipe in recipesFiltered" :key="recipe.id" class="recipe-card">
+                <router-link :to="`/recipe-view/${recipe.id}`">
                 <button @click="selectRecipe(recipe)">
+                  
                     <img :src="recipe.image" :alt="`${recipe.title}`">
                     <h2>{{ recipe.title }}</h2>
                 </button>
+            </router-link>
             </div>
         </div>
 
