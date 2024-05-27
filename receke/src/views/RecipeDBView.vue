@@ -27,7 +27,7 @@ export default {
     
     <!-- Recipe title -->
     <div class="recipe-nav">
-        <button> <img src="./src/assets/img/back-arrow.png"> </button>
+        <button><router-link to="/"><img src="../assets/img/back-arrow.png"></router-link> </button>
         <h1>{{ recipeSelected.title }}</h1>
     </div>
 
