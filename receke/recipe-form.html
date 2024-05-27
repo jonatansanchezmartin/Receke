@@ -15,13 +15,32 @@
    
    <!-- Header logo & content -->
 
+
+   <div class="header-arrangement">
+
     <header class="header-logo">
-        <img src="./src/assets/img/Receké.png" alt="Logo" >
-        <h1>Contribuye con tu receta</h1>
-        <p>Aporta a la comunidad recetas<br>
-            fáciles con ingredientes sencillos</p>
+      <img src="./src/assets/img/Receke.png" alt="Logo" >
+      <h1>Recetas fáciles con 
+        <br>lo que tienes en la nevera</h1>
+      <p id="query-hide">Selecciona tus ingredientes</p>
     </header>
 
+    <div class="desktop-logo">
+      <img src="./src/assets/favicons/android-chrome-192x192.png"> 
+    </div>
+
+  </div>
+
+  <div class="recipe-nav">
+    <button> <img src="./src/assets/img/back-arrow.png"> </button>
+    <h1>Contribuye con tu receta</h1>
+    <p>Aporta a la comunidad recetas<br>
+        fáciles con ingredientes sencillos</p>
+</div>  
+
+
+
+<div class="recipe-form-content">
     
     <!-- Form Label & Input -->
 
@@ -40,7 +59,7 @@
 
   
       <!-- Filter buttons -->
-  
+    <div class="form-buttons-container">
       <div class="button-container">
         <button class="button-style">Todos</button>
         <button class="button-style">Frescos</button>
@@ -48,7 +67,7 @@
         <button class="button-style">Verduras</button>
         <button class="button-style">Frutas</button>
       </div>
-  
+    </div>
       <!-- Ingredient count cards -->
 
 
@@ -152,6 +171,8 @@
 
 
         <button class="send-button"> <h3> Enviar receta</h3> </button>
+
+</div>
 
 </div>
 <script type="module" src="/src/main.js"></script>
