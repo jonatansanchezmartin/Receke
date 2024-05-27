@@ -2,7 +2,7 @@
 import { defineStore } from 'pinia'
 
 const baseUrl = import.meta.env.VITE_APP_BACKEND_URL;
-console.log("Hola", baseUrl);
+//console.log("Hola", baseUrl);
 
 export const useRecipesStore = defineStore('recipesStore', {  //el default
   state: () => ({   //data de default
@@ -94,8 +94,9 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
   // }
 
   async filterRecipesByIngredients(recipes, selectedIngredients) {
-    console.log("esto es el array recipes", recipes); //test 1
-    console.log("esto es el array selectedIngredients", selectedIngredients); //test 2
+    console.log("inside filterRecipesByIngredients")
+    //console.log("esto es el array recipes", recipes);
+    //console.log("esto es el array selectedIngredients", selectedIngredients);
   
     let recipesFiltered = [];
     
@@ -109,22 +110,26 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
         }
       )
 
-      console.log(ingredientsFiltered)
+
     
       
     let matchCount = ingredientsFiltered.filter(ing => selectedIngredients.includes(ing)).length;
-      console.log("match", matchCount);
-      if (matchCount >= 1) { 
-        recipesFiltered.push({...recipe, count: matchCount});
+      //console.log("match", matchCount);
+      if(matchCount === ingredientsFiltered.length){
+        recipesFiltered.push({...recipe, count: matchCount, matchAll : true});
+      }
+      else if (matchCount >= 1) { 
+        recipesFiltered.push({...recipe, count: matchCount, matchAll : false});
       }
     });
+
+    recipesFiltered.sort((a, b) => b.count - a.count);
     
-    console.log(recipesFiltered);
   
     console.log("después de la función", recipesFiltered); //test 3
   
     this.recipesFiltered = recipesFiltered;
   
-    console.log("después de asignar", this.recipesFiltered); //test 3
+    //console.log("después de asignar", this.recipesFiltered); //test 3
   },
 }})

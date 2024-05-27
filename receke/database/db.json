@@ -421,7 +421,7 @@
           "quantity": "1 árbol"
         },
         {
-          "ingredient": "Patatas",
+          "ingredient": "Patata",
           "quantity": "3"
         },
         {
@@ -429,7 +429,7 @@
           "quantity": "1"
         },
         {
-          "ingredient": "Caldo de pollo",
+          "ingredient": "Caldo de ave",
           "quantity": "1 pastilla"
         },
         {
@@ -440,131 +440,6 @@
           "ingredient": "Queso",
           "quantity": "150 g"
         }
-      ]
-    },
-    {
-      "id": "4d1d",
-      "title": "test",
-      "instructions": [
-        "pasoDummy",
-        "1",
-        "2",
-        "3"
-      ],
-      "image": "imagen url",
-      "ingredients": [
-        {
-          "ingredient": "Patata",
-          "quantity": "2 kg"
-        },
-        {
-          "ingredient": "Huevo",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Leche",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Limón",
-          "quantity": ""
-        }
-      ]
-    },
-    {
-      "id": "9f80",
-      "title": "",
-      "instructions": [
-        "pasoDummy"
-      ],
-      "image": "",
-      "ingredients": [
-        {
-          "ingredient": "Patata",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Huevo",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Leche",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Canela",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Tomate",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Ajo",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Aceite de oliva",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Pan",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Sal",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Almendra",
-          "quantity": ""
-        }
-      ]
-    },
-    {
-      "id": "73de",
-      "title": "Nombre",
-      "instructions": [
-        "pasoDummy",
-        "Paso 1",
-        "Paso 2"
-      ],
-      "image": "http://localhost:5173/src/assets/media/brocoli.png",
-      "ingredients": [
-        {
-          "ingredient": "Patata",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Huevo",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Leche",
-          "quantity": ""
-        },
-        {
-          "ingredient": "Azúcar",
-          "quantity": "1 cucharada"
-        }
-      ]
-    },
-    {
-      "id": "48ff",
-      "title": "hjhj",
-      "instructions": [
-        "pasoDummy",
-        "fgfdgfd",
-        "gfdgfdg"
-      ],
-      "image": "hjh",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Patata",
-            "quantity": "ljjlj"
-          }
-        ]
       ]
     }
   ],

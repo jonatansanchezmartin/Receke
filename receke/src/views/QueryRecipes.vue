@@ -17,18 +17,20 @@ export default {
 },
     created() {
         this.test()
-        this.fetchRecipes()
+        this.fetchRecipes().then(() => {
+            this.filterRecipesByIngredients(this.recipes, this.selectedIngredients)
+        })
         //this.filterRecipesByIngredients(this.recipes,this.selectedIngredients)
     },
-    watch: {
-        recipes: {
-            handler() {
-                this.filterRecipesByIngredients(this.recipes,this.selectedIngredients)
-            },
-            immediate: true
-        },
+    // watch: {
+    //     recipes: {
+    //         handler() {
+    //             this.filterRecipesByIngredients(this.recipes,this.selectedIngredients)
+    //         },
+    //         immediate: true
+    //     },
         
-    },
+    // },
 
     methods: {
         // ...mapActions(useIngredientsStore,)
@@ -78,7 +80,7 @@ export default {
 
     <div class="query-nav">
         <button><router-link to="/"><img src="../assets/img/back-arrow.png"></router-link> </button>
-        <h1>Aqui tienes algunas sugerencias</h1>
+        <h1>Aquí tienes algunas sugerencias</h1>
     </div>
 
     <!-- Recipe cards -->
@@ -86,12 +88,15 @@ export default {
     <div class="recipes-container">
 
         <div class="recipes-container">
-            <div v-for="recipe in recipesFiltered" :key="recipe.id" class="recipe-card">
+            <div v-for="recipe in recipesFiltered" :key="recipe.id" class="recipe-card" :class="{ 'bg-green': recipe.matchAll === true }">
                 <router-link :to="`/recipe-view/${recipe.id}`">
                 <button @click="selectRecipe(recipe)">
                   
-                    <img :src="recipe.image" :alt="`${recipe.title}`">
+                    <img :src="recipe.image" :alt="`${recipe.title}`" width="50">
                     <h2>{{ recipe.title }}</h2>
+                    <p v-if="recipe.matchAll === true">Tienes todo</p>
+                    <p v-else-if="recipe.count === 1">Tienes {{ recipe.count }} ingrediente</p>
+                    <p v-else >Tienes {{ recipe.count }} ingredientes</p>
                 </button>
             </router-link>
             </div>
@@ -101,5 +106,8 @@ export default {
 
 </template>
 
-<styles>
-</styles>
+<style>
+    .bg-green {
+        background-color: green;
+    }
+</style>
