@@ -54,22 +54,14 @@ export default {
 </script>
 
 <template>
-  <div class="query-nav">
-    <button label="botón volver">
-      <router-link to="/"><img src="../assets/img/back-arrow.png" /></router-link>
-    </button>
-    <div>
-      <h1>Contribuye con tu receta TEST</h1>
-      <p>Aporta a la comunidad recetas fáciles con ingredientes sencillos</p>
-    </div>
-  </div>
-  <form @submit.prevent="createRecipe()">
-    <div class="form-block">
-      <div class="ingredients-title" for="recipe-name">Nombre de la receta</div>
+  
+  <form  @submit.prevent="createRecipe()">
+    <div class="form-block form-recipe-name">
+      <label class="ingredients-title" for="recipe-name">Nombre de la receta</label>
       <input id="recipe-name" v-model="recipeName" />
     </div>
-    <div class="form-block">
-      <div class="ingredients-title" for="recipe-name">Ingredientes básicos</div>
+    <div class="form-block form-recipe-name">
+      <label class="ingredients-title" for="recipe-name">Ingredientes básicos</label>
       <div class="cards-container">
         <ingredientCard
           v-for="ingredient in ingredients"
@@ -82,7 +74,7 @@ export default {
                 </div> -->
       </div>
     </div>
-    <div class="form-block recipe-steps-container">
+    <div class="form-block recipe-steps-container form-recipe-name">
       <label for="steps">Pasos</label>
 
       <ol>
@@ -94,8 +86,8 @@ export default {
         />
       </ol>
     </div>
-    <div class="form-block">
-      <div class="ingredients-title" for="recipe-img">Imagen de la receta</div>
+    <div class="form-block form-recipe-name">
+      <label class="ingredients-title" for="recipe-img">Imagen de la receta</label>
       <input id="recipe-img" v-model="recipeImage" />
     </div>
     <button
@@ -108,4 +100,10 @@ export default {
   </form>
 </template>
 
-<style></style>
+<style>
+    form .form-recipe-name input {
+        background-color: #FAFAFA!important;
+        border-radius: 10px;
+        border: 1px solid #EFEFEF;
+    }
+</style>

@@ -115,7 +115,6 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
     let matchCount = ingredientsFiltered.filter(ing => selectedIngredients.includes(ing)).length;
       console.log("match", matchCount);
       if (matchCount >= 1) { 
-        console.log("todos los ingredientes");
         recipesFiltered.push({...recipe, count: matchCount});
       }
     });

@@ -2,6 +2,7 @@
 import { defineStore } from 'pinia'
 
 const baseUrl = import.meta.env.VITE_APP_BACKEND_URL;
+console.log("Hola", baseUrl);
 
 export const useIngredientsStore = defineStore('IngredientsStore', {
   state: () => ({

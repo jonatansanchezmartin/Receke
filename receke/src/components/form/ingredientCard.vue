@@ -77,11 +77,11 @@ export default {
     .ingredient-card-wrapper.active .ingredient-quantity{
         pointer-events: none;
     }
-    input {
+    .form-recipe-name input {
         text-align: center;
     }
-    input.required {
-        border-color: red;
+    .form-recipe-name input.required {
+        border: 1px solid red;
     }
     form.form-recipe-name textarea::placeholder {
         text-align: left;
