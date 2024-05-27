@@ -56,10 +56,10 @@ export default {
 
         // },
 
-        async getImagePath(recipe) {
+        // async getImagePath(recipe) {
 
-            return `http://localhost:3001/recipes${recipe.image}`;
-        },
+        //     return `http://localhost:3001/recipes/${recipe.id}`;
+        // },
 
         selectRecipe(recipe) {
             this.$store.recipes.setSelectedRecipe(recipe);
@@ -88,7 +88,7 @@ export default {
         <div class="recipes-container">
             <div v-for="recipe in recipesFiltered" :key="recipe.id" class="recipe-card">
                 <button @click="selectRecipe(recipe)">
-                    <img :src="getImagePath(recipe)" alt="Imagen de la receta">
+                    <img :src="recipe.image" :alt="`${recipe.title}`">
                     <h2>{{ recipe.title }}</h2>
                 </button>
             </div>
