@@ -986,16 +986,13 @@ display: inline-flex;
 
 ************************************
 
-.cards-container {
-  width: 1200px;
+.recipe-form-cards-container {
+  width: 300px;
   height: 320px;
   overflow-x: auto;
   margin: 0 2.4vh;
   display: block;
-  text-align: left;
-  grid-template-columns: 1fr 1fr 1fr;
 }
-
 
 ***********************************
 
