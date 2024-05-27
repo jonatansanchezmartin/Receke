@@ -55,28 +55,56 @@ export const useRecipesStore = defineStore('RecipesStore', {
 
     //       console.log("despues de la funcion" ,recipesFiltered) //test 3
 
-    //            //test 3
+  // async filterRecipesByIngredients(recipes, selectedIngredients) {
+  //   const matchingRecipes = []
+  //   for (const recipe of recipes) {
+  //     for (const recipeIngredient of recipe.ingredients) {
+  //       for (const selectedIngredient of selectedIngredients) {
+  //         if (selectedIngredient === recipeIngredient.ingredient){
+  //           matchingRecipes.push(recipe)
+  //         }
+  //       }
+  //     }
+  //   }
+  //   console.log()
 
-    //         this.recipesFiltered = recipesFiltered
+  //   this.recipesFiltered = matchingRecipes
 
-    //         ;
-    //         console.log("despues de igualar" ,this.recipesFiltered) //test 3
+  // }
 
-    //     },
-    // }
+  async filterRecipesByIngredients(recipes, selectedIngredients) {
+    console.log("esto es el array recipes", recipes); //test 1
+    console.log("esto es el array selectedIngredients", selectedIngredients); //test 2
+  
+    let recipesFiltered = [];
+    
+    recipes.forEach(recipe => {
+      let ingredientsFiltered = [];
 
-    async filterRecipesByIngredients(recipes, selectedIngredients) {
-      const matchingRecipes = []
-      for (const recipe of recipes) {
-        for (const recipeIngredient of recipe.ingredients) {
-          for (const selectedIngredient of selectedIngredients) {
-            if (selectedIngredient === recipeIngredient.ingredient){
-              matchingRecipes.push(recipe)
-            }
-          }
+      
+      recipe.ingredients.forEach(
+        objIng => {
+          ingredientsFiltered.push(objIng.ingredient)
         }
+      )
+
+      console.log(ingredientsFiltered)
+    
+      
+    let matchCount = ingredientsFiltered.filter(ing => selectedIngredients.includes(ing)).length;
+      console.log("match", matchCount);
+      if (matchCount >= 1) { 
+        console.log("todos los ingredientes");
+        recipesFiltered.push({...recipe, count: matchCount});
       }
-      console.log(matchingRecipes)
-    }
-  }
-})
+    });
+    
+    console.log(recipesFiltered);
+  
+    console.log("después de la función", recipesFiltered); //test 3
+  
+    this.recipesFiltered = recipesFiltered;
+  
+    console.log("después de asignar", this.recipesFiltered); //test 3
+  },
+}})
