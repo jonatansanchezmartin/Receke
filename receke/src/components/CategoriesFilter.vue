@@ -1,3 +1,4 @@
+
 <script>
 import { mapState, mapActions } from "pinia";
 import { useIngredientsStore } from '@/stores/IngredientsStore'
