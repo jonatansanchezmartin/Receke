@@ -20,13 +20,13 @@ export const useIngredientsStore = defineStore('IngredientsStore', {
       let categories = await response.json()
       this.categories = categories
     },
-    toggleIngredient(id) {
-      if (this.selectedIngredients.includes(id)) {
+    toggleIngredient(name) {
+      if (this.selectedIngredients.includes(name)) {
         this.selectedIngredients = this.selectedIngredients.filter(
-          (ingredient) => ingredient !== id
+          (ingredient) => ingredient !== name
         )
       } else {
-        this.selectedIngredients.push(id)
+        this.selectedIngredients.push(name)
       }
     },
     filterIngredients(category = 'all') {

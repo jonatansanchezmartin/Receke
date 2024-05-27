@@ -22,13 +22,9 @@ export default {
 
 <template>
     
+     
 
-        <!-- Header logo, content & navigation -->
-
-    <header class="header-logo">
-        <img src="./src/assets/img/Receké.png" alt="Logo">
-    </header>
-
+    
     <!-- Recipe title -->
     <div class="recipe-nav">
         <button> <img src="./src/assets/img/back-arrow.png"> </button>
