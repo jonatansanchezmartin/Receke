@@ -71,7 +71,7 @@ export const useRecipesStore = defineStore('RecipesStore', {
         for (const recipeIngredient of recipe.ingredients) {
           for (const selectedIngredient of selectedIngredients) {
             if (selectedIngredient === recipeIngredient.ingredient){
-              matchingRecipes.push(recipe.title)
+              matchingRecipes.push(recipe)
             }
           }
         }
