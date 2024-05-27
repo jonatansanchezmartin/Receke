@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-    <!DOCTYPE html>
+    <!-- <!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -33,13 +33,13 @@ export default {
 
 
     <body>
-    <div id="app">
+    <div id="app"> -->
 
         <!-- Header logo, content & navigation -->
-
+<!-- 
     <header class="header-logo">
         <img src="./src/assets/img/Receké.png" alt="Logo">
-    </header>
+    </header> -->
 
     <!-- Recipe title -->
     <div class="recipe-nav">
