@@ -453,7 +453,6 @@
       ],
       "image": "imagen url",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": "2 kg"
@@ -470,7 +469,6 @@
             "ingredient": "Limón",
             "quantity": ""
           }
-        ]
       ]
     },
     {
@@ -481,7 +479,6 @@
       ],
       "image": "",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": ""
@@ -522,7 +519,6 @@
             "ingredient": "Almendra",
             "quantity": ""
           }
-        ]
       ]
     },
     {
@@ -535,7 +531,6 @@
       ],
       "image": "http://localhost:5173/src/assets/media/brocoli.png",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": ""
@@ -552,180 +547,9 @@
             "ingredient": "Azúcar",
             "quantity": "1 cucharada"
           }
-        ]
-      ]
-    },
-    {
-      "id": "65e5",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "Paso 1",
-        "2",
-        "3"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "pasta",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Caldo de carne",
-            "quantity": "1l"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "163a",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "1"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Carne picada de cerdo",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "4e8e",
-      "title": "",
-      "instructions": [
-        "pasoDummy"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Patata",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Limón",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "24a6",
-      "title": "gfgdfg",
-      "instructions": [
-        "pasoDummy",
-        "Paso 1",
-        "Paso 2",
-        "paso 3"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Patata",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Huevo",
-            "quantity": "1"
-          }
-        ]
-      ]
-    },
-    {
-      "id": "4a08",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "paso 1"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Patata",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "a600",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "paso 1",
-        "paso 2"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Whisky",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "ec6a",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "paao 1",
-        "paso 2"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Brócoli",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "4b79",
-      "title": "",
-      "instructions": [
-        "pasoDummy",
-        "fgfg",
-        "gfdgdf",
-        "gfdgdf"
-      ],
-      "image": "",
-      "ingredients": [
-        [
-          {
-            "ingredient": "Bacon",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Queso",
-            "quantity": ""
-          }
-        ]
-      ]
-    },
-    {
-      "id": "7a45",
-      "title": "",
-      "instructions": [
-        "pasoDummy"
-      ],
-      "image": "",
-      "ingredients": [
-        []
       ]
     }
-  ],
+  ] ,
   "ingredients": [
     {
       "id": "1",
