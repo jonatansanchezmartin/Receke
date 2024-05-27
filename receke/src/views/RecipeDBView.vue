@@ -21,7 +21,7 @@ export default {
 </script>
 
 <template>
-    <!DOCTYPE html>
+    <!-- <!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@ export default {
         <ol>
             <li v-for="(step, index) in recipeSelected.instructions" :key="index"> {{ step }} </li>
         </ol>
-    </div>
+    </div> -->
 
 </template>
 <style></style>
