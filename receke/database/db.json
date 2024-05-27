@@ -453,22 +453,22 @@
       ],
       "image": "imagen url",
       "ingredients": [
-          {
-            "ingredient": "Patata",
-            "quantity": "2 kg"
-          },
-          {
-            "ingredient": "Huevo",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Leche",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Limón",
-            "quantity": ""
-          }
+        {
+          "ingredient": "Patata",
+          "quantity": "2 kg"
+        },
+        {
+          "ingredient": "Huevo",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Leche",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Limón",
+          "quantity": ""
+        }
       ]
     },
     {
@@ -479,46 +479,46 @@
       ],
       "image": "",
       "ingredients": [
-          {
-            "ingredient": "Patata",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Huevo",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Leche",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Canela",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Tomate",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Ajo",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Aceite de oliva",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Pan",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Sal",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Almendra",
-            "quantity": ""
-          }
+        {
+          "ingredient": "Patata",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Huevo",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Leche",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Canela",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Tomate",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Ajo",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Pan",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Sal",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Almendra",
+          "quantity": ""
+        }
       ]
     },
     {
@@ -531,25 +531,43 @@
       ],
       "image": "http://localhost:5173/src/assets/media/brocoli.png",
       "ingredients": [
+        {
+          "ingredient": "Patata",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Huevo",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Leche",
+          "quantity": ""
+        },
+        {
+          "ingredient": "Azúcar",
+          "quantity": "1 cucharada"
+        }
+      ]
+    },
+    {
+      "id": "48ff",
+      "title": "hjhj",
+      "instructions": [
+        "pasoDummy",
+        "fgfdgfd",
+        "gfdgfdg"
+      ],
+      "image": "hjh",
+      "ingredients": [
+        [
           {
             "ingredient": "Patata",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Huevo",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Leche",
-            "quantity": ""
-          },
-          {
-            "ingredient": "Azúcar",
-            "quantity": "1 cucharada"
+            "quantity": "ljjlj"
           }
+        ]
       ]
     }
-  ] ,
+  ],
   "ingredients": [
     {
       "id": "1",
