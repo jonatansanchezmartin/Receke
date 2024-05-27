@@ -453,7 +453,6 @@
       ],
       "image": "imagen url",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": "2 kg"
@@ -470,7 +469,6 @@
             "ingredient": "Limón",
             "quantity": ""
           }
-        ]
       ]
     },
     {
@@ -481,7 +479,6 @@
       ],
       "image": "",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": ""
@@ -522,7 +519,6 @@
             "ingredient": "Almendra",
             "quantity": ""
           }
-        ]
       ]
     },
     {
@@ -535,7 +531,6 @@
       ],
       "image": "http://localhost:5173/src/assets/media/brocoli.png",
       "ingredients": [
-        [
           {
             "ingredient": "Patata",
             "quantity": ""
@@ -552,7 +547,6 @@
             "ingredient": "Azúcar",
             "quantity": "1 cucharada"
           }
-        ]
       ]
     }
   ] ,

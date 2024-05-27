@@ -8,13 +8,13 @@ export default {
         ...mapState(useIngredientsStore, ['ingredients', 'categories', 'selectedIngredients']),
         ...mapState(useRecipesStore, ['recipes', 'selectedRecipe', 'recipesFiltered'])
     },
-
+    
 
     data() {
         return {
             //recipesFiltered: []
-        }
-    },
+    }
+},
     created() {
         this.test()
         this.fetchRecipes()
@@ -36,10 +36,10 @@ export default {
 
         //testeo de que funciona
         async test() {
-            console.log("estoy aqui")
-            console.log("ingredientes Seleccionados" , this.selectedIngredients)
-            console.log("todas las recetas" , this.recipes)
-            console.log("resultado del filtrado" , this.recipesFiltered)
+            // console.log("estoy aqui")
+            // console.log("ingredientes Seleccionados" , this.selectedIngredients)
+            // console.log("todas las recetas" , this.recipes)
+            // console.log("resultado del filtrado" , this.recipesFiltered)
         },
 
 
@@ -65,8 +65,8 @@ export default {
             this.$store.recipes.setSelectedRecipe(recipe);
 
 
-
-        }
+       
+    } 
 
     }
 }

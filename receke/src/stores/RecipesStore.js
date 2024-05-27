@@ -29,12 +29,11 @@ export const useRecipesStore = defineStore('RecipesStore', {
 
     //obtiene un listado de recetas de la base de datos
     async fetchRecipes() {
-      let response = await fetch('http://localhost:3001/recipes',{
+      let response = await fetch('http://localhost:3001/recipes', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
         }
-      
       })
       let recipes = await response.json()
       this.recipes = recipes
@@ -44,27 +43,17 @@ export const useRecipesStore = defineStore('RecipesStore', {
       this.selectedRecipe = recipe
     },
 
-  //   async filterRecipesByIngredients(recipes, selectedIngredients) {
-  //     console.log("recipes", recipes) //test 1
-  //     console.log("selectedIngredients", selectedIngredients) //test 2
+    //   async filterRecipesByIngredients(recipes, selectedIngredients) {
+    //     console.log("recipes", recipes) //test 1
+    //     console.log("selectedIngredients", selectedIngredients) //test 2
 
-  //         let recipesFiltered =
-  //         recipes.filter(recipe => {
-  //           console.log("antes de función recipe.ingredient", recipe["ingredients"])
-  //           recipe.ingredients == (for ingredient of selectedIngredients)
-  //         })
-        
-  //       console.log("despues de la funcion" ,recipesFiltered) //test 3 
-            
-  //            //test 3  
-                  
-  //         this.recipesFiltered = recipesFiltered
-              
-  //         ;
-  //         console.log("despues de igualar" ,this.recipesFiltered) //test 3 
+    //         let recipesFiltered =
+    //         recipes.filter(recipe => {
+    //           console.log("antes de función recipe.ingredient", recipe["ingredients"])
+    //           recipe.ingredients == (for ingredient of selectedIngredients)
+    //         })
 
-  //     },
-  // }
+    //       console.log("despues de la funcion" ,recipesFiltered) //test 3
 
   async filterRecipesByIngredients(recipes, selectedIngredients) {
     const matchingRecipes = []
