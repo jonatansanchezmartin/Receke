@@ -2,7 +2,7 @@
 import CategoriesFilter from "../components/CategoriesFilter.vue";
 import IngredientsCards from "../components/IngredientsCards.vue";
 
-import { mapState,} from "pinia";
+import { mapActions, mapState,} from "pinia";
 import { useIngredientsStore } from '@/stores/IngredientsStore'
 import { useRecipesStore } from '@/stores/RecipesStore'
 
@@ -17,7 +17,7 @@ export default {
         IngredientsCards
     },
     methods: {
-        
+        ...mapActions(useRecipesStore, ['fetchRecipes']),
         filterIngredients(category) {
             if (category === 'all') {
                 this.ingredientsToShow = this.ingredients
@@ -39,7 +39,12 @@ export default {
             },
             immediate: true
         }
-    }
+    },
+
+    created() {
+        this.fetchRecipes()
+    },
+
 }
 </script>
 

@@ -18,33 +18,43 @@ export default {
     created() {
         this.test()
         this.fetchRecipes()
+        //this.filterRecipesByIngredients(this.recipes,this.selectedIngredients)
+    },
+    watch: {
+        recipes: {
+            handler() {
+                this.filterRecipesByIngredients(this.recipes,this.selectedIngredients)
+            },
+            immediate: true
+        },
         
     },
+
     methods: {
         // ...mapActions(useIngredientsStore,)
-        ...mapActions(useRecipesStore, ['fetchRecipes']),
+        ...mapActions(useRecipesStore, ['fetchRecipes', 'filterRecipesByIngredients']),
 
         //testeo de que funciona
         async test() {
             console.log("estoy aqui")
-            console.log("ingredientes Seleccionados" + this.selectedIngredients)
-            console.log("todas las recetas" + this.recipes)
-            console.log("resultado del filtrado" + this.recipesFiltered)
+            console.log("ingredientes Seleccionados" , this.selectedIngredients)
+            console.log("todas las recetas" , this.recipes)
+            console.log("resultado del filtrado" , this.recipesFiltered)
         },
 
 
 
         //Función para filtrar recetas por ingredientes seleccionados
-        async filterRecipesByIngredients(recipes, selectedIngredients) {
-            let recipesFiltered =
-            recipes.filter(recipe =>
-                recipe.ingredients.some(ing =>
-                    selectedIngredients.includes(ing.ingredient)
-                )
-            );
-            console.log(recipesFiltered) //test 1 
+        // async filterRecipesByIngredients(recipes, selectedIngredients) {
+        //     let recipesFiltered =
+        //     recipes.filter(recipe =>
+        //         recipe.ingredients.some(ing =>
+        //             selectedIngredients.includes(ing.ingredient)
+        //         )
+        //     );
+        //     console.log(recipesFiltered) //test 1 
 
-        },
+        // },
 
         async getImagePath(recipe) {
 
