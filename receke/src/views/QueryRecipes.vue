@@ -8,13 +8,13 @@ export default {
         ...mapState(useIngredientsStore, ['ingredients', 'categories', 'selectedIngredients']),
         ...mapState(useRecipesStore, ['recipes', 'selectedRecipe', 'recipesFiltered'])
     },
-
+    
 
     data() {
         return {
             //recipesFiltered: []
-        }
-    },
+    }
+},
     created() {
         this.test()
         this.fetchRecipes()
@@ -65,8 +65,8 @@ export default {
             this.$store.recipes.setSelectedRecipe(recipe);
 
 
-
-        }
+       
+    } 
 
     }
 }
