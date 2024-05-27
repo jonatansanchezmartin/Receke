@@ -16,11 +16,11 @@ export default {
     <div class="cards-container">
 
         <button 
-            @click='toggleIngredient(ingredient.id)'
+            @click='toggleIngredient(ingredient.name)'
             class="ingredient-card"
             v-for="ingredient in ingredientsToShow"
             :key="ingredient.id"
-            :class="{ 'active': selectedIngredients.includes(ingredient.id) }"
+            :class="{ 'active': selectedIngredients.includes(ingredient.name) }"
             >
             <img :src="ingredient.image" alt="ingredient.name">
             <h3>{{ ingredient.name }}</h3>
