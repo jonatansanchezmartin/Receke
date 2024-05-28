@@ -223,8 +223,13 @@ overflow: hidden;
 /* Recipes container style */
 
 .recipes-container {
-  margin: 2.4vh auto; 
-  display: inline-block;
+  margin: 1vh;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: left;
+  align-items: flex-start;
 }
 
       /*** Removes PNG button default styles ***/
@@ -239,16 +244,24 @@ overflow: hidden;
 
 .recipe-card {
   height: 100px;
-  width: 160px;
+  width: 140px;
+  margin: 10px;
   background-color: #ffd3332f;
 }
 
+.image-container img {
+  width: 200px;
+  /* height: 100px; */
+  margin: 10px;
+  object-fit: cover;
+}
+
 .recipes-container h2{
-  padding: 2px 0;
+  padding: 4px;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   color:var(--receke-black);
-  
+
 }
 
 .recipes-container p{
