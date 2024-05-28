@@ -53,8 +53,6 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
         },
         body: JSON.stringify(newRecipe)
       })
-
-      window.location.reload()
     },
 
     //obtiene un listado de recetas de la base de datos
