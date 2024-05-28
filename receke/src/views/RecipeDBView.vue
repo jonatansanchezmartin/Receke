@@ -7,10 +7,6 @@ import NavComponent from '@/components/NavComponent.vue';
 export default {
     methods: {
         ...mapActions(useRecipesStore, ['getRecipeById']),
-        getIngredientImage(ingredient) {
-            const ingredientMatch = this.ingredients.find((item) => item.name === ingredient)
-            return ingredientMatch.image
-        }
     },
     computed: {
         ...mapState(useRecipesStore, ['recipeSelected']),
@@ -28,7 +24,6 @@ export default {
 <template>
 
     <NavComponent link="/query-recipes" :title="recipeSelected.title" />
-
     <div class="recipe-layout-alignment">
         <!-- Recipe image -->
         <div class="recipe-image">
@@ -40,7 +35,7 @@ export default {
             <!-- Ingredients list -->
             <div class="ingredients-list" v-for="(item, index) in recipeSelected.ingredients" :key="index">
                 <div>
-                    <img :src="getIngredientImage(item.ingredient)">
+                    <img :src="item.image">
                     <h4> {{ item.ingredient }} {{ item.quantity }}</h4>
                 </div>
             </div>

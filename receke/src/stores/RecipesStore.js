@@ -1,6 +1,7 @@
 //import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
-
+import { useIngredientsStore } from '@/stores/IngredientsStore'
+import { mapState } from 'pinia'
 const baseUrl = import.meta.env.VITE_APP_BACKEND_URL
 //console.log("Hola", baseUrl);
 
@@ -9,9 +10,7 @@ export const useRecipesStore = defineStore('recipesStore', {
   state: () => ({
     //data de default
     recipes: [],
-
     recipeSelected: {}
-
     // recipeName: '',
 
     // selectedIngredients: [],
@@ -24,7 +23,9 @@ export const useRecipesStore = defineStore('recipesStore', {
 
     //ingredients : parseInt(localStorage.getItem('ingredients') || []), //obtiene los ingredientes guardados en LocalStorage en futuro quitamos esto cuando pongamos usuarios
   }),
-  getters: {},
+  getters: {
+    ...mapState(useIngredientsStore, ['ingredients'])
+  },
   actions: {
     //methods de default
 
@@ -37,7 +38,30 @@ export const useRecipesStore = defineStore('recipesStore', {
     async getRecipeById(id) {
       let response = await fetch(`${baseUrl}/recipes/${id}`)
       let recipe = await response.json()
-      this.recipeSelected = recipe
+
+      //Get the image of the ingredient from the ingredients store
+      const recipeIngredientsWithImage = await Promise.all(
+        recipe.ingredients.map(async (ingredient) => {
+          return {
+            ...ingredient,
+            image: await this.getIngredientImage(ingredient.ingredient)
+          }
+        })
+      )
+
+      recipe.ingredients = recipeIngredientsWithImage
+      console.log(recipe.ingredients)
+
+      this.recipeSelected = await recipe
+    },
+
+    async getIngredientImage(ingredient) {
+      try {
+        const ingredientMatch = await this.ingredients.find((item) => item.name === ingredient)
+        return ingredientMatch.image
+      } catch (error) {
+        console.error(error)
+      }
     },
 
     async postRecipe(newRecipe) {

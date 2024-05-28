@@ -130,11 +130,11 @@
           "quantity": "1 chorro"
         },
         {
-          "ingredient": "Almendras",
+          "ingredient": "Almendra",
           "quantity": "1 puñado"
         },
         {
-          "ingredient": "Avellanas",
+          "ingredient": "Avellana",
           "quantity": "1 puñado"
         }
       ]
@@ -223,7 +223,7 @@
     },
     {
       "id": "7",
-      "title": "pasta con setas y calabacín",
+      "title": "Pasta con setas y calabacín",
       "instructions": [
         "Cocer la pasta en agua ligeramente salada el tiempo que indique el fabricante y escurrirla muy bien.",
         "Despuntar el calabacín, lavarlo y cortarlo en medias lunas. Lavar los tomatitos. Limpiar los champiñones, lavarlos, secarlos y cortarlos en láminas. Mezclar todas las especias.",
@@ -614,7 +614,7 @@
     },
     {
       "id": "29",
-      "name": "pasta",
+      "name": "Pasta",
       "category": "🌾Granos",
       "image": "http://localhost:5173/src/assets/media/pasta.png"
     },
@@ -650,7 +650,7 @@
     },
     {
       "id": "35",
-      "name": "Ternera picada",
+      "name": "Carne picada de ternera",
       "category": "🥩Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
@@ -668,7 +668,7 @@
     },
     {
       "id": "38",
-      "name": "Cerdo picado",
+      "name": "Carne picada de cerdo",
       "category": "🥩Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
@@ -689,6 +689,12 @@
       "name": "Queso",
       "category": "🥛Lácteos",
       "image": "http://localhost:5173/src/assets/media/queso.png"
+    },
+    {
+      "id": "42",
+      "name": "Albahaca",
+      "category": "Otros",
+      "image": "http://localhost:5173/src/assets/media/especias.png"
     }
   ],
   "categories": [
