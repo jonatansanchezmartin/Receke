@@ -2,6 +2,8 @@
 import { mapState, mapActions } from "pinia";
 import { useIngredientsStore } from '@/stores/IngredientsStore';
 import { useRecipesStore } from '@/stores/RecipesStore';
+import NavComponent from '@/components/NavComponent.vue';
+
 export default {
     methods: {
         ...mapActions(useRecipesStore, ['getRecipeById']),
@@ -16,20 +18,16 @@ export default {
     },
     mounted() {
         this.getRecipeById(this.$route.params.id)
+    },
+    components:{
+        NavComponent
     }
 }
 </script>
 
 <template>
     
-     
-
-    
-    <!-- Recipe title -->
-    <div class="recipe-nav">
-        <button><router-link to="/query-recipes"><img src="../assets/img/back-arrow.png"></router-link> </button>
-        <h1>{{ recipeSelected.title }}</h1>
-    </div>
+     <NavComponent link="/query-recipes" :title="recipeSelected.title"/>
 
     <!-- Recipe image -->
     <div class="recipe-image"> <img :src="recipeSelected.image" width="250"> </div>
