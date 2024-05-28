@@ -7,6 +7,7 @@ import NavComponent from '@/components/NavComponent.vue';
 export default {
     data() {
         return {
+            starsSelected: '',
             stars: '',
         }
     },
@@ -15,6 +16,9 @@ export default {
         getIngredientImage(ingredient) {
             const ingredientMatch = this.ingredients.find((item) => item.name === ingredient)
             return ingredientMatch.image
+        },
+        checkStars(star){
+            this.starsSelected = star;
         },
         selectStars(star) {
             // Paso el valor de la estrella seleccionada
@@ -99,18 +103,19 @@ export default {
                 <p></p>
             </div>
 
-            
+
             <div class="stars">
                 <h3>Valora esta receta</h3>
-                <div class="stars-container">
-                    <div class="star" 
+                <div class="stars-container" :class="starsSelected === 1? 'selected1' : starsSelected === 2? 'selected2' : starsSelected === 3? 'selected3' : starsSelected === 4? 'selected4' : starsSelected === 5? 'selected5': ''">
+                    <div class="star"  
                         v-for="star in 5" 
                         :key="star" 
-                        :class="{ selected: stars === star }"
-                        @click="selectStars(star)">
+                        
+                        @click="checkStars(star)">
                         <!-- <p>{{ star }}</p> -->
                     </div>
                 </div>
+                <button class="send-button" :class="{'disabled': starsSelected === ''}" @click="selectStars(this.starsSelected)">Enviar valoración</button>
             </div>
         </div>
     </div>
@@ -126,6 +131,32 @@ export default {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.stars .stars-container.selected1 .star:nth-child(1) {
+    opacity: 1;
+}
+
+.stars .stars-container.selected2 .star:nth-child(1),
+.stars .stars-container.selected2 .star:nth-child(2) {
+    opacity: 1;
+}
+
+.stars .stars-container.selected3 .star:nth-child(1),
+.stars .stars-container.selected3 .star:nth-child(2),
+.stars .stars-container.selected3 .star:nth-child(3) {
+    opacity: 1;
+}
+
+.stars .stars-container.selected4 .star:nth-child(1),
+.stars .stars-container.selected4 .star:nth-child(2),
+.stars .stars-container.selected4 .star:nth-child(3),
+.stars .stars-container.selected4 .star:nth-child(4) {
+    opacity: 1;
+}
+
+.stars .stars-container.selected5 .star {
+    opacity: 1;
 }
 
 .stars .stars-container .star {
