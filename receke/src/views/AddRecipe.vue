@@ -39,11 +39,12 @@ export default {
     async createRecipe(recipeName, steps, selectedIngredients, recipeImage) {
       console.log(recipeName, steps, selectedIngredients, recipeImage)
 
+      steps.shift();
       const newRecipe = {
         title: recipeName,
         instructions: steps,
         image: recipeImage,
-        ingredients: [selectedIngredients]
+        ingredients: selectedIngredients
       }
 
       console.log(newRecipe)
