@@ -11,7 +11,7 @@ export default {
 <template>
     <div class="recipe-nav">
         <router-link :to="link">
-            <button><img src="../assets/img/back-arrow.png" /></button>
+            <button><img src="../assets/img/back-arrow.png" alt="flecha" /></button>
         </router-link>
         <h1>{{ title }}</h1>
     </div>
