@@ -7,7 +7,7 @@ import NavComponent from '@/components/NavComponent.vue'
 export default {
     computed: {
         ...mapState(useIngredientsStore, ['ingredients', 'categories', 'selectedIngredients']),
-        ...mapState(useRecipesStore, ['recipes', 'selectedRecipe', 'recipesFiltered'])
+        ...mapState(useRecipesStore, ['recipes', 'recipesFiltered'])
     },
 
 
@@ -64,12 +64,9 @@ export default {
         //     return `http://localhost:3001/recipes/${recipe.id}`;
         // },
 
-        selectRecipe(recipe) {
-            this.$store.recipes.setSelectedRecipe(recipe);
-
-
-
-        }
+        // selectRecipe(recipe) {
+        //     this.$store.recipes.setSelectedRecipe(recipe);
+        // }
 
     },
 
@@ -101,7 +98,7 @@ export default {
 
             <router-link :to="`/recipe-view/${recipe.id}`">
 
-               <div :class="{ 'bg-green': recipe.matchAll === true }"  @click="selectRecipe(recipe)">
+               <div :class="{ 'bg-green': recipe.matchAll === true }">
                     <div class="image-container"  > 
                     <img :src="recipe.image" :alt="`${recipe.title}`" >
                     </div>
