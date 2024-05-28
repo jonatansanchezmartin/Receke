@@ -36,7 +36,15 @@ export default {
             this.editRecipe(id, edited)
         },
         showEvaluation(){
-            console.log(this.recipeSelected.evaluation)
+            console.log(this.recipeSelected.evaluation);
+            const evaluations = this.recipeSelected.evaluation;
+            if (evaluations.length === 0) {
+                return 0;
+            }
+            const sum = evaluations.reduce((total, num) => total + num, 0);
+            console.log(sum);
+            const final = (sum / evaluations.length).toFixed(2);
+            console.log(final);
         }
     },
     computed: {
@@ -84,10 +92,14 @@ export default {
                 </ol>
             </div>
 
+            
+
+            <div @click="showEvaluation()">Mostrar evaluacion</div>
             <div class="evaluation">
                 <p></p>
             </div>
 
+            
             <div class="stars">
                 <h3>Valora esta receta</h3>
                 <div class="stars-container">
@@ -117,12 +129,17 @@ export default {
 }
 
 .stars .stars-container .star {
+    opacity: 0.5;
     width: 30px;
     aspect-ratio: 1/1;
     height: 30px;
     background-position: center center;
     background-size: contain;;
     background-image: url('data:image/svg+xml,<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.2647 0L47.4485 47.4485H0L39.5404 79.0809L23.7243 126.529L63.2647 94.8971L102.805 126.529L86.989 79.0809L126.529 47.4485H79.0809L63.2647 0Z" fill="%23DC8A0B"/></svg>');
+}
+
+.stars .stars-container .star:hover {
+    opacity: 1;
 }
 
 
