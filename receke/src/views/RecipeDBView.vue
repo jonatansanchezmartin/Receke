@@ -50,9 +50,7 @@ export default {
         showEvaluation(){
             console.log(this.recipeSelected.evaluation);
             const evaluations = this.recipeSelected.evaluation;
-            if (evaluations.length === 0) {
-                return 0;
-            }
+            
             const sum = evaluations.reduce((total, num) => total + num, 0);
             this.totalNumEvaluation = evaluations.length;
             
@@ -65,7 +63,9 @@ export default {
         ...mapState(useIngredientsStore, ['ingredients'])
     },
     mounted() {
-        this.getRecipeById(this.$route.params.id)
+        this.getRecipeById(this.$route.params.id).then(()=> {
+            this.showEvaluation();
+        })
         
     },
     components: {
@@ -107,7 +107,7 @@ export default {
 
             
 
-            <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button>
+            <!-- <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button> -->
             <div class="evaluation" v-if="this.mediumEvaluation !== ''">
                 <div class="cal">
                     <p>{{ this.mediumEvaluation }}</p><span>/5</span>
