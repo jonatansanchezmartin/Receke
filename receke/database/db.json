@@ -542,6 +542,29 @@
           "quantity": "a"
         }
       ]
+    },
+    {
+      "id": "d24b",
+      "title": "AAA",
+      "instructions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "image": "IMAGEN",
+      "ingredients": [
+        {
+          "ingredient": "Patata",
+          "quantity": "A"
+        }
+      ]
+    },
+    {
+      "id": "e0a0",
+      "title": "",
+      "instructions": [],
+      "image": "",
+      "ingredients": []
     }
   ],
   "ingredients": [

@@ -25,7 +25,8 @@ export default {
       steps: ['pasoDummy'],
       recipeImage: '',
 
-      isActive: false
+      isActive: false,
+      isDisabled: true,
     }
   },
   created() {},
@@ -49,6 +50,8 @@ export default {
 
       console.log(newRecipe)
       this.postRecipe(newRecipe)
+
+      
     }
   }
 }
@@ -59,7 +62,7 @@ export default {
   <form  @submit.prevent="createRecipe()">
     <div class="form-block form-recipe-name">
       <label class="ingredients-title" for="recipe-name">Nombre de la receta</label>
-      <input id="recipe-name" v-model="recipeName" />
+      <input id="recipe-name"  v-model="recipeName" />
     </div>
     <div class="form-block form-recipe-name">
       <label class="ingredients-title" for="recipe-name">Ingredientes básicos</label>
@@ -91,7 +94,8 @@ export default {
       <label class="ingredients-title" for="recipe-img">Imagen de la receta</label>
       <input id="recipe-img" v-model="recipeImage" />
     </div>
-    <button
+    
+    <button :class="{ 'disabled' : isDisabled }"
       class="send-button"
       type="button"
       @click="createRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)"
@@ -106,5 +110,8 @@ export default {
         background-color: #FAFAFA!important;
         border-radius: 10px;
         border: 1px solid #EFEFEF;
+    }
+    form button.send-button.disabled {
+      background-color: grey;
     }
 </style>
