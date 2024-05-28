@@ -346,11 +346,11 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Albondigas_La_Nacional.jpg",
       "ingredients": [
         {
-          "ingredient": "Carne picada de ternera",
+          "ingredient": "Ternera picada",
           "quantity": "500 g"
         },
         {
-          "ingredient": "Carne picada de cerdo",
+          "ingredient": "Cerdo picado",
           "quantity": "100 g"
         },
         {
@@ -650,7 +650,7 @@
     },
     {
       "id": "35",
-      "name": "Carne picada de ternera",
+      "name": "Ternera picada",
       "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
@@ -668,7 +668,7 @@
     },
     {
       "id": "38",
-      "name": "Carne picada de cerdo",
+      "name": "Cerdo picado",
       "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
