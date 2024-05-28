@@ -146,7 +146,7 @@ header p {
 .fixed-menu {
   display: block;
   text-align: center;
-  position: fixed;
+  position: sticky;
   height: 140px;
   bottom: 0%;
   right: 0%; 
@@ -679,6 +679,7 @@ header p {
   position: relative;
   bottom: 0%;
   right: 0%; 
+  background: none;
 }
 
 .search-button {
