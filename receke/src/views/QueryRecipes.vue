@@ -2,6 +2,7 @@
 import { mapState, mapActions } from 'pinia';
 import { useIngredientsStore } from '@/stores/IngredientsStore.js'
 import { useRecipesStore } from '@/stores/RecipesStore';
+import NavComponent from '@/components/NavComponent.vue'
 
 export default {
     computed: {
@@ -70,6 +71,10 @@ export default {
 
         }
 
+    },
+
+    components: {
+        NavComponent
     }
 }
 
@@ -77,12 +82,12 @@ export default {
 </script>
 
 <template>
-
-
+    <NavComponent link="/" title="Explora estas sugerencias" />
+<!-- 
     <div class="query-nav">
         <button><router-link to="/"><img src="../assets/img/back-arrow.png"></router-link> </button>
         <h1>¡Manos en la masa!</h1>
-    </div>
+    </div> -->
     <!-- Recipe cards -->
 
     <div class="recipes-container">
@@ -92,16 +97,16 @@ export default {
         v-for="recipe in recipesFiltered" 
         :key="recipe.id"
         
-        @click="selectRecipe(recipe)">
+        >
 
             <router-link :to="`/recipe-view/${recipe.id}`">
 
-               <div :class="{ 'bg-green': recipe.matchAll === true }">
+               <div :class="{ 'bg-green': recipe.matchAll === true }"  @click="selectRecipe(recipe)">
                     <div class="image-container"  > 
                     <img :src="recipe.image" :alt="`${recipe.title}`" >
                     </div>
 
-                    <h3 style="color:var(--receke-black)"  >{{ recipe.title }}</h3>
+                    <h2 style="color:var(--receke-black); font-family: 'Roboto'"   >{{ recipe.title }}</h2>
                     <p v-if="recipe.matchAll === true">Tienes todos los Ingredientes</p>
                     <p v-else-if="recipe.count === 1">Tienes {{ recipe.count }} ingrediente</p>
                     <p v-else>Tienes {{ recipe.count }} ingredientes</p>
