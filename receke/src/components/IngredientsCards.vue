@@ -25,7 +25,4 @@ export default {
     </div>
 </template>
 <style>
-.ingredient-card.active {
-    border: 1px solid green;
-}
 </style>
