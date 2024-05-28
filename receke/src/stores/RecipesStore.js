@@ -50,7 +50,6 @@ export const useRecipesStore = defineStore('recipesStore', {
       )
 
       recipe.ingredients = recipeIngredientsWithImage
-      console.log(recipe.ingredients)
 
       this.recipeSelected = await recipe
     },
