@@ -30,7 +30,7 @@ export default {
      <NavComponent link="/query-recipes" :title="recipeSelected.title"/>
 
     <!-- Recipe image -->
-    <div class="recipe-image"> <img :src="recipeSelected.image" width="250"> </div>
+    <div class="recipe-image"> <img :src="recipeSelected.image" width="250" :alt="recipeSelected.title"> </div>
     <h3 class="ingredients-title"> Ingredientes</h3>
 
     <!-- Ingredients list -->

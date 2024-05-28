@@ -650,7 +650,7 @@
     },
     {
       "id": "35",
-      "name": "Carne picada de ternera",
+      "name": "Ternera picada",
       "category": "🥩Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
@@ -668,7 +668,7 @@
     },
     {
       "id": "38",
-      "name": "Carne picada de cerdo",
+      "name": "Cerdo picado",
       "category": "🥩Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },

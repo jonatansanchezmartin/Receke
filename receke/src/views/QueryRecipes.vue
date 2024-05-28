@@ -91,20 +91,21 @@ export default {
         <button class="recipe-card" 
         v-for="recipe in recipesFiltered" 
         :key="recipe.id"
-        :class="{ 'bg-green': recipe.matchAll === true }"
+        
         @click="selectRecipe(recipe)">
 
             <router-link :to="`/recipe-view/${recipe.id}`">
 
-               
-                    <div class="image-container"> 
+               <div :class="{ 'bg-green': recipe.matchAll === true }">
+                    <div class="image-container"  > 
                     <img :src="recipe.image" :alt="`${recipe.title}`" >
                     </div>
 
-                    <h2>{{ recipe.title }}</h2>
+                    <h3 style="color:var(--receke-black)"  >{{ recipe.title }}</h3>
                     <p v-if="recipe.matchAll === true">Tienes todos los Ingredientes</p>
                     <p v-else-if="recipe.count === 1">Tienes {{ recipe.count }} ingrediente</p>
                     <p v-else>Tienes {{ recipe.count }} ingredientes</p>
+                </div>
 
                 
 
@@ -119,8 +120,8 @@ export default {
 </template>
 
 <style>
-.bg-green {
-    background-color: green;
+.bg-green p {
+    color: var(--receke-green-100) ;
 }
 
 .image-container {

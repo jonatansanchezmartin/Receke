@@ -20,7 +20,10 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
-
+h1 , h2 {
+  font-family: 'Enfantine-bold' !important;
+  
+}
 /* Landing page styles - Mobile */
 
 
@@ -44,6 +47,7 @@ header h1 {
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  font-family: "Enfantine-bold";
 }
 
 header p {
@@ -242,13 +246,15 @@ overflow: hidden;
 .recipes-container h2{
   padding: 2px 0;
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
+  color:var(--receke-black);
+  font-family: ;
 }
 
 .recipes-container p{
   color: #D61F31;
   text-align: left;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 /* Recipe page styles - Mobile */
@@ -523,8 +529,10 @@ display: inline-flex;
     src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
         url('./fonts/Roboto-Regular.woff') format('woff');
   }
-
-
+  
+  h1, h2{
+  font-family: 'Enfantine-bold' !important;
+  }
 /* Landing page styles - Mobile */
 
 
@@ -557,7 +565,7 @@ header h1 {
   position: center;
   padding: 1vh 0 1vh 0;
   color: #433A2F;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   line-height: normal;
 }
@@ -566,7 +574,7 @@ header p {
   display: none;
   padding: 0 0 3vh 0 ;
   color: #A7A7A7;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .desktop-logo{
@@ -622,7 +630,7 @@ header p {
   display: block;
   padding: 3vh 0 2vh 0 ;
   color: #A7A7A7;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .cards-container {
@@ -658,7 +666,7 @@ header p {
 .ingredient-card h3{
   margin: 4px;
   color:  #433A2F;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* Fixed menu styles */
@@ -680,7 +688,7 @@ header p {
   color:#FFFFF5;
   white-space: nowrap;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   background-color:#D61F31;
   border: none;
   border-radius: 10px;
@@ -692,7 +700,7 @@ header p {
   padding: 10px 120px;
   color: #433A2F;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   background-color: #FFFFF5;
   border: 1px solid #433A2F;;
