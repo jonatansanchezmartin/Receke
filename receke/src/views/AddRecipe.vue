@@ -1,6 +1,7 @@
 <script>
 import newStep from '../components/form/newStep.vue'
 import ingredientCard from '../components/form/ingredientCard.vue'
+import NavComponent from '@/components/NavComponent.vue'
 
 import { mapState, mapActions } from 'pinia'
 
@@ -14,6 +15,7 @@ export default {
 
   components: {
     newStep,
+    NavComponent,
     ingredientCard
   },
 
@@ -58,7 +60,7 @@ export default {
 </script>
 
 <template>
-  
+  <NavComponent link="/" title="Contribuye con tu receta" />
   <form  @submit.prevent="createRecipe(this.recipeName, this.steps, this.selectedIngredients, this.recipeImage)">
     <div class="form-block form-recipe-name">
       <label class="ingredients-title" for="recipe-name">Nombre de la receta</label>
