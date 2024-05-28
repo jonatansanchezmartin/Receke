@@ -447,25 +447,25 @@
     {
       "id": "1",
       "name": "Patata",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/patata.png"
     },
     {
       "id": "2",
       "name": "Huevo",
-      "category": "🥚Huevos",
+      "category": "🥚 Huevos",
       "image": "http://localhost:5173/src/assets/media/huevo.png"
     },
     {
       "id": "3",
       "name": "Leche",
-      "category": "🥛Lácteos",
+      "category": "🥛 Lácteos",
       "image": "http://localhost:5173/src/assets/media/leche.png"
     },
     {
       "id": "4",
       "name": "Arroz",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/arroz.png"
     },
     {
@@ -477,7 +477,7 @@
     {
       "id": "6",
       "name": "Limón",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/limon.png"
     },
     {
@@ -489,19 +489,19 @@
     {
       "id": "8",
       "name": "Tomate",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/tomate.png"
     },
     {
       "id": "9",
       "name": "Ajo",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/ajo.png"
     },
     {
       "id": "10",
       "name": "Pan",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/pan.png"
     },
     {
@@ -519,19 +519,19 @@
     {
       "id": "13",
       "name": "Pollo",
-      "category": "🥩Carnes",
+      "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/pollo.png"
     },
     {
       "id": "14",
       "name": "Zanahoria",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/zanahoria.png"
     },
     {
       "id": "15",
       "name": "Cebolla",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/cebolla.png"
     },
     {
@@ -543,19 +543,19 @@
     {
       "id": "17",
       "name": "Almendra",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/frutoseco.png"
     },
     {
       "id": "18",
       "name": "Avellana",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/frutoseco.png"
     },
     {
       "id": "19",
       "name": "Harina de trigo",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/harina.png"
     },
     {
@@ -567,7 +567,7 @@
     {
       "id": "21",
       "name": "Puerro",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/puerro.png"
     },
     {
@@ -615,25 +615,25 @@
     {
       "id": "29",
       "name": "Pasta",
-      "category": "🌾Granos",
+      "category": "🌾 Granos",
       "image": "http://localhost:5173/src/assets/media/pasta.png"
     },
     {
       "id": "30",
       "name": "Tomate cherry",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/tomate.png"
     },
     {
       "id": "31",
       "name": "Calabacín",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/calabacin.png"
     },
     {
       "id": "32",
       "name": "Champiñón",
-      "category": "🥬Vegetales",
+      "category": "🥬 Vegetales",
       "image": "http://localhost:5173/src/assets/media/setas.png"
     },
     {
@@ -651,13 +651,13 @@
     {
       "id": "35",
       "name": "Carne picada de ternera",
-      "category": "🥩Carnes",
+      "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
       "id": "36",
       "name": "Solomillo de cerdo",
-      "category": "🥩Carnes",
+      "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
@@ -669,25 +669,25 @@
     {
       "id": "38",
       "name": "Carne picada de cerdo",
-      "category": "🥩Carnes",
+      "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/carne.png"
     },
     {
       "id": "39",
       "name": "Brócoli",
-      "category": "🥬Carnes",
+      "category": "🥬 Carnes",
       "image": "http://localhost:5173/src/assets/media/brocoli.png"
     },
     {
       "id": "40",
       "name": "Bacon",
-      "category": "🥩Carnes",
+      "category": "🥩 Carnes",
       "image": "http://localhost:5173/src/assets/media/bacon.png"
     },
     {
       "id": "41",
       "name": "Queso",
-      "category": "🥛Lácteos",
+      "category": "🥛 Lácteos",
       "image": "http://localhost:5173/src/assets/media/queso.png"
     },
     {
@@ -700,27 +700,27 @@
   "categories": [
     {
       "id": "c1",
-      "name": "🥛Lácteos"
+      "name": "🥛 Lácteos"
     },
     {
       "id": "c2",
-      "name": "🥚Huevos"
+      "name": "🥚 Huevos"
     },
     {
       "id": "c3",
-      "name": "🥩Carnes"
+      "name": "🥩 Carnes"
     },
     {
       "id": "c4",
-      "name": "🐟Pescados"
+      "name": "🐟 Pescados"
     },
     {
       "id": "c5",
-      "name": "🥬Vegetales"
+      "name": "🥬 Vegetales"
     },
     {
       "id": "c6",
-      "name": "🌾Granos"
+      "name": "🌾 Granos"
     },
     {
       "id": "c7",
