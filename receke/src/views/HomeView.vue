@@ -19,12 +19,12 @@ export default {
     <div class="fixed-menu">
         <router-link to="/query-recipes">
             <button class="search-button">
-                <h3> Buscar recetas</h3>
+                <h3>Buscar recetas</h3>
             </button>
         </router-link>
         <router-link to="/add-recipe">
             <button class="add-button">
-                <h3> Añadir recetas</h3>
+                <h3>Añadir recetas</h3>
             </button>
         </router-link>
     </div>
