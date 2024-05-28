@@ -107,13 +107,14 @@ export default {
 
             
 
-            <button class="add-button" @click="showEvaluation()">Mostrar evaluacion</button>
+            <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button>
             <div class="evaluation" v-if="this.mediumEvaluation !== ''">
                 <div class="cal">
                     <p>{{ this.mediumEvaluation }}</p><span>/5</span>
                 </div>
                 <p>de un total de <span>{{ this.totalNumEvaluation }} valoraciones</span></p>
             </div>
+            
 
 
             <div class="stars">
