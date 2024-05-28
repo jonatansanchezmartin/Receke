@@ -1,4 +1,3 @@
-
 <script>
 import { mapState, mapActions } from 'pinia'
 import { useIngredientsStore } from '@/stores/IngredientsStore'
@@ -12,21 +11,21 @@ export default {
 }
 </script>
 <template>
+    <p class="ingredients-title-desktop">Selecciona tus ingredientes</p>
     <div class="cards-container">
-        <button 
+        <button class="ingredient-card" 
             @click='toggleIngredient(ingredient.name)'
-            class="ingredient-card"
-            v-for="ingredient in ingredientsToShow"
+            v-for="ingredient in ingredientsToShow" 
             :key="ingredient.name"
             :class="{ 'active': selectedIngredients.includes(ingredient.name) }"
-            >
+        >
             <img :src="ingredient.image" alt="ingredient.name">
             <h3>{{ ingredient.name }}</h3>
         </button>
     </div>
 </template>
 <style>
-.ingredient-card.active{
-  border: 1px solid green;
+.ingredient-card.active {
+    border: 1px solid green;
 }
 </style>
