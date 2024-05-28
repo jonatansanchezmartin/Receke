@@ -7,8 +7,15 @@ import NavComponent from '@/components/NavComponent.vue';
 export default {
     data() {
         return {
+            // Estrellas seleccionadas
             starsSelected: '',
+            // Valor de estrellas
             stars: '',
+
+            // Valoración media
+            mediumEvaluation: '',
+            // Total de valoraciones
+            totalNumEvaluation: '',
         }
     },
     methods: {
@@ -18,6 +25,7 @@ export default {
             return ingredientMatch.image
         },
         checkStars(star){
+            // Le doy valor a starsSelected para usarlo en el dom
             this.starsSelected = star;
         },
         selectStars(star) {
@@ -46,9 +54,10 @@ export default {
                 return 0;
             }
             const sum = evaluations.reduce((total, num) => total + num, 0);
-            console.log(sum);
-            const final = (sum / evaluations.length).toFixed(2);
-            console.log(final);
+            this.totalNumEvaluation = evaluations.length;
+            
+            const medium = (sum / evaluations.length).toFixed(2);
+            this.mediumEvaluation = medium;
         }
     },
     computed: {
@@ -98,9 +107,12 @@ export default {
 
             
 
-            <div @click="showEvaluation()">Mostrar evaluacion</div>
-            <div class="evaluation">
-                <p></p>
+            <button class="add-button" @click="showEvaluation()">Mostrar evaluacion</button>
+            <div class="evaluation" v-if="this.mediumEvaluation !== ''">
+                <div class="cal">
+                    <p>{{ this.mediumEvaluation }}</p><span>/5</span>
+                </div>
+                <p>de un total de <span>{{ this.totalNumEvaluation }} valoraciones</span></p>
             </div>
 
 
@@ -125,6 +137,34 @@ export default {
 .recipe-image img{
     max-width: 100%;
     height: 200px;
+}
+
+.evaluation {
+    color: var(--receke-black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--receke-lemon-50);
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.evaluation .cal {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.evaluation .cal p {
+    font-size: 42px;
+    line-height: 42px;
+}
+
+.stars h3 {
+    color: var(--receke-black);
 }
 
 .stars .stars-container {
@@ -173,5 +213,9 @@ export default {
     opacity: 1;
 }
 
+.send-button.disabled {
+    background-color: grey;
+    pointer-events: none;
+}
 
 </style>
