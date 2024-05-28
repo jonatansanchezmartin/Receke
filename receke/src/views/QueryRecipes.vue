@@ -59,10 +59,7 @@ export default {
 
         // },
 
-        // async getImagePath(recipe) {
-
-        //     return `http://localhost:3001/recipes/${recipe.id}`;
-        // },
+        
 
         // selectRecipe(recipe) {
         //     this.$store.recipes.setSelectedRecipe(recipe);

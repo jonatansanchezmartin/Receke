@@ -10,13 +10,13 @@ export const useIngredientsStore = defineStore('IngredientsStore', {
   }),
   actions: {
     async fetchIngredients() {
-      let response = await fetch('http://localhost:3001/ingredients')
+      let response = await fetch('hhttps://receke-api.vercel.app/ingredients')
       let ingredients = await response.json()
       this.ingredients = ingredients
       this.ingredientsToShow = ingredients
     },
     async fetchCategories() {
-      let response = await fetch('http://localhost:3001/categories')
+      let response = await fetch('https://receke-api.vercel.app/categories')
       let categories = await response.json()
       this.categories = categories
     },
