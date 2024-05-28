@@ -8,13 +8,13 @@ export default {
         ...mapState(useIngredientsStore, ['ingredients', 'categories', 'selectedIngredients']),
         ...mapState(useRecipesStore, ['recipes', 'selectedRecipe', 'recipesFiltered'])
     },
-    
+
 
     data() {
         return {
             //recipesFiltered: []
-    }
-},
+        }
+    },
     created() {
         this.test()
         this.fetchRecipes().then(() => {
@@ -29,7 +29,7 @@ export default {
     //         },
     //         immediate: true
     //     },
-        
+
     // },
 
     methods: {
@@ -67,8 +67,8 @@ export default {
             this.$store.recipes.setSelectedRecipe(recipe);
 
 
-       
-    } 
+
+        }
 
     }
 }
@@ -78,36 +78,67 @@ export default {
 
 <template>
 
+
     <div class="query-nav">
         <button><router-link to="/"><img src="../assets/img/back-arrow.png"></router-link> </button>
-        <h1>Aquí tienes algunas sugerencias</h1>
+        <h1>¡Manos en la masa!</h1>
     </div>
-
     <!-- Recipe cards -->
 
     <div class="recipes-container">
 
-        <div class="recipes-container">
-            <div v-for="recipe in recipesFiltered" :key="recipe.id" class="recipe-card" :class="{ 'bg-green': recipe.matchAll === true }">
-                <router-link :to="`/recipe-view/${recipe.id}`">
-                <button @click="selectRecipe(recipe)">
-                  
-                    <img :src="recipe.image" :alt="`${recipe.title}`" width="50">
+
+        <button class="recipe-card" 
+        v-for="recipe in recipesFiltered" 
+        :key="recipe.id"
+        :class="{ 'bg-green': recipe.matchAll === true }"
+        @click="selectRecipe(recipe)">
+
+            <router-link :to="`/recipe-view/${recipe.id}`">
+
+               
+                    <div class="image-container"> 
+                    <img :src="recipe.image" :alt="`${recipe.title}`" >
+                    </div>
+
                     <h2>{{ recipe.title }}</h2>
-                    <p v-if="recipe.matchAll === true">Tienes todo</p>
+                    <p v-if="recipe.matchAll === true">Tienes todos los Ingredientes</p>
                     <p v-else-if="recipe.count === 1">Tienes {{ recipe.count }} ingrediente</p>
-                    <p v-else >Tienes {{ recipe.count }} ingredientes</p>
-                </button>
+                    <p v-else>Tienes {{ recipe.count }} ingredientes</p>
+
+                
+
+
             </router-link>
-            </div>
-        </div>
+
+        </button>
+
 
     </div>
 
 </template>
 
 <style>
-    .bg-green {
-        background-color: green;
-    }
+.bg-green {
+    background-color: green;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 4/3;
+    width: 150px ;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+.recipes-container .recipe-card {
+    height: initial;
+}
+
 </style>
