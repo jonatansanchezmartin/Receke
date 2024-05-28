@@ -624,7 +624,6 @@ header p {
 
 /* Ingredient cards styles */
 
-
 .ingredients-title-desktop{
   margin: 0 2.4vh;
   display: block;
@@ -634,31 +633,34 @@ header p {
 }
 
 .cards-container {
-  width: 1100px;
+  width: auto;
   height: 320px;
+  margin: 10px;
+  display: flex;
   overflow-x: auto;
-  margin: 2.4vh;
-  display: block;
+  flex-wrap: wrap;
 }
 
 .ingredient-card {
-  margin: 8px;
+  margin: 10px;
   height: 140px;
   width: 100px;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(223,223,223,0.5) 100%);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .ingredient-card:hover {
   border: 1px solid #6DCA53;
 }
 
-.ingredient-card img{
-  margin: 6px;
-  width: 76px;
-  height: 76px;
+.ingredient-card img {
+  height: 70px;
+  width: 70px;
+  margin: 1vh;
+  padding: 2px;
+  
 }
 
 .ingredient-card h3{
