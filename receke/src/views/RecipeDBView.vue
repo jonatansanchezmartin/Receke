@@ -28,6 +28,7 @@ export default {
 <template>
 
     <NavComponent link="/query-recipes" :title="recipeSelected.title" />
+
     <div class="recipe-layout-alignment">
         <!-- Recipe image -->
         <div class="recipe-image">
