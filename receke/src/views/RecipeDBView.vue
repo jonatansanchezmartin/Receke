@@ -55,9 +55,3 @@ export default {
     </div>
 
 </template>
-<style>
-.recipe-image img{
-    max-width: 100%;
-    height: 200px;
-}
-</style>
