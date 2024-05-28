@@ -55,6 +55,17 @@ export const useRecipesStore = defineStore('recipesStore', {  //el default
       })
     },
 
+    async editRecipe(id, evaluation){
+      const url = `${baseUrl}/recipes/${id}`;
+      await fetch(url, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(evaluation)
+      })
+    },
+
     //obtiene un listado de recetas de la base de datos
     
     // marca como seleccionada una receta
