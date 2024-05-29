@@ -302,7 +302,7 @@ font-family: 'Roboto';
 
 
 .bg-green p {
-  color: var(--receke-green-100) ;
+  color: var(--receke-green-100)!important ;
 }
 
 .image-container {
