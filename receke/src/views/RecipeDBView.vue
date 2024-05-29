@@ -48,6 +48,9 @@ export default {
 
             // Utilizo la función del store de editar receta
             this.editRecipe(id, edited)
+
+            // reload
+            window.location.reload();
         },
         showEvaluation() {
             //console.log(this.recipeSelected.evaluation);
@@ -118,11 +121,14 @@ export default {
 
 
             <!-- <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button> -->
-            <div class="evaluation" v-if="this.mediumEvaluation !== 0">
+            <div class="evaluation" v-if="this.totalNumEvaluation > 0">
                 <div class="cal">
                     <p>{{ this.mediumEvaluation }}</p><span>/5</span>
                 </div>
                 <p>de un total de <span>{{ this.totalNumEvaluation }} valoraciones</span></p>
+            </div>
+            <div class="evaluation" v-else>
+                <p>Aún no existen valoraciones para esta receta, ¡Sé el primero!</p>
             </div>
 
 

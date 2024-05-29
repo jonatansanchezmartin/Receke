@@ -115,7 +115,7 @@ export default {
 
         <div class="form-block form-recipe-name">
           <label class="ingredients-title" for="recipe-img">Imagen de la receta</label>
-          <input id="recipe-img" v-model="recipeImage" />
+          <input placeholder="URL de imagen para tu receta" type="url" id="recipe-img" v-model="recipeImage" />
         </div>
 
         <button :class="{ 'disabled': recipeName === '' || selectedIngredients.length === 0 || steps.length === 0  || recipeImage === ''}"
