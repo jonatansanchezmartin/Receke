@@ -64,7 +64,8 @@ export default {
         },
         async deleteRecipeWithError(id) {
             const response = await this.deleteRecipe(id);
-            if (response === 200) {
+            //Adding 500 code as a workaround for JSON Server API on Vercel showing error but applying the delete
+            if (response === 200 || response === 500) {
                 this.deleteStatus = 'Receta borrada correctamente'
             } else {
                 this.deleteStatus = 'Error al borrar la receta'
