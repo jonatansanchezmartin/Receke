@@ -196,7 +196,9 @@
           "quantity": "1 sobre (7 g)"
         }
       ],
-      "evaluation": []
+      "evaluation": [
+        3
+      ]
     },
     {
       "id": "6",

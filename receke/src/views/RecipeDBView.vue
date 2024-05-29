@@ -52,9 +52,7 @@ export default {
         showEvaluation() {
             console.log(this.recipeSelected.evaluation);
             const evaluations = this.recipeSelected.evaluation;
-            if (evaluations.length === 0) {
-                return 0;
-            }
+            
             const sum = evaluations.reduce((total, num) => total + num, 0);
             this.totalNumEvaluation = evaluations.length;
 
@@ -68,7 +66,6 @@ export default {
             } else {
                 this.deleteStatus = 'Error al borrar la receta'
             }
-            //this.$router.push('/query-recipes');
         }
     },
     computed: {
@@ -76,8 +73,10 @@ export default {
         ...mapState(useIngredientsStore, ['ingredients'])
     },
     mounted() {
-        this.getRecipeById(this.$route.params.id)
-
+        this.getRecipeById(this.$route.params.id).then(()=> {
+            this.showEvaluation();
+        })
+        
     },
     components: {
         NavComponent
@@ -118,8 +117,8 @@ export default {
 
 
 
-            <button class="add-button" @click="showEvaluation()">Mostrar evaluacion</button>
-            <div class="evaluation" v-if="this.mediumEvaluation !== ''">
+            <!-- <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button> -->
+            <div class="evaluation" v-if="this.mediumEvaluation !== 0">
                 <div class="cal">
                     <p>{{ this.mediumEvaluation }}</p><span>/5</span>
                 </div>
@@ -162,88 +161,8 @@ export default {
 
 </template>
 <style>
-.recipe-image img {
-    max-width: 100%;
-    height: 200px;
-}
 
-.evaluation {
-    color: var(--receke-black);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--receke-lemon-50);
-    overflow: hidden;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
 
-.evaluation .cal {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
 
-.evaluation .cal p {
-    font-size: 42px;
-    line-height: 42px;
-}
 
-.stars h3 {
-    color: var(--receke-black);
-}
-
-.stars .stars-container {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-.stars .stars-container.selected1 .star:nth-child(1) {
-    opacity: 1;
-}
-
-.stars .stars-container.selected2 .star:nth-child(1),
-.stars .stars-container.selected2 .star:nth-child(2) {
-    opacity: 1;
-}
-
-.stars .stars-container.selected3 .star:nth-child(1),
-.stars .stars-container.selected3 .star:nth-child(2),
-.stars .stars-container.selected3 .star:nth-child(3) {
-    opacity: 1;
-}
-
-.stars .stars-container.selected4 .star:nth-child(1),
-.stars .stars-container.selected4 .star:nth-child(2),
-.stars .stars-container.selected4 .star:nth-child(3),
-.stars .stars-container.selected4 .star:nth-child(4) {
-    opacity: 1;
-}
-
-.stars .stars-container.selected5 .star {
-    opacity: 1;
-}
-
-.stars .stars-container .star {
-    opacity: 0.5;
-    width: 30px;
-    aspect-ratio: 1/1;
-    height: 30px;
-    background-position: center center;
-    background-size: contain;
-    ;
-    background-image: url('data:image/svg+xml,<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.2647 0L47.4485 47.4485H0L39.5404 79.0809L23.7243 126.529L63.2647 94.8971L102.805 126.529L86.989 79.0809L126.529 47.4485H79.0809L63.2647 0Z" fill="%23DC8A0B"/></svg>');
-}
-
-.stars .stars-container .star:hover {
-    opacity: 1;
-}
-
-.send-button.disabled {
-    background-color: grey;
-    pointer-events: none;
-}
 </style>
