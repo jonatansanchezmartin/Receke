@@ -471,6 +471,37 @@
         }
       ],
       "evaluation": []
+    },
+    {
+      "id": "a827",
+      "title": "receta de prueba",
+      "instructions": [],
+      "image": "",
+      "ingredients": []
+    },
+    {
+      "id": "f4ac",
+      "title": "Santi's Workspace",
+      "instructions": [],
+      "image": "",
+      "ingredients": [
+        {
+          "ingredient": "Patata",
+          "quantity": "s"
+        }
+      ]
+    },
+    {
+      "id": "7e61",
+      "title": "Santi's Workspace",
+      "instructions": [],
+      "image": "",
+      "ingredients": [
+        {
+          "ingredient": "Patata",
+          "quantity": "y"
+        }
+      ]
     }
   ],
   "ingredients": [
