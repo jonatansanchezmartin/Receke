@@ -9,7 +9,8 @@ export const useRecipesStore = defineStore('recipesStore', {
   //el default
   state: () => ({
     //data de default
-    recipes: [],
+    recipes: JSON.parse(localStorage.getItem('recipes')) || [],
+    recipesFiltered: JSON.parse(localStorage.getItem('recipesFiltered')) || [],
     recipeSelected: {}
     // recipeName: '',
 
@@ -32,6 +33,7 @@ export const useRecipesStore = defineStore('recipesStore', {
     async fetchRecipes() {
       let response = await fetch(`${baseUrl}/recipes`)
       let recipes = await response.json()
+      localStorage.setItem('recipes', JSON.stringify(recipes))
       this.recipes = recipes
     },
 
@@ -158,6 +160,7 @@ export const useRecipesStore = defineStore('recipesStore', {
 
       //console.log('después de la función', recipesFiltered) //test 3
 
+      localStorage.setItem('recipesFiltered', JSON.stringify(recipesFiltered))
       this.recipesFiltered = recipesFiltered
 
       //console.log("después de asignar", this.recipesFiltered); //test 3
