@@ -150,7 +150,7 @@ export default {
 
 
 
-            <button class="add-button" @click="showDelete = true">Borrar receta</button>
+            <button id="erase-fix" class="add-button" @click="showDelete = true">Borrar receta</button>
             <div class="sentMessage" v-if="showDelete">
                 <div v-if="!this.deleteStatus">
                     <p>Quieres borrar esta receta?</p>

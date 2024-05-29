@@ -566,10 +566,16 @@ display: inline-flex;
   padding: 12px 8px;
   flex: 1;
   text-align: left;
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./fonts/Roboto-Regular.woff') format('woff');
 }
 
 .recipe-steps-container textarea ::placeholder {
-  text-align:left; 
+  text-align:left;
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./fonts/Roboto-Regular.woff') format('woff');
 }
 
 .recipe-steps-container ol {
@@ -578,6 +584,7 @@ display: inline-flex;
 }
 
 .recipe-steps-container ol li {
+  margin: 2vh;
   display: flex;
   gap:6px;
   margin-bottom: 9px;
@@ -624,10 +631,12 @@ form .form-block.form-recipe-name {
 }
 
 form .form-block.form-recipe-name input {
-    background-color: #FAFAFA;
-    border-radius: 10px;
-    border: 1px solid #EFEFEF;
+  margin: 2vh;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  border: 1px solid #EFEFEF;
 }
+
 form button.send-button.disabled {
   background-color: grey;
   pointer-events: all;
@@ -747,7 +756,6 @@ form .form-block.form-recipe-name input.required {
   background-color: grey;
   pointer-events: none;
 }
-
 
 
 @media (min-width: 1024px) {
@@ -874,7 +882,7 @@ header p {
 .cards-container {
   width: auto;
   height: 320px;
-  margin: 10px;
+  margin: none;
   display: flex;
   overflow-x: auto;
   flex-wrap: wrap;
@@ -937,6 +945,7 @@ header p {
 .add-button {
   margin: none;
   padding: 10px 120px;
+  width: 340px;
   color: #433A2F;
   white-space: nowrap;
   font-size: 15px;
@@ -1287,9 +1296,6 @@ display: inline-flex;
   display: block;
 }
 
-.recipe-steps-arrangement {}
-
-
 .recipe-steps-container input{
   height: 120px;
   width: 240px;
@@ -1321,8 +1327,8 @@ display: inline-flex;
 }
 
 .send-button {
-  margin: 4vh 0 1vh 0;
-  width: -webkit-fill-available;
+  margin: 2vh 0 1vh 40px;
+  width: 300px;
   padding: 10px 10px;
   color:#FFFFF5;
   white-space: nowrap;
@@ -1331,7 +1337,6 @@ display: inline-flex;
   background-color:#D61F31;
   border: none;
   border-radius: 10px;
-
 }
 
 form {
@@ -1342,11 +1347,17 @@ form {
 }
 
 form .form-column .form-block {
-  width: 100%;
+  width: 340px;
+  margin: 2vh;
 }
 
 form .form-column .form-block .cards-container {
   height: 50vh;
+}
+
+#erase-fix {
+  margin-left: 20px;
+  padding: 10px 10px;
 }
 
 
