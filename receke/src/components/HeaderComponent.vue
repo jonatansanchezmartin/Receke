@@ -17,7 +17,7 @@ export default {
         </header>
         <div class="desktop-logo">
             <router-link :to="$router.back()">
-            <img src="../assets/favicons/android-chrome-192x192.png" alt="Receké Logo" />
+                <img src="../assets/favicons/android-chrome-192x192.png" alt="Receké Logo" />
             </router-link>
         </div>
     </div>
