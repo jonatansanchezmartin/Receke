@@ -34,10 +34,10 @@ export default {
 
             <!-- Ingredients list -->
             <div class="ingredients-list" v-for="(item, index) in recipeSelected.ingredients" :key="index">
-                <div>
+                
                     <img :src="item.image">
                     <h4> {{ item.ingredient }} {{ item.quantity }}</h4>
-                </div>
+                
             </div>
 
             <!-- Ingredients -->
@@ -55,9 +55,4 @@ export default {
     </div>
 
 </template>
-<style>
-.recipe-image img{
-    max-width: 100%;
-    height: 200px;
-}
-</style>
+<style></style>
