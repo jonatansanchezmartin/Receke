@@ -483,6 +483,32 @@
         }
       ],
       "evaluation": []
+    },
+    {
+      "id": "11",
+      "title": "Sardinas a la plancha",
+      "instructions": [
+        "Secar las sardinas con sal durante 1 hora para que cojan sabor.",
+        "Calentar la plancha y agregar el aceite.",
+        "Agregar las sardinas y cocinar durante 3 o 4 minutos.",
+        "Retirar y servir con el jugo del limón."
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Broccoli_salad.jpg",
+      "ingredients": [
+        {
+          "ingredient": "Sardina",
+          "quantity": "250 g"
+        },
+        {
+          "ingredient": "Limón",
+          "quantity": "1 rodaja"
+        },
+        {
+          "ingredient": "Aceite de oliva",
+          "quantity": "1 chorrito"
+        }
+      ],
+      "evaluation": []
     }
   ],
   "ingredients": [
@@ -737,6 +763,12 @@
       "name": "Albahaca",
       "category": "Otros",
       "image": "http://localhost:5173/src/assets/media/especias.png"
+    },
+    {
+      "id": "43",
+      "name": "Sardina",
+      "category": "🐟 Pescados",
+      "image": "http://localhost:5173/src/assets/media/sardina.png"
     }
   ],
   "categories": [
