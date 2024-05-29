@@ -48,6 +48,9 @@ export default {
 
             // Utilizo la función del store de editar receta
             this.editRecipe(id, edited)
+
+            // reload
+            window.location.reload();
         },
         showEvaluation() {
             //console.log(this.recipeSelected.evaluation);
