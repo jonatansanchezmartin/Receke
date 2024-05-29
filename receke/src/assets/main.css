@@ -190,7 +190,7 @@ header p {
 
 .add-button {
   margin: 1vh 0 2vh 0;
-  width: 340px;
+  width: -webkit-fill-available;
   padding: 10px 120px;
   color: #433A2F;
   white-space: nowrap;
@@ -416,7 +416,7 @@ display: inline-flex;
   height: 60px;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(223,223,223,0.5) 100%);
-  border: 1px solid #6DCA53;
+  border: none;
   border-radius: 5px;
 }
 
@@ -606,8 +606,8 @@ display: inline-flex;
 }
 
 .send-button {
-  margin: 4vh 0 1vh 0;
-  width: 340px;
+  margin: 6vh 0 1vh 0;
+  width: -webkit-fill-available;
   padding: 10px 120px;
   color:#FFFFF5;
   white-space: nowrap;
@@ -618,6 +618,136 @@ display: inline-flex;
   border-radius: 10px;
 
 }
+
+form .form-block.form-recipe-name {
+  height: initial;
+}
+
+form .form-block.form-recipe-name input {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    border: 1px solid #EFEFEF;
+}
+form button.send-button.disabled {
+  background-color: grey;
+  pointer-events: all;
+}
+
+form .form-block.form-recipe-name input.required {
+  border: 1px solid var(--receke-red);
+}
+
+.sentMessage {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  top: 0px;
+  left: 0px;
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EDEDD4;
+}
+
+.sentMessage p {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.error p {
+  color: var(--receke-red)
+}
+
+/****************** STARS IN RECIPE VIEW **************************/
+
+.evaluation {
+  color: var(--receke-black);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--receke-lemon-50);
+  overflow: hidden;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.evaluation .cal {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.evaluation .cal p {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.stars h3 {
+  padding: 20px;
+  text-align: left;
+  position: center;
+  color: var(--receke-black);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stars .stars-container {
+  padding: 2vh 6vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.stars .stars-container.selected1 .star:nth-child(1) {
+  opacity: 1;
+}
+
+.stars .stars-container.selected2 .star:nth-child(1),
+.stars .stars-container.selected2 .star:nth-child(2) {
+  opacity: 1;
+}
+
+.stars .stars-container.selected3 .star:nth-child(1),
+.stars .stars-container.selected3 .star:nth-child(2),
+.stars .stars-container.selected3 .star:nth-child(3) {
+  opacity: 1;
+}
+
+.stars .stars-container.selected4 .star:nth-child(1),
+.stars .stars-container.selected4 .star:nth-child(2),
+.stars .stars-container.selected4 .star:nth-child(3),
+.stars .stars-container.selected4 .star:nth-child(4) {
+  opacity: 1;
+}
+
+.stars .stars-container.selected5 .star {
+  opacity: 1;
+}
+
+.stars .stars-container .star {
+  opacity: 0.5;
+  width: 30px;
+  aspect-ratio: 1/1;
+  height: 30px;
+  background-position: center center;
+  background-size: contain;;
+  background-image: url('data:image/svg+xml,<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.2647 0L47.4485 47.4485H0L39.5404 79.0809L23.7243 126.529L63.2647 94.8971L102.805 126.529L86.989 79.0809L126.529 47.4485H79.0809L63.2647 0Z" fill="%23DC8A0B"/></svg>');
+}
+
+.stars .stars-container .star:hover {
+  opacity: 1;
+}
+
+.send-button.disabled {
+  background-color: grey;
+  pointer-events: none;
+}
+
 
 
 @media (min-width: 1024px) {
@@ -805,8 +935,7 @@ header p {
 }
 
 .add-button {
-  margin: 4vh 1vh 2vh 0;
-  width: 340px;
+  margin: none;
   padding: 10px 120px;
   color: #433A2F;
   white-space: nowrap;
@@ -1004,7 +1133,7 @@ display: inline-flex;
   height: 60px;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(223,223,223,0.5) 100%);
-  border: 1px solid #6DCA53;
+  border: none;
   border-radius: 5px;
 }
 
@@ -1193,7 +1322,7 @@ display: inline-flex;
 
 .send-button {
   margin: 4vh 0 1vh 0;
-  width: 40px;
+  width: -webkit-fill-available;
   padding: 10px 10px;
   color:#FFFFF5;
   white-space: nowrap;
@@ -1205,89 +1334,24 @@ display: inline-flex;
 
 }
 
+form {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+form .form-column .form-block {
+  width: 100%;
+}
+
+form .form-column .form-block .cards-container {
+  height: 50vh;
+}
 
 
 
 }
 
 
-/****************** STARS IN RECIPE VIEW **************************/
 
-.evaluation {
-  color: var(--receke-black);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--receke-lemon-50);
-  overflow: hidden;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.evaluation .cal {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.evaluation .cal p {
-  font-size: 42px;
-  line-height: 42px;
-}
-
-.stars h3 {
-  color: var(--receke-black);
-}
-
-.stars .stars-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
-
-.stars .stars-container.selected1 .star:nth-child(1) {
-  opacity: 1;
-}
-
-.stars .stars-container.selected2 .star:nth-child(1),
-.stars .stars-container.selected2 .star:nth-child(2) {
-  opacity: 1;
-}
-
-.stars .stars-container.selected3 .star:nth-child(1),
-.stars .stars-container.selected3 .star:nth-child(2),
-.stars .stars-container.selected3 .star:nth-child(3) {
-  opacity: 1;
-}
-
-.stars .stars-container.selected4 .star:nth-child(1),
-.stars .stars-container.selected4 .star:nth-child(2),
-.stars .stars-container.selected4 .star:nth-child(3),
-.stars .stars-container.selected4 .star:nth-child(4) {
-  opacity: 1;
-}
-
-.stars .stars-container.selected5 .star {
-  opacity: 1;
-}
-
-.stars .stars-container .star {
-  opacity: 0.5;
-  width: 30px;
-  aspect-ratio: 1/1;
-  height: 30px;
-  background-position: center center;
-  background-size: contain;;
-  background-image: url('data:image/svg+xml,<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.2647 0L47.4485 47.4485H0L39.5404 79.0809L23.7243 126.529L63.2647 94.8971L102.805 126.529L86.989 79.0809L126.529 47.4485H79.0809L63.2647 0Z" fill="%23DC8A0B"/></svg>');
-}
-
-.stars .stars-container .star:hover {
-  opacity: 1;
-}
-
-.send-button.disabled {
-  background-color: grey;
-  pointer-events: none;
-}
