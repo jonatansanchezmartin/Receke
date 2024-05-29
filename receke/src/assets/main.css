@@ -696,6 +696,11 @@ form .form-block.form-recipe-name input.required {
   line-height: 42px;
 }
 
+.stars{
+  display: flex;
+  flex-direction: column;
+}
+
 .stars h3 {
   padding: 20px;
   text-align: left;
@@ -752,11 +757,36 @@ form .form-block.form-recipe-name input.required {
   opacity: 1;
 }
 
+.stars .send-button {
+  align-self: center;
+  margin: 0px;
+  padding: 10px;
+  width: 300px;
+}
+
 .send-button.disabled {
   background-color: grey;
   pointer-events: none;
 }
 
+.delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-button {
+    margin: 2vh 0 1vh 0;
+    padding: 10px 10px;
+    width: 300px;
+    color: #433A2F;
+    white-space: nowrap;
+    font-size: 15px;
+    text-align: center;
+    background-color: #FFFFF5;
+    border: 1px solid #433A2F;
+    border-radius: 10px;
+}
 
 @media (min-width: 1024px) {
   body {
@@ -1358,6 +1388,7 @@ form .form-column .form-block .cards-container {
 #erase-fix {
   margin-left: 20px;
   padding: 10px 10px;
+  width: 300px;
 }
 
 
