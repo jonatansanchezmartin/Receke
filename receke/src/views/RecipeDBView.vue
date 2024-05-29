@@ -16,15 +16,17 @@ export default {
             mediumEvaluation: '',
             // Total de valoraciones
             totalNumEvaluation: '',
+            showDelete: false,
+            deleteStatus: ''
         }
     },
     methods: {
-        ...mapActions(useRecipesStore, ['getRecipeById','editRecipe']),
+        ...mapActions(useRecipesStore, ['getRecipeById', 'editRecipe', 'deleteRecipe']),
         getIngredientImage(ingredient) {
             const ingredientMatch = this.ingredients.find((item) => item.name === ingredient)
             return ingredientMatch.image
         },
-        checkStars(star){
+        checkStars(star) {
             // Le doy valor a starsSelected para usarlo en el dom
             this.starsSelected = star;
         },
@@ -41,13 +43,13 @@ export default {
             evaluationArray.push(stars)
 
             // Creo el nuevo objeto con los valores de la receta
-            const edited = {...this.recipeSelected, evaluation: evaluationArray}
+            const edited = { ...this.recipeSelected, evaluation: evaluationArray }
             console.log(edited);
 
             // Utilizo la función del store de editar receta
             this.editRecipe(id, edited)
         },
-        showEvaluation(){
+        showEvaluation() {
             console.log(this.recipeSelected.evaluation);
             const evaluations = this.recipeSelected.evaluation;
             if (evaluations.length === 0) {
@@ -55,9 +57,18 @@ export default {
             }
             const sum = evaluations.reduce((total, num) => total + num, 0);
             this.totalNumEvaluation = evaluations.length;
-            
+
             const medium = (sum / evaluations.length).toFixed(2);
             this.mediumEvaluation = medium;
+        },
+        async deleteRecipeWithError(id) {
+            const response = await this.deleteRecipe(id);
+            if (response === 200) {
+                this.deleteStatus = 'Receta borrada correctamente'
+            } else {
+                this.deleteStatus = 'Error al borrar la receta'
+            }
+            //this.$router.push('/query-recipes');
         }
     },
     computed: {
@@ -66,7 +77,7 @@ export default {
     },
     mounted() {
         this.getRecipeById(this.$route.params.id)
-        
+
     },
     components: {
         NavComponent
@@ -105,37 +116,53 @@ export default {
                 </ol>
             </div>
 
-            
 
-            <button class="add-button" @click="showEvaluation()" >Mostrar evaluacion</button>
+
+            <button class="add-button" @click="showEvaluation()">Mostrar evaluacion</button>
             <div class="evaluation" v-if="this.mediumEvaluation !== ''">
                 <div class="cal">
                     <p>{{ this.mediumEvaluation }}</p><span>/5</span>
                 </div>
                 <p>de un total de <span>{{ this.totalNumEvaluation }} valoraciones</span></p>
             </div>
-            
+
 
 
             <div class="stars">
                 <h3>Valora esta receta</h3>
-                <div class="stars-container" :class="starsSelected === 1? 'selected1' : starsSelected === 2? 'selected2' : starsSelected === 3? 'selected3' : starsSelected === 4? 'selected4' : starsSelected === 5? 'selected5': ''">
-                    <div class="star"  
-                        v-for="star in 5" 
-                        :key="star" 
-                        
-                        @click="checkStars(star)">
+                <div class="stars-container"
+                    :class="starsSelected === 1 ? 'selected1' : starsSelected === 2 ? 'selected2' : starsSelected === 3 ? 'selected3' : starsSelected === 4 ? 'selected4' : starsSelected === 5 ? 'selected5' : ''">
+                    <div class="star" v-for="star in 5" :key="star" @click="checkStars(star)">
                         <!-- <p>{{ star }}</p> -->
                     </div>
                 </div>
-                <button class="send-button" :class="{'disabled': starsSelected === ''}" @click="selectStars(this.starsSelected)">Enviar valoración</button>
+                <button class="send-button" :class="{ 'disabled': starsSelected === '' }"
+                    @click="selectStars(this.starsSelected)">Enviar valoración</button>
             </div>
+
+
+
+            <button class="add-button" @click="showDelete = true">Borrar receta</button>
+            <div class="sentMessage" v-if="showDelete">
+                <div v-if="!this.deleteStatus">
+                    <p>Quieres borrar esta receta?</p>
+                    <button @click="deleteRecipeWithError(recipeSelected.id)" class="search-button">Aceptar</button>
+                    <button @click="showDelete = false" class="add-button">Cancelar</button>
+                </div>
+                <div v-else>
+                    <p>{{ this.deleteStatus }}</p>
+                    <button @click="showDelete = false, this.$router.push('/query-recipes')"
+                        class="add-button">Aceptar</button>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
 </template>
 <style>
-.recipe-image img{
+.recipe-image img {
     max-width: 100%;
     height: 200px;
 }
@@ -206,7 +233,8 @@ export default {
     aspect-ratio: 1/1;
     height: 30px;
     background-position: center center;
-    background-size: contain;;
+    background-size: contain;
+    ;
     background-image: url('data:image/svg+xml,<svg width="127" height="127" viewBox="0 0 127 127" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M63.2647 0L47.4485 47.4485H0L39.5404 79.0809L23.7243 126.529L63.2647 94.8971L102.805 126.529L86.989 79.0809L126.529 47.4485H79.0809L63.2647 0Z" fill="%23DC8A0B"/></svg>');
 }
 
@@ -218,5 +246,4 @@ export default {
     background-color: grey;
     pointer-events: none;
 }
-
 </style>
