@@ -37,7 +37,21 @@ Developed to help people with cooking challenges in order to:
 
 Frontend: HTML, CSS, Javascrit y VUE.
 
+### Installation
 
+From the root folder of the application, type this command on the terminal:
+
+```npm install```
+
+### Running the application
+
+1. From the root folder of the application, type the command in one terminal and keep it open:
+
+```npm run serve```
+
+2. Open another terminal and run the following command:
+
+```npm run dev```
 
 ## 🤝 Feedback and Contributions
 
