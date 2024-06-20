@@ -2,6 +2,7 @@
 import { defineStore } from 'pinia'
 import { useIngredientsStore } from '@/stores/IngredientsStore'
 import { mapState } from 'pinia'
+import axios from 'axios'
 const baseUrl = import.meta.env.VITE_APP_BACKEND_URL
 //console.log("Hola", baseUrl);
 
@@ -31,15 +32,13 @@ export const useRecipesStore = defineStore('recipesStore', {
     //methods de default
 
     async fetchRecipes() {
-      let response = await fetch(`${baseUrl}/recipes`)
-      let recipes = await response.json()
+      let recipes = await axios.get(`${baseUrl}/recipes`)
       localStorage.setItem('recipes', JSON.stringify(recipes))
       this.recipes = recipes
     },
 
     async getRecipeById(id) {
-      let response = await fetch(`${baseUrl}/recipes/${id}`)
-      let recipe = await response.json()
+      let recipe = await axios.get(`${baseUrl}/recipes/${id}`)
 
       //Get the image of the ingredient from the ingredients store
       const recipeIngredientsWithImage = await Promise.all(
@@ -66,33 +65,15 @@ export const useRecipesStore = defineStore('recipesStore', {
     },
 
     async postRecipe(newRecipe) {
-      const url = `${baseUrl}/recipes`
-      await fetch(url, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(newRecipe)
-      })
+      await axios.post(`${baseUrl}/recipes`, newRecipe)
     },
 
     async editRecipe(id, evaluation){
-      const url = `${baseUrl}/recipes/${id}`;
-      await fetch(url, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(evaluation)
-      })
+      await axios.put(`${baseUrl}/recipes/${id}`, evaluation)
     },
 
     async deleteRecipe(id) {
-      const url = `${baseUrl}/recipes/${id}`
-      const response = await fetch(url, {
-        method: 'DELETE'
-      })
-      return response.status
+      await axios.delete(`${baseUrl}/recipes/${id}`)
     },
 
     //obtiene un listado de recetas de la base de datos
