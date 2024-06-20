@@ -31,7 +31,8 @@
         5,
         3,
         5,
-        3
+        3,
+        5
       ]
     },
     {
@@ -85,7 +86,8 @@
         3,
         4,
         4,
-        5
+        5,
+        4
       ]
     },
     {
@@ -134,42 +136,53 @@
       "ingredients": [
         {
           "ingredient": "Pollo",
-          "quantity": "1 pollo entero"
+          "quantity": "1 pollo entero",
+          "image": "http://localhost:5173/src/assets/media/pollo.png"
         },
         {
           "ingredient": "Tomate",
-          "quantity": "1"
+          "quantity": "1",
+          "image": "http://localhost:5173/src/assets/media/tomate.png"
         },
         {
           "ingredient": "Zanahoria",
-          "quantity": "1"
+          "quantity": "1",
+          "image": "http://localhost:5173/src/assets/media/zanahoria.png"
         },
         {
           "ingredient": "Cebolla",
-          "quantity": "1"
+          "quantity": "1",
+          "image": "http://localhost:5173/src/assets/media/cebolla.png"
         },
         {
           "ingredient": "Sal",
-          "quantity": "1 pizca"
+          "quantity": "1 pizca",
+          "image": "http://localhost:5173/src/assets/media/especias.png"
         },
         {
           "ingredient": "Vino blanco",
-          "quantity": "1 chorro"
+          "quantity": "1 chorro",
+          "image": "http://localhost:5173/src/assets/media/vino.png"
         },
         {
           "ingredient": "Aceite de oliva",
-          "quantity": "1 chorro"
+          "quantity": "1 chorro",
+          "image": "http://localhost:5173/src/assets/media/aceite.png"
         },
         {
           "ingredient": "Almendra",
-          "quantity": "1 puñado"
+          "quantity": "1 puñado",
+          "image": "http://localhost:5173/src/assets/media/frutoseco.png"
         },
         {
           "ingredient": "Avellana",
-          "quantity": "1 puñado"
+          "quantity": "1 puñado",
+          "image": "http://localhost:5173/src/assets/media/frutoseco.png"
         }
       ],
-      "evaluation": []
+      "evaluation": [
+        5
+      ]
     },
     {
       "id": "5",
