@@ -1,5 +1,7 @@
 //import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import axios from 'axios'
+const baseUrl = import.meta.env.VITE_APP_BACKEND_URL
 export const useIngredientsStore = defineStore('IngredientsStore', {
   state: () => ({
     ingredients: [],
@@ -9,14 +11,12 @@ export const useIngredientsStore = defineStore('IngredientsStore', {
   }),
   actions: {
     async fetchIngredients() {
-      let response = await fetch('http://localhost:3001/ingredients')
-      let ingredients = await response.json()
+      const ingredients = await axios.get(`${baseUrl}/ingredients`)
       this.ingredients = ingredients
       this.ingredientsToShow = ingredients
     },
     async fetchCategories() {
-      let response = await fetch('http://localhost:3001/categories')
-      let categories = await response.json()
+      let categories = axios.get(`${baseUrl}/categories`)
       this.categories = categories
     },
     toggleIngredient(name) {
